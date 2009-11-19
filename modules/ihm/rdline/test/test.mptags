@@ -1,0 +1,319 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+AUTOCONF_INCLUDED	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	4;"	d	line:4
+AVR	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	9;"	d	line:9
+CIRBUF_FOREACH	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	103;"	f	line:103
+CONFIGURATION_BITS_CONFIG_H	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\configuration_bits_config.h	23;"	d	line:23
+CONFIG_F_CPU::(40000000)	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	16;"	d	line:16
+CONFIG_MODULE_ADC	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	70;"	d	line:70
+CONFIG_MODULE_ADC_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	71;"	d	line:71
+CONFIG_MODULE_AES	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	157;"	d	line:157
+CONFIG_MODULE_AES_CTR	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	158;"	d	line:158
+CONFIG_MODULE_AX12	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	92;"	d	line:92
+CONFIG_MODULE_AX12_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	93;"	d	line:93
+CONFIG_MODULE_BASE64	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	170;"	d	line:170
+CONFIG_MODULE_BIQUAD	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	138;"	d	line:138
+CONFIG_MODULE_BLOCKING_DETECTION_MANAGER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	121;"	d	line:121
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	98;"	d	line:98
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	99;"	d	line:99
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL_DOUBLE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	100;"	d	line:100
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL_DOUBLE_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	101;"	d	line:101
+CONFIG_MODULE_CC2420	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	147;"	d	line:147
+CONFIG_MODULE_CC2420_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	148;"	d	line:148
+CONFIG_MODULE_CIRBUF::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	25;"	d	line:25
+CONFIG_MODULE_CIRBUF_LARGE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	26;"	d	line:26
+CONFIG_MODULE_COMPENSATE_CENTRIFUGAL_FORCE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	119;"	d	line:119
+CONFIG_MODULE_CONTROL_SYSTEM_MANAGER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	128;"	d	line:128
+CONFIG_MODULE_DIAGNOSTIC	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	180;"	d	line:180
+CONFIG_MODULE_DIAGNOSTIC_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	181;"	d	line:181
+CONFIG_MODULE_DSPIC_UART_CREATE_CONFIG::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	48;"	d	line:48
+CONFIG_MODULE_ENCODERS_EIRBOT	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	108;"	d	line:108
+CONFIG_MODULE_ENCODERS_EIRBOT_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	109;"	d	line:109
+CONFIG_MODULE_ENCODERS_MICROB	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	106;"	d	line:106
+CONFIG_MODULE_ENCODERS_MICROB_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	107;"	d	line:107
+CONFIG_MODULE_ENCODERS_SPI	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	110;"	d	line:110
+CONFIG_MODULE_ENCODERS_SPI_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	111;"	d	line:111
+CONFIG_MODULE_ERROR::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	182;"	d	line:182
+CONFIG_MODULE_ERROR_CREATE_CONFIG::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	183;"	d	line:183
+CONFIG_MODULE_FIXED_POINT	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	27;"	d	line:27
+CONFIG_MODULE_GEOMETRY	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	29;"	d	line:29
+CONFIG_MODULE_HAMMING	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	171;"	d	line:171
+CONFIG_MODULE_I2C	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	51;"	d	line:51
+CONFIG_MODULE_I2C_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	54;"	d	line:54
+CONFIG_MODULE_I2C_MASTER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	52;"	d	line:52
+CONFIG_MODULE_I2C_MULTIMASTER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	53;"	d	line:53
+CONFIG_MODULE_LCD	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	88;"	d	line:88
+CONFIG_MODULE_LCD_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	89;"	d	line:89
+CONFIG_MODULE_MD5	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	159;"	d	line:159
+CONFIG_MODULE_MD5_HMAC	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	160;"	d	line:160
+CONFIG_MODULE_MENU	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	76;"	d	line:76
+CONFIG_MODULE_MF2_CLIENT	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	55;"	d	line:55
+CONFIG_MODULE_MF2_CLIENT_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	57;"	d	line:57
+CONFIG_MODULE_MF2_CLIENT_USE_SCHEDULER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	56;"	d	line:56
+CONFIG_MODULE_MF2_SERVER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	58;"	d	line:58
+CONFIG_MODULE_MF2_SERVER_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	59;"	d	line:59
+CONFIG_MODULE_MULTISERVO	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	90;"	d	line:90
+CONFIG_MODULE_MULTISERVO_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	91;"	d	line:91
+CONFIG_MODULE_OBSTACLE_AVOIDANCE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	122;"	d	line:122
+CONFIG_MODULE_OBSTACLE_AVOIDANCE_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	123;"	d	line:123
+CONFIG_MODULE_PARSE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	82;"	d	line:82
+CONFIG_MODULE_PARSE_NO_FLOAT	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	83;"	d	line:83
+CONFIG_MODULE_PID	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	133;"	d	line:133
+CONFIG_MODULE_PID_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	134;"	d	line:134
+CONFIG_MODULE_POSITION_MANAGER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	118;"	d	line:118
+CONFIG_MODULE_PWM	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	67;"	d	line:67
+CONFIG_MODULE_PWM_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	68;"	d	line:68
+CONFIG_MODULE_PWM_NG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	69;"	d	line:69
+CONFIG_MODULE_QUADRAMP	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	136;"	d	line:136
+CONFIG_MODULE_QUADRAMP_DERIVATE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	137;"	d	line:137
+CONFIG_MODULE_RAMP	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	135;"	d	line:135
+CONFIG_MODULE_RC4	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	161;"	d	line:161
+CONFIG_MODULE_RDLINE::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	78;"	d	line:78
+CONFIG_MODULE_RDLINE_CREATE_CONFIG::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	79;"	d	line:79
+CONFIG_MODULE_RDLINE_HISTORY::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	81;"	d	line:81
+CONFIG_MODULE_RDLINE_KILL_BUF::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	80;"	d	line:80
+CONFIG_MODULE_ROBOT_SYSTEM	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	116;"	d	line:116
+CONFIG_MODULE_ROBOT_SYSTEM_MOT_AND_EXT	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	117;"	d	line:117
+CONFIG_MODULE_SCHEDULER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	30;"	d	line:30
+CONFIG_MODULE_SCHEDULER_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	31;"	d	line:31
+CONFIG_MODULE_SCHEDULER_MANUAL	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	34;"	d	line:34
+CONFIG_MODULE_SCHEDULER_TIMER0::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	33;"	d	line:33
+CONFIG_MODULE_SCHEDULER_USE_TIMERS	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	32;"	d	line:32
+CONFIG_MODULE_SPI	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	49;"	d	line:49
+CONFIG_MODULE_SPI_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	50;"	d	line:50
+CONFIG_MODULE_TIME	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	35;"	d	line:35
+CONFIG_MODULE_TIMER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	64;"	d	line:64
+CONFIG_MODULE_TIMER_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	65;"	d	line:65
+CONFIG_MODULE_TIMER_DYNAMIC	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	66;"	d	line:66
+CONFIG_MODULE_TIME_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	36;"	d	line:36
+CONFIG_MODULE_TIME_EXT	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	37;"	d	line:37
+CONFIG_MODULE_TIME_EXT_CREATE_CONFIG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	38;"	d	line:38
+CONFIG_MODULE_TRAJECTORY_MANAGER	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	120;"	d	line:120
+CONFIG_MODULE_UART::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	47;"	d	line:47
+CONFIG_MODULE_VECT2	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	28;"	d	line:28
+CONFIG_MODULE_VT100	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	77;"	d	line:77
+CONFIG_QUARTZ::(10000000)	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	15;"	d	line:15
+DSPIC::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\autoconf.h	10;"	d	line:10
+ERROR_DUMP_FILE_LINE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\error_config.h	29;"	d	line:29
+ERROR_DUMP_TEXTLOG	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\error_config.h	26;"	d	line:26
+FWDTEN_OFF	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\configuration_bits_config.h	54;"	v	line:54
+OSCILLATOR_CONFIG_H	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\oscillator_config.h	24;"	d	line:24
+PROGMEM	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	57;"	v	line:57
+STDIO_UART::0	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	32;"	d	line:32
+TEST_COMPLETION::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	164;"	d	line:164	file:
+UART0_BAUDRATE::38400	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	47;"	d	line:47
+UART0_COMPILE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	39;"	d	line:39
+UART0_ENABLED::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	42;"	d	line:42
+UART0_INTERRUPT_ENABLED::1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	45;"	d	line:45
+UART0_NBITS::8	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	59;"	d	line:59
+UART0_PARITY::UART_PARTITY_NONE	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	62;"	d	line:62
+UART0_RX_FIFO_SIZE::4	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	56;"	d	line:56
+UART0_STOP_BIT::UART_STOP_BITS_1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	66;"	d	line:66
+UART0_TX_FIFO_SIZE::128	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	57;"	d	line:57
+UART0_USE_DOUBLE_SPEED::0	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	53;"	d	line:53
+UART_CONFIG_H	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\uart_config.h	27;"	d	line:27
+UART_SET_STATICCONF::(x)	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	198;"	d	line:198	file:
+_ERROR_CONFIG_	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\error_config.h	23;"	d	line:23
+_U1RXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	134;"	f	line:134	signature:(void)
+_U1TXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	111;"	f	line:111	signature:(void)
+_U2RXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	141;"	f	line:141	signature:(void)
+_U2TXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	119;"	f	line:119	signature:(void)
+__cirbuf_add_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_head.c	31;"	f	line:31	file:	signature:(struct cirbuf * cbuf, char c)
+__cirbuf_add_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_tail.c	32;"	f	line:32	file:	signature:(struct cirbuf * cbuf, char c)
+__cirbuf_del_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_head.c	30;"	f	line:30	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_del_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_tail.c	31;"	f	line:31	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_shift_left	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	28;"	f	line:28	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_shift_right	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	45;"	f	line:45	file:	signature:(struct cirbuf * cbuf)
+ap	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	76;"	l	line:76
+buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	157;"	l	line:157
+buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	195;"	l	line:195
+buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	77;"	l	line:77
+c	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	557;"	l	line:557
+c	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	567;"	l	line:567
+c	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	97;"	l	line:97
+cirbuf_add_buf_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_buf_head.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, const char * c, cirbuf_uint n)
+cirbuf_add_buf_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_buf_tail.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, const char * c, cirbuf_uint n)
+cirbuf_add_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_head.c	52;"	f	line:52	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_head_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_head.c	42;"	f	line:42	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_tail.c	53;"	f	line:53	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_tail_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_tail.c	43;"	f	line:43	signature:(struct cirbuf * cbuf, char c)
+cirbuf_align_left	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	62;"	f	line:62	signature:(struct cirbuf * cbuf)
+cirbuf_align_right	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	77;"	f	line:77	signature:(struct cirbuf * cbuf)
+cirbuf_del_buf_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_buf_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, cirbuf_uint size)
+cirbuf_del_buf_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_buf_tail.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, cirbuf_uint size)
+cirbuf_del_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_head.c	50;"	f	line:50	signature:(struct cirbuf * cbuf)
+cirbuf_del_head_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_head.c	40;"	f	line:40	signature:(struct cirbuf * cbuf)
+cirbuf_del_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_tail.c	51;"	f	line:51	signature:(struct cirbuf * cbuf)
+cirbuf_del_tail_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_del_tail.c	41;"	f	line:41	signature:(struct cirbuf * cbuf)
+cirbuf_get_buf_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_get_buf_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, char * c, cirbuf_uint size)
+cirbuf_get_buf_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_get_buf_tail.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, char * c, cirbuf_uint size)
+cirbuf_get_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_get_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf)
+cirbuf_get_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_get_tail.c	30;"	f	line:30	signature:(struct cirbuf * cbuf)
+cirbuf_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf.c	29;"	f	line:29	signature:(struct cirbuf * cbuf, char * buf, cirbuf_uint start, cirbuf_uint maxlen)
+cmd	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	154;"	l	line:154
+cmd	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	74;"	l	line:74
+cmd0	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	34;"	v	line:34	file:
+cmd1	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	35;"	v	line:35	file:
+cmd10	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	44;"	v	line:44	file:
+cmd11	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	45;"	v	line:45	file:
+cmd12	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	46;"	v	line:46	file:
+cmd13	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	47;"	v	line:47	file:
+cmd14	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	48;"	v	line:48	file:
+cmd15	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	49;"	v	line:49	file:
+cmd16	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	50;"	v	line:50	file:
+cmd17	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	51;"	v	line:51	file:
+cmd18	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	52;"	v	line:52	file:
+cmd19	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	53;"	v	line:53	file:
+cmd2	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	36;"	v	line:36	file:
+cmd20	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	54;"	v	line:54	file:
+cmd21	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	55;"	v	line:55	file:
+cmd3	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	37;"	v	line:37	file:
+cmd4	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	38;"	v	line:38	file:
+cmd5	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	39;"	v	line:39	file:
+cmd6	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	40;"	v	line:40	file:
+cmd7	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	41;"	v	line:41	file:
+cmd8	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	42;"	v	line:42	file:
+cmd9	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	43;"	v	line:43	file:
+complete_buffer	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	169;"	f	line:169	signature:(const char * buf, char * dstbuf, uint8_t dstsize,int16_t * state)
+complete_state	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	314;"	l	line:314
+cpt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	67;"	v	line:67
+display_buffer	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	152;"	f	line:152	signature:(const char * buf, uint8_t size)
+display_right_buffer	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	121;"	f	line:121	file:	signature:(struct rdline * rdl)
+div	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	567;"	l	line:567
+dummy_complete	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	157;"	v	line:157
+dump_it	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	112;"	f	line:112	signature:(struct cirbuf * cbuf)
+dump_it	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	92;"	f	line:92	signature:(struct cirbuf * cbuf)
+e	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_buf_head.c	33;"	l	line:33
+e	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_add_buf_tail.c	33;"	l	line:33
+e	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	95;"	l	line:95
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	158;"	l	line:158
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	181;"	l	line:181
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	211;"	l	line:211
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	226;"	l	line:226
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_recv.c	31;"	l	line:31
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_recv_nowait.c	31;"	l	line:31
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_events.c	32;"	l	line:32
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_events.c	44;"	l	line:44
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_recv_nowait.c	32;"	l	line:32
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_send_nowait.c	33;"	l	line:33
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	208;"	l	line:208
+g_rx0_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	31;"	v	line:31
+g_rx1_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	35;"	v	line:35
+g_rx_fifo	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	32;"	v	line:32
+g_tx0_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	30;"	v	line:30
+g_tx1_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	34;"	v	line:34
+g_tx_fifo	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	31;"	v	line:31
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	30;"	l	line:30
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	47;"	l	line:47
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_dev_io.c	29;"	l	line:29
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	123;"	l	line:123
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	138;"	l	line:138
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	153;"	l	line:153
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	477;"	l	line:477
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	490;"	l	line:490
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	513;"	l	line:513
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	73;"	l	line:73
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	196;"	l	line:196
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	94;"	l	line:94
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	75;"	l	line:75
+isblank	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	47;"	f	line:47	file:	signature:(int c)
+len	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	490;"	l	line:490
+len	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	513;"	l	line:513
+len_l	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	107;"	l	line:107
+len_r	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	107;"	l	line:107
+main	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	191;"	f	line:191	signature:(void)
+match_command	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	72;"	f	line:72	file:	signature:(char * buf, uint8_t size)
+n	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_get_buf_head.c	32;"	l	line:32
+n	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_get_buf_tail.c	33;"	l	line:33
+n	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	196;"	l	line:196
+n	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	78;"	l	line:78
+oldterm	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	194;"	l	line:194
+oscillator_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\hardware\dspic\oscillator\oscillator.c	28;"	f	line:28	signature:(void)
+prompt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	66;"	v	line:66
+rdl	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	65;"	v	line:65
+rdline_add_history	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	511;"	f	line:511	signature:(struct rdline * rdl, const char * buf)
+rdline_add_history	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	544;"	f	line:544	signature:(struct rdline * rdl, const char * buf)
+rdline_char_in	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	151;"	f	line:151	signature:(struct rdline * rdl, char c)
+rdline_clear_history	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	537;"	f	line:537	signature:(struct rdline * rdl)
+rdline_clear_history	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	545;"	f	line:545	signature:(struct rdline * rdl)
+rdline_get_buffer	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	105;"	f	line:105	signature:(struct rdline * rdl)
+rdline_get_history_item	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	488;"	f	line:488	signature:(struct rdline * rdl, uint8_t idx)
+rdline_get_history_item	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	546;"	f	line:546	signature:(struct rdline * rdl, uint8_t i)
+rdline_get_history_size	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	42;"	p	line:42	file:	signature:(struct rdline * rdl)
+rdline_get_history_size	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	475;"	f	line:475	file:	signature:(struct rdline * rdl)
+rdline_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	55;"	f	line:55	signature:(struct rdline *rdl, rdline_write_char_t *write_char, rdline_validate_t *validate, rdline_complete_t *complete)
+rdline_miniprintf_P	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	36;"	p	line:36	file:	signature:(struct rdline * rdl, const prog_char * buf, uint8_t val)
+rdline_miniprintf_P	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	565;"	f	line:565	file:	signature:(struct rdline * rdl, const prog_char * buf, uint8_t val)
+rdline_newline	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	71;"	f	line:71	signature:(struct rdline * rdl, const char * prompt)
+rdline_puts_P	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	35;"	p	line:35	file:	signature:(struct rdline * rdl, const prog_char * buf)
+rdline_puts_P	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	555;"	f	line:555	file:	signature:(struct rdline * rdl, const prog_char * buf)
+rdline_redisplay	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	136;"	f	line:136	signature:(struct rdline * rdl)
+rdline_remove_first_history_item	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	41;"	p	line:41	file:	signature:(struct rdline * rdl)
+rdline_remove_first_history_item	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	455;"	f	line:455	file:	signature:(struct rdline * rdl)
+rdline_remove_old_history_item	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	40;"	p	line:40	file:	signature:(struct rdline * rdl)
+rdline_remove_old_history_item	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	442;"	f	line:442	file:	signature:(struct rdline * rdl)
+rdline_restart	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	99;"	f	line:99	signature:(struct rdline * rdl)
+rdline_stop	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	93;"	f	line:93	signature:(struct rdline * rdl)
+ret	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	202;"	l	line:202
+ret	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	315;"	l	line:315
+ret	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	477;"	l	line:477
+ret	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	132;"	l	line:132
+ret	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	197;"	l	line:197
+rx	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	130;"	f	line:130	file:	signature:(char c)
+rx_event	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	35;"	v	line:35
+s	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	72;"	v	line:72
+sin_ci	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	200;"	l	line:200
+size	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	96;"	l	line:96
+sock_printf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	111;"	f	line:111	signature:(const char * fmt, ...)
+sock_printf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	74;"	f	line:74	signature:(const char * fmt, ...)
+started	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	567;"	l	line:567
+static_conf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	207;"	l	line:207
+term	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	194;"	l	line:194
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	31;"	l	line:31
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\base\cirbuf\cirbuf_align.c	48;"	l	line:48
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	124;"	l	line:124
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	139;"	l	line:139
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	155;"	l	line:155
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	444;"	l	line:444
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	457;"	l	line:457
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	477;"	l	line:477
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	490;"	l	line:490
+tmp_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	313;"	l	line:313
+tmp_size	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	316;"	l	line:316
+tx_event	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	36;"	v	line:36
+uart_config_int	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	155;"	f	line:155	signature:(uint8_t num, uint16_t config)
+uart_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	243;"	f	line:243	signature:(void)
+uart_open	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	179;"	f	line:179	signature:(uint8_t num, uint16_t uxmode, uint16_t uxsta, uint16_t uxbrg)
+uart_recv	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_recv.c	29;"	f	line:29	signature:(uint8_t num)
+uart_recv_next_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	127;"	p	line:127	file:	signature:(uint8_t num)
+uart_recv_next_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	206;"	f	line:206	file:	signature:(uint8_t num)
+uart_recv_nowait	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_recv_nowait.c	29;"	f	line:29	signature:(uint8_t num)
+uart_register_rx_event	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_events.c	42;"	f	line:42	signature:(uint8_t num, void (*f)(char))
+uart_register_tx_event	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_events.c	30;"	f	line:30	signature:(uint8_t num, void (*f)(char))
+uart_regs	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	83;"	v	line:83
+uart_send	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_send.c	28;"	f	line:28	signature:(uint8_t num, char c)
+uart_send_next_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart.c	153;"	f	line:153	signature:(uint8_t num)
+uart_send_nowait	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_send_nowait.c	31;"	f	line:31	signature:(uint8_t num, char c)
+uart_setconf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	200;"	f	line:200	signature:(uint8_t num, struct uart_config *u)
+ubrg_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	203;"	l	line:203
+uconfig_int_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	204;"	l	line:204
+umode_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	205;"	l	line:205
+usta_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_setconf.c	206;"	l	line:206
+vt100_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	65;"	f	line:65	signature:(struct vt100 * vt)
+vt100_parser	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\vt100\vt100.c	94;"	f	line:94	signature:(struct vt100 *vt, char ch)
+write	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\comm\dspic\uart\uart_dev_io.c	28;"	f	line:28	signature:(int handle, void *buffer, unsigned int len)
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	129;"	p	line:129	file:
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	145;"	p	line:145	file:
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	338;"	p	line:338	file:	signature:(tmp_buf[i])
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	350;"	p	line:350	file:	signature:(tmp_buf[i])
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	559;"	p	line:559	file:
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	586;"	p	line:586	file:
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\rdline.c	590;"	p	line:590	file:
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	119;"	f	line:119	signature:(char c)
+write_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\jbs_libs\modules\ihm\rdline\test\main.c	124;"	f	line:124	signature:(char c)

@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+UART_SET_STATICCONF::(x)	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	198;"	d	line:198	file:
+_U1RXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	134;"	f	line:134	signature:(void)
+_U1TXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	111;"	f	line:111	signature:(void)
+_U2RXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	141;"	f	line:141	signature:(void)
+_U2TXInterrupt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	119;"	f	line:119	signature:(void)
+__cirbuf_add_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c	31;"	f	line:31	file:	signature:(struct cirbuf * cbuf, char c)
+__cirbuf_add_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c	32;"	f	line:32	file:	signature:(struct cirbuf * cbuf, char c)
+__cirbuf_del_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c	30;"	f	line:30	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_del_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c	31;"	f	line:31	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_shift_left	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	28;"	f	line:28	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_shift_right	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	45;"	f	line:45	file:	signature:(struct cirbuf * cbuf)
+cirbuf_add_buf_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_head.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, const char * c, cirbuf_uint n)
+cirbuf_add_buf_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_tail.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, const char * c, cirbuf_uint n)
+cirbuf_add_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c	52;"	f	line:52	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_head_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c	42;"	f	line:42	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c	53;"	f	line:53	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_tail_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c	43;"	f	line:43	signature:(struct cirbuf * cbuf, char c)
+cirbuf_align_left	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	62;"	f	line:62	signature:(struct cirbuf * cbuf)
+cirbuf_align_right	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	77;"	f	line:77	signature:(struct cirbuf * cbuf)
+cirbuf_del_buf_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, cirbuf_uint size)
+cirbuf_del_buf_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_tail.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, cirbuf_uint size)
+cirbuf_del_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c	50;"	f	line:50	signature:(struct cirbuf * cbuf)
+cirbuf_del_head_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c	40;"	f	line:40	signature:(struct cirbuf * cbuf)
+cirbuf_del_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c	51;"	f	line:51	signature:(struct cirbuf * cbuf)
+cirbuf_del_tail_safe	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c	41;"	f	line:41	signature:(struct cirbuf * cbuf)
+cirbuf_get_buf_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, char * c, cirbuf_uint size)
+cirbuf_get_buf_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_tail.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, char * c, cirbuf_uint size)
+cirbuf_get_head	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf)
+cirbuf_get_tail	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_tail.c	30;"	f	line:30	signature:(struct cirbuf * cbuf)
+cirbuf_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf.c	29;"	f	line:29	signature:(struct cirbuf * cbuf, char * buf, cirbuf_uint start, cirbuf_uint maxlen)
+e	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_head.c	33;"	l	line:33
+e	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_tail.c	33;"	l	line:33
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	158;"	l	line:158
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	181;"	l	line:181
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	211;"	l	line:211
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	226;"	l	line:226
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv.c	31;"	l	line:31
+elt	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c	31;"	l	line:31
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c	32;"	l	line:32
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_send_nowait.c	33;"	l	line:33
+flags	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	208;"	l	line:208
+g_rx0_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	31;"	v	line:31
+g_rx1_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	35;"	v	line:35
+g_rx_fifo	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	32;"	v	line:32
+g_tx0_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	30;"	v	line:30
+g_tx1_buf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	34;"	v	line:34
+g_tx_fifo	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	31;"	v	line:31
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	30;"	l	line:30
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	47;"	l	line:47
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\main.c	48;"	l	line:48
+i	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_dev_io.c	29;"	l	line:29
+main	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\main.c	46;"	f	line:46	signature:(void)
+n	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_head.c	32;"	l	line:32
+n	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_tail.c	33;"	l	line:33
+oscillator_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.c	28;"	f	line:28	signature:(void)
+ret	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	202;"	l	line:202
+rx_event	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	35;"	v	line:35
+static_conf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	207;"	l	line:207
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	31;"	l	line:31
+tmp	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	48;"	l	line:48
+tx_event	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	36;"	v	line:36
+uart_config_int	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	155;"	f	line:155	signature:(uint8_t num, uint16_t config)
+uart_init	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	243;"	f	line:243	signature:(void)
+uart_open	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	179;"	f	line:179	signature:(uint8_t num, uint16_t uxmode, uint16_t uxsta, uint16_t uxbrg)
+uart_recv	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv.c	29;"	f	line:29	signature:(uint8_t num)
+uart_recv_next_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	127;"	p	line:127	file:	signature:(uint8_t num)
+uart_recv_next_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	206;"	f	line:206	file:	signature:(uint8_t num)
+uart_recv_nowait	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c	29;"	f	line:29	signature:(uint8_t num)
+uart_regs	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	83;"	v	line:83
+uart_send	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_send.c	28;"	f	line:28	signature:(uint8_t num, char c)
+uart_send_next_char	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	153;"	f	line:153	signature:(uint8_t num)
+uart_send_nowait	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_send_nowait.c	31;"	f	line:31	signature:(uint8_t num, char c)
+uart_setconf	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	200;"	f	line:200	signature:(uint8_t num, struct uart_config *u)
+ubrg_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	203;"	l	line:203
+uconfig_int_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	204;"	l	line:204
+umode_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	205;"	l	line:205
+usta_reg	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	206;"	l	line:206
+write	D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_dev_io.c	28;"	f	line:28	signature:(int handle, void *buffer, unsigned int len)
