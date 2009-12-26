@@ -50,6 +50,8 @@ Command:
   -Tp33FJ64MC804.gld.00 \
   --defsym=__MPLAB_BUILD=1 \
   --defsym=__MPLAB_DEBUG=1 \
+  --defsym=__MPLAB_DEBUGGER_ICD3=1 \
+  --defsym=__ICD2RAM=1 \
   --heap=512 \
   -Map=.\output_files\test.map \
   --report-mem \
@@ -261,97 +263,98 @@ Data Memory  [Origin = 0x800, Length = 0x4000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.nbss                        0x800                   0           0x18c  (396)
-.ndata                       0x98c                   0            0xb4  (180)
-.nbss                        0xa40                   0            0x20  (32)
-.ndata                       0xa60                   0            0x16  (22)
-.nbss                        0xa76                   0            0x14  (20)
-.ndata                       0xa8a                   0             0x8  (8)
-.nbss                        0xa92                   0             0x2  (2)
-.data                        0xa94                   0            0xd0  (208)
-.dconst                      0xb64                   0            0x32  (50)
-.data                        0xb96                   0            0x34  (52)
-.dconst                      0xbca                   0             0x8  (8)
-.data                        0xbd2                   0             0x6  (6)
-.bss                         0xbd8                   0             0x2  (2)
-.data                        0xbda                   0             0x2  (2)
-.dconst                      0xbdc                   0             0x2  (2)
-.data                        0xbde                   0             0x2  (2)
-.bss                         0xbe0                   0             0x2  (2)
-.heap                        0xbe2                   0           0x200  (512)
+.icd                         0x800                0x50            0x50  (80)
+.nbss                        0x850                   0           0x18c  (396)
+.ndata                       0x9dc                   0            0xb4  (180)
+.nbss                        0xa90                   0            0x20  (32)
+.ndata                       0xab0                   0            0x16  (22)
+.nbss                        0xac6                   0            0x14  (20)
+.ndata                       0xada                   0             0x8  (8)
+.nbss                        0xae2                   0             0x2  (2)
+.data                        0xae4                   0            0xd0  (208)
+.dconst                      0xbb4                   0            0x32  (50)
+.data                        0xbe6                   0            0x34  (52)
+.dconst                      0xc1a                   0             0x8  (8)
+.data                        0xc22                   0             0x6  (6)
+.bss                         0xc28                   0             0x2  (2)
+.data                        0xc2a                   0             0x2  (2)
+.dconst                      0xc2c                   0             0x2  (2)
+.data                        0xc2e                   0             0x2  (2)
+.bss                         0xc30                   0             0x2  (2)
+.heap                        0xc32                   0           0x200  (512)
 
-                        Total data memory used (bytes):          0x5e2  (1506) 9%
+                        Total data memory used (bytes):          0x632  (1586) 9%
 
 
 Dynamic Memory Usage
 
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
-heap                         0xbe2                               0x200  (512)
-stack                        0xde2                              0x3a1e  (14878)
+heap                         0xc32                               0x200  (512)
+stack                        0xe32                              0x39ce  (14798)
 
-                        Maximum dynamic memory (bytes):         0x3c1e  (15390)
+                        Maximum dynamic memory (bytes):         0x3bce  (15310)
 
 
 External Symbols in Data Memory (by address):
 
-                    0x0800                  _prompt
-                    0x0810                  _rdl
-                    0x098c                  _help_help
-                    0x099a                  _cmd_help_arg0
-                    0x09a0                  _str_help_arg0
-                    0x09a5                  _help_trigo
-                    0x09d0                  _cmd_trigo_op
-                    0x09d6                  _str_trigo_op
-                    0x09e2                  _help_float
-                    0x0a06                  _cmd_float_op
-                    0x0a0c                  _str_float_op
-                    0x0a14                  _vt100_commands
-                    0x0a40                  _tx_event
-                    0x0a44                  _rx_event
-                    0x0a48                  _g_rx_fifo
-                    0x0a54                  _g_tx_fifo
-                    0x0a60                  _token_num_ops
-                    0x0a76                  _g_rx0_buf
-                    0x0a7a                  _g_tx0_buf
-                    0x0a8a                  _token_string_ops
-                    0x0a94                  __Files
-                    0x0aa4                  __Stderr
-                    0x0acc                  __Stdout
-                    0x0af4                  __Stdin
-                    0x0bd2                  __Size_block
-                    0x0bd4                  __Aldata
-                    0x0be0                  ___curbrk
+                    0x0850                  _prompt
+                    0x0860                  _rdl
+                    0x09dc                  _help_help
+                    0x09ea                  _cmd_help_arg0
+                    0x09f0                  _str_help_arg0
+                    0x09f5                  _help_trigo
+                    0x0a20                  _cmd_trigo_op
+                    0x0a26                  _str_trigo_op
+                    0x0a32                  _help_float
+                    0x0a56                  _cmd_float_op
+                    0x0a5c                  _str_float_op
+                    0x0a64                  _vt100_commands
+                    0x0a90                  _tx_event
+                    0x0a94                  _rx_event
+                    0x0a98                  _g_rx_fifo
+                    0x0aa4                  _g_tx_fifo
+                    0x0ab0                  _token_num_ops
+                    0x0ac6                  _g_rx0_buf
+                    0x0aca                  _g_tx0_buf
+                    0x0ada                  _token_string_ops
+                    0x0ae4                  __Files
+                    0x0af4                  __Stderr
+                    0x0b1c                  __Stdout
+                    0x0b44                  __Stdin
+                    0x0c22                  __Size_block
+                    0x0c24                  __Aldata
+                    0x0c30                  ___curbrk
 
 External Symbols in Data Memory (by name):
 
-                    0x0bd4                  __Aldata
-                    0x0a94                  __Files
-                    0x0bd2                  __Size_block
-                    0x0aa4                  __Stderr
-                    0x0af4                  __Stdin
-                    0x0acc                  __Stdout
-                    0x0be0                  ___curbrk
-                    0x0a06                  _cmd_float_op
-                    0x099a                  _cmd_help_arg0
-                    0x09d0                  _cmd_trigo_op
-                    0x0a76                  _g_rx0_buf
-                    0x0a48                  _g_rx_fifo
-                    0x0a7a                  _g_tx0_buf
-                    0x0a54                  _g_tx_fifo
-                    0x09e2                  _help_float
-                    0x098c                  _help_help
-                    0x09a5                  _help_trigo
-                    0x0800                  _prompt
-                    0x0810                  _rdl
-                    0x0a44                  _rx_event
-                    0x0a0c                  _str_float_op
-                    0x09a0                  _str_help_arg0
-                    0x09d6                  _str_trigo_op
-                    0x0a60                  _token_num_ops
-                    0x0a8a                  _token_string_ops
-                    0x0a40                  _tx_event
-                    0x0a14                  _vt100_commands
+                    0x0c24                  __Aldata
+                    0x0ae4                  __Files
+                    0x0c22                  __Size_block
+                    0x0af4                  __Stderr
+                    0x0b44                  __Stdin
+                    0x0b1c                  __Stdout
+                    0x0c30                  ___curbrk
+                    0x0a56                  _cmd_float_op
+                    0x09ea                  _cmd_help_arg0
+                    0x0a20                  _cmd_trigo_op
+                    0x0ac6                  _g_rx0_buf
+                    0x0a98                  _g_rx_fifo
+                    0x0aca                  _g_tx0_buf
+                    0x0aa4                  _g_tx_fifo
+                    0x0a32                  _help_float
+                    0x09dc                  _help_help
+                    0x09f5                  _help_trigo
+                    0x0850                  _prompt
+                    0x0860                  _rdl
+                    0x0a94                  _rx_event
+                    0x0a5c                  _str_float_op
+                    0x09f0                  _str_help_arg0
+                    0x0a26                  _str_trigo_op
+                    0x0ab0                  _token_num_ops
+                    0x0ada                  _token_string_ops
+                    0x0a90                  _tx_event
+                    0x0a64                  _vt100_commands
 
 External Symbols in Program Memory (by address):
 
@@ -1039,6 +1042,10 @@ __FUID2
 
 __FUID3
  *(__FUID3.sec)
+
+.icd                0x0800         0x50
+                    0x0850                  . = (. + DEFINED (__ICD2RAM)?0x50:0x0)
+ *fill*             0x0800         0x5000
 
 .comment          0x000000         0x5e
  *(.comment)
@@ -2430,6 +2437,8 @@ __FUID3
                     0x0230                  _UART2 = 0x230
                     0x0001                  __MPLAB_BUILD = 0x1
                     0x0001                  __MPLAB_DEBUG = 0x1
+                    0x0001                  __MPLAB_DEBUGGER_ICD3 = 0x1
+                    0x0001                  __ICD2RAM = 0x1
 START GROUP
 LOAD c:/programas/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a
 LOAD c:/programas/microchip/mplab c30/bin/bin/../../lib\libm-coff.a
@@ -2592,90 +2601,90 @@ __c30_signature
  __c30_signature
                   0x000214          0x6 c:/programas/microchip/mplab c30/bin/bin/../../lib\libm-coff.a(muldi3.o)
 
-.nbss               0x0800        0x18c
- .nbss              0x0800        0x18c compiled_files\main.o
-                    0x0800                  prompt
-                    0x0810                  rdl
+.nbss               0x0850        0x18c
+ .nbss              0x0850        0x18c compiled_files\main.o
+                    0x0850                  prompt
+                    0x0860                  rdl
 
-.ndata              0x098c         0xb4
- .ndata             0x098c         0x88 compiled_files\commands.o
-                    0x098c                  help_help
-                    0x099a                  cmd_help_arg0
-                    0x09a0                  str_help_arg0
-                    0x09a5                  help_trigo
-                    0x09d0                  cmd_trigo_op
-                    0x09d6                  str_trigo_op
-                    0x09e2                  help_float
-                    0x0a06                  cmd_float_op
-                    0x0a0c                  str_float_op
- .ndata             0x0a14         0x2c compiled_files\vt100.o
-                    0x0a14                  vt100_commands
+.ndata              0x09dc         0xb4
+ .ndata             0x09dc         0x88 compiled_files\commands.o
+                    0x09dc                  help_help
+                    0x09ea                  cmd_help_arg0
+                    0x09f0                  str_help_arg0
+                    0x09f5                  help_trigo
+                    0x0a20                  cmd_trigo_op
+                    0x0a26                  str_trigo_op
+                    0x0a32                  help_float
+                    0x0a56                  cmd_float_op
+                    0x0a5c                  str_float_op
+ .ndata             0x0a64         0x2c compiled_files\vt100.o
+                    0x0a64                  vt100_commands
 
-.nbss               0x0a40         0x20
- .nbss              0x0a40         0x20 compiled_files\uart.o
-                    0x0a40                  tx_event
-                    0x0a44                  rx_event
-                    0x0a48                  g_rx_fifo
-                    0x0a54                  g_tx_fifo
+.nbss               0x0a90         0x20
+ .nbss              0x0a90         0x20 compiled_files\uart.o
+                    0x0a90                  tx_event
+                    0x0a94                  rx_event
+                    0x0a98                  g_rx_fifo
+                    0x0aa4                  g_tx_fifo
 
-.ndata              0x0a60         0x16
- .ndata             0x0a60         0x16 compiled_files\parse_num.o
-                    0x0a60                  token_num_ops
+.ndata              0x0ab0         0x16
+ .ndata             0x0ab0         0x16 compiled_files\parse_num.o
+                    0x0ab0                  token_num_ops
 
-.nbss               0x0a76         0x14
- .nbss              0x0a76         0x14 compiled_files\uart_setconf.o
-                    0x0a76                  g_rx0_buf
-                    0x0a7a                  g_tx0_buf
+.nbss               0x0ac6         0x14
+ .nbss              0x0ac6         0x14 compiled_files\uart_setconf.o
+                    0x0ac6                  g_rx0_buf
+                    0x0aca                  g_tx0_buf
 
-.ndata              0x0a8a          0x8
- .ndata             0x0a8a          0x8 compiled_files\parse_string.o
-                    0x0a8a                  token_string_ops
+.ndata              0x0ada          0x8
+ .ndata             0x0ada          0x8 compiled_files\parse_string.o
+                    0x0ada                  token_string_ops
 
-.nbss               0x0a92          0x2
- .nbss              0x0a92          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libm-coff.a(errno.o)
-                    0x0a92                  errno
+.nbss               0x0ae2          0x2
+ .nbss              0x0ae2          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libm-coff.a(errno.o)
+                    0x0ae2                  errno
 
-.data               0x0a94         0xd0
- .data              0x0a94         0x88 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xfiles.o)
-                    0x0a94                  _Files
-                    0x0aa4                  _Stderr
-                    0x0acc                  _Stdout
-                    0x0af4                  _Stdin
- .data              0x0b1c         0x48 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xldtob.o)
+.data               0x0ae4         0xd0
+ .data              0x0ae4         0x88 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xfiles.o)
+                    0x0ae4                  _Files
+                    0x0af4                  _Stderr
+                    0x0b1c                  _Stdout
+                    0x0b44                  _Stdin
+ .data              0x0b6c         0x48 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xldtob.o)
 
-.dconst             0x0b64         0x32
- .dconst            0x0b64         0x32 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xldtob.o)
+.dconst             0x0bb4         0x32
+ .dconst            0x0bb4         0x32 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xldtob.o)
 
-.data               0x0b96         0x34
- .data              0x0b96         0x22 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xlitob.o)
- .data              0x0bb8         0x12 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xprintf.o)
+.data               0x0be6         0x34
+ .data              0x0be6         0x22 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xlitob.o)
+ .data              0x0c08         0x12 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xprintf.o)
 
-.dconst             0x0bca          0x8
- .dconst            0x0bca          0x8 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xprintf.o)
+.dconst             0x0c1a          0x8
+ .dconst            0x0c1a          0x8 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xprintf.o)
 
-.data               0x0bd2          0x6
- .data              0x0bd2          0x6 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(malloc.o)
-                    0x0bd2                  _Size_block
-                    0x0bd4                  _Aldata
+.data               0x0c22          0x6
+ .data              0x0c22          0x6 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(malloc.o)
+                    0x0c22                  _Size_block
+                    0x0c24                  _Aldata
 
-.bss                0x0bd8          0x2
- .bss               0x0bd8          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(fclose.o)
+.bss                0x0c28          0x2
+ .bss               0x0c28          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(fclose.o)
 
-.data               0x0bda          0x2
- .data              0x0bda          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(ldiv.o)
+.data               0x0c2a          0x2
+ .data              0x0c2a          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(ldiv.o)
 
-.dconst             0x0bdc          0x2
- .dconst            0x0bdc          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xgenld.o)
+.dconst             0x0c2c          0x2
+ .dconst            0x0c2c          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(xgenld.o)
 
-.data               0x0bde          0x2
- .data              0x0bde          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(div.o)
+.data               0x0c2e          0x2
+ .data              0x0c2e          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libc-coff.a(div.o)
 
-.bss                0x0be0          0x2
- .bss               0x0be0          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(brk.o)
-                    0x0be0                  __curbrk
+.bss                0x0c30          0x2
+ .bss               0x0c30          0x2 c:/programas/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(brk.o)
+                    0x0c30                  __curbrk
 
-.heap               0x0be2        0x200
- .heap              0x0be2        0x200 heap
+.heap               0x0c32        0x200
+ .heap              0x0c32        0x200 heap
 
 .const              0xa8bc        0x240 load address 0x0028bc  
  .const             0xa8bc        0x10a compiled_files\commands.o

@@ -1,28 +1,28 @@
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_tail.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_head.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_tail.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_head.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_tail.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_head.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_tail.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_head.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_dev_io.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_getconf.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_send.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_send_nowait.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\main.c
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\test\dspic\autoconf.h
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\test\dspic\configuration_bits_config.h
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\test\dspic\oscillator_config.h
-D:\Javier\Proyectos\Proyectos 2010\Eurobot 2010\mplab\test\dspic\uart_config.h
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_tail.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_head.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_tail.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_head.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_tail.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_head.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_tail.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_head.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_dev_io.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_getconf.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_send.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart_send_nowait.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\main.c
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\autoconf.h
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\configuration_bits_config.h
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\oscillator_config.h
+D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\test\uart_config.h
