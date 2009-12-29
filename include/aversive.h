@@ -253,6 +253,7 @@ do {				     \
 #  define nothing() do {} while(0)
 #  define cli() do {SRbits.IPL=7;} while(0)
 #  define sei() do {SRbits.IPL=0;} while(0)
+#  define _BV(bit_num) (1<<bit_num)
 #endif /* DSPIC */
 /**
  *   little bit toggeling macro 

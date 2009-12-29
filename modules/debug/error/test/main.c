@@ -29,6 +29,7 @@
 #include <aversive/error.h>
 #include <aversive/pgmspace.h>
 
+#include <configuration_bits_config.h>
 
 void mylog(struct error * e, ...)
 {
@@ -45,11 +46,13 @@ void mylog(struct error * e, ...)
 
 int main(void)
 {
+
 #ifndef HOST_VERSION
+	oscillator_init();
 	/* uart stuff */
 	uart_init();  
 	sei();
-	fdevopen(uart0_dev_send,NULL);
+	//fdevopen(uart0_dev_send,NULL);
 #endif
 	
 	/* hello */

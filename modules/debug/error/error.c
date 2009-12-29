@@ -22,12 +22,15 @@
 
 #include <string.h>
 
-#ifndef HOST_VERSION
-#include <avr/io.h>
-#endif
-
 #include <aversive.h>
 #include <aversive/error.h>
+#include <aversive/pgmspace.h>
+
+#ifndef HOST_VERSION
+#ifdef AVR
+#include <avr/io.h>
+#endif
+#endif
 
 struct error_fct g_error_fct;
 

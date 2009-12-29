@@ -158,6 +158,8 @@ void encoders_dspic_set_value(void * number, int32_t v)
 {
   uint8_t flags;
 
+	number--;
+
   IRQ_LOCK(flags);
   g_encoders_dspic_values[(int)number] = v;
   IRQ_UNLOCK(flags);

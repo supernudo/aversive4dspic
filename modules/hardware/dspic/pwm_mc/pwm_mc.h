@@ -45,9 +45,11 @@
  * PWM_MC_MODE_SIGNED            : activate the sign output on another port
  * PWM_MC_MODE_SIGN_INVERTED     : invert sign output
  */
-#define PWM_MC_MODE_NORMAL          0x00 
-#define PWM_MC_MODE_SIGN_INVERTED   0x01
-#define PWM_MC_MODE_SIGNED          0x02
+#define PWM_MC_MODE_NORMAL          	0x00 
+#define PWM_MC_MODE_REVERSE          	0x01 
+#define PWM_MC_MODE_SIGN_INVERTED   	0x02
+#define PWM_MC_MODE_SIGNED          	0x04
+#define PWM_MC_MODE_BIPOLAR						0x08
 
 /* 
  * PWM pins configuration 
@@ -74,7 +76,7 @@
 #endif
 
 /* PWM motor control struct */
-struct pwm_mc {
+struct pwm_mc{
 	uint8_t mode:4,
 		module_num:1, 		/* DCMCPWM module up to 2 (value range 1 to 2) */
 		channel_num:2, 	/* Up to 3 for module 1 */
@@ -106,7 +108,7 @@ void pwm_mc_channel_init(struct pwm_mc *pwm, uint8_t pwm_mode,
 
 /**
  * Inititialize PWMs generation.
- * /param num is the DCMCPWM module (1 or 2).
+ * /param pwm is a pointer to the struct pwm.
  * /param f_pwm is the PWM frequency in Hz. 
  * NOTE:
  *	 - The resolution of PWM is: log2(2*FCY/f_pwm)
@@ -117,7 +119,7 @@ void pwm_mc_channel_init(struct pwm_mc *pwm, uint8_t pwm_mode,
  * 	example 2. Generation of PWM by channel 1 in independs mode (implies only channel H is enable):
  * 				  pwm_pins_config = MOD1_IND & PEN1H & PDIS1L;
  */
-void pwm_mc_init(uint8_t num, uint16_t f_pwm, uint16_t pwm_pins_config);
+void pwm_mc_init(struct pwm_mc *pwm, uint16_t f_pwm, uint16_t pwm_pins_config);
 
 /** Apply a PWM.
  * \param pwm is a pointer to the struct pwm.

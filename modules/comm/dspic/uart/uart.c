@@ -110,16 +110,16 @@ const struct regs uart_regs[UART_HW_NUM] = {
 #ifdef UART0_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U1TXInterrupt(void) 
 {
-	uart_send_next_char(0);
 	IFS0bits.U1TXIF = 0;
+	uart_send_next_char(0);
 }
 #endif
 
 #ifdef UART1_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U2TXInterrupt(void) 
 {
-	uart_send_next_char(1);
 	IFS1bits.U2TXIF = 0;
+	uart_send_next_char(1);
 }
 #endif
 
@@ -133,15 +133,16 @@ static void uart_recv_next_char(uint8_t num);
 #ifdef UART0_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U1RXInterrupt(void)
 {
-	uart_recv_next_char(0);
 	IFS0bits.U1RXIF = 0;
+	uart_recv_next_char(0);
+
 }
 #endif
 #ifdef UART1_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U2RXInterrupt(void)
 {
-	uart_recv_next_char(1);
 	IFS1bits.U2RXIF = 0;
+	uart_recv_next_char(1);
 }
 #endif
 

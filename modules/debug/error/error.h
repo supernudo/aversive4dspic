@@ -48,13 +48,13 @@ struct error {
 };
 
 
-struct error_fct {
+struct error_fct{
 	void (*emerg)(struct error *, ...);
 	void (*error)(struct error *, ...);
 	void (*warning)(struct error *, ...);
 	void (*notice)(struct error *, ...);
 	void (*debug)(struct error *, ...);
-} ;
+};
 
 extern struct error_fct g_error_fct;
 

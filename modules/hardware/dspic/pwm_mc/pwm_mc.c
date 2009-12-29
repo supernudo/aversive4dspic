@@ -33,13 +33,13 @@
 
 #include <aversive.h>
 #include <pwm_mc.h>
-#include <p33FJ64MC804.h>
 
 
 //#define DEBUG_PWM_MC 1
 
 int32_t pwm_max[2];
 int32_t pwm_min[2];
+int32_t pwm_offset[2];
 
 void pwm_mc_channel_init(struct pwm_mc *pwm, uint8_t pwm_mode,
 		 uint8_t pwm_module_num, uint8_t pwm_channel_num,
@@ -58,8 +58,9 @@ void pwm_mc_channel_init(struct pwm_mc *pwm, uint8_t pwm_mode,
 	pwm->sign_bit_n = sign_bit_n;
 }
 
-void pwm_mc_init(uint8_t num, uint16_t f_pwm, uint16_t pwm_pins_config){
+void pwm_mc_init(struct pwm_mc *pwm, uint16_t f_pwm, uint16_t pwm_pins_config){
 	
+	volatile uint8_t num;
 	volatile uint16_t period = 0;
 	volatile uint16_t prescaler = 0;
 	volatile uint16_t sptime = 0;
@@ -68,14 +69,39 @@ void pwm_mc_init(uint8_t num, uint16_t f_pwm, uint16_t pwm_pins_config){
 	volatile uint16_t config3 = 0;
 	volatile uint16_t config4 = 0;
 	
+	// pwm generator module number
+	num = pwm->module_num;
+	
 	// period - The PWM timebase period value to be stored in the PTPER SFR.
 	prescaler = 1;
 	period = (uint16_t)((FCY / (f_pwm * prescaler))-1); 	// ecuation for free running mode
-														 					// XXX range depends of prescaler and FCY
+														 														// XXX range depends of prescaler and FCY
 	
 	// PWM value ranges
-	pwm_max[num-1] = (int32_t)(2*period);
-	pwm_min[num-1] = -pwm_max[num-1];
+	if((pwm->mode & PWM_MC_MODE_SIGNED)){
+			 
+		pwm_max[num] = (int32_t)(2*period);
+		pwm_min[num] = -pwm_max[num];
+		
+		// PWM offset
+		pwm_offset[num] = 0;	
+	}
+	else if((pwm->mode & PWM_MC_MODE_BIPOLAR)){
+			 
+		pwm_max[num] = (int32_t)(period-1);
+		pwm_min[num] = -(int32_t)(period);
+		
+		// PWM offset
+		pwm_offset[num] = (int32_t)(period);
+	}
+	else{
+		pwm_max[num] = (int32_t)(2*period);
+		pwm_min[num] = 0;
+		
+		// PWM offset
+		pwm_offset[num] = 0;
+		
+	}
 	
 	// sptime - The special event compare value to be stored in SEVTCMP SFR.
 	sptime = 0;
@@ -145,7 +171,7 @@ void pwm_mc_init(uint8_t num, uint16_t f_pwm, uint16_t pwm_pins_config){
 	
 
 	
-	if(num == 1){
+	if(num == 0){
 #if defined(_PWMIF)
 	OpenMCPWM(period, sptime, config1, config2, config3); 
 	ConfigIntMCPWM(config4);
@@ -157,7 +183,7 @@ void pwm_mc_init(uint8_t num, uint16_t f_pwm, uint16_t pwm_pins_config){
 #endif
 	}
 #if defined(_FLTA2IF)	
-	else{
+	else if (num == 1){
 	OpenMCPWM2(period, sptime, config1, config2, config3); 
 	ConfigIntMCPWM2(config4);	
 	}
@@ -205,6 +231,7 @@ void pwm_mc_set(void *data, int32_t value)
 	struct pwm_mc *pwm = data;
 
 	MAX(value, pwm_max[pwm->module_num]);
+	
 	if (pwm->mode & PWM_MC_MODE_SIGNED) {
 		MIN(value, pwm_min[pwm->module_num]);
 		if (value < 0) {
@@ -215,8 +242,19 @@ void pwm_mc_set(void *data, int32_t value)
 			pwm_sign_reset(pwm);
 		}
 	}
+	else if (pwm->mode & PWM_MC_MODE_BIPOLAR) {
+		MIN(value, pwm_min[pwm->module_num]);
+		
+		if (pwm->mode & PWM_MC_MODE_SIGN_INVERTED)
+			value = -value;
+		
+		value += pwm_offset[pwm->module_num];
+	}
 	else {
 		MIN(value, 0);
+		
+		if (pwm->mode & PWM_MC_MODE_REVERSE)
+			value = pwm_max[pwm->module_num]-value;
 	}
 	
 	if (pwm->module_num == 0)

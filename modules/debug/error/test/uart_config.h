@@ -15,7 +15,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: uart_config.h,v 1.4.6.1 2006/11/26 21:06:03 zer0 Exp $
+ *  Revision : $Id: uart_config.h,v 1.3.10.1 2006/11/26 21:06:02 zer0 Exp $
  *
  */
 
@@ -27,7 +27,12 @@
 #define UART_CONFIG_H
 
 /*
- * UART0 definitions 
+ * STDIO redireccion (only output for the moment) 
+ */
+ #define STDIO_UART	0
+
+/*
+ * UART0 definitions (dspic UART1) 
  */
 
 /* compile uart0 fonctions, undefine it to pass compilation */
@@ -49,10 +54,8 @@
 //#define UART0_USE_DOUBLE_SPEED 1
 
 #define UART0_RX_FIFO_SIZE 4
-#define UART0_TX_FIFO_SIZE 16
-//#define UART0_NBITS 5
-//#define UART0_NBITS 6
-//#define UART0_NBITS 7
+#define UART0_TX_FIFO_SIZE 4
+
 #define UART0_NBITS 8
 //#define UART0_NBITS 9
 
@@ -62,9 +65,6 @@
 
 #define UART0_STOP_BIT UART_STOP_BITS_1
 //#define UART0_STOP_BIT UART_STOP_BITS_2
-
-
-
 
 /* .... same for uart 1, 2, 3 ... */
 
