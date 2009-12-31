@@ -44,6 +44,7 @@ MODULES_LIST="CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL,/devices/brushless_mot
               CONFIG_MODULE_DSPIC_OSCILLATOR,hardware/dspic/oscillator
               CONFIG_MODULE_DSPIC_CONFIGURATION_BITS,hardware/dspic/configuration_bits
               CONFIG_MODULE_DSPIC_PWM,hardware/dspic/pwm
+              CONFIG_MODULE_DSPIC_ENCODERS_DSPIC,devices/encoders/dspic/encoders_dspic
               CONFIG_MODULE_ADC,hardware/adc
               CONFIG_MODULE_AES,crypto/aes
               CONFIG_MODULE_MD5,crypto/md5

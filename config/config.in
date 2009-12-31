@@ -358,14 +358,11 @@ bool 'Timer (not yet on DSPIC)' CONFIG_MODULE_TIMER
 #dep_bool '  |-- Allow dynamic modification of prescaler' CONFIG_MODULE_TIMER_DYNAMIC \
 #	$CONFIG_MODULE_TIMER
 
-#### PWM
-bool 'PWM' CONFIG_MODULE_PWM 
-
-dep_bool '  |-- Create Default pwm config' CONFIG_MODULE_DSPIC_PWM_CREATE_CONFIG \
-	$CONFIG_MODULE_DSPIC_PWM
+#### PWM_MC
+bool 'PWM_MC' CONFIG_MODULE_DSPIC_PWM_MC 
 
 #### PWM_NG
-bool 'PWM_ng (not yet on DSPIC)' CONFIG_MODULE_PWM_NG
+#bool 'PWM_ng (not yet on DSPIC)' CONFIG_MODULE_PWM_NG
 
 #### ADC
 bool 'ADC (not yet on DSPIC)' CONFIG_MODULE_ADC
@@ -472,6 +469,14 @@ dep_bool 'Encoders_spi (microb)' CONFIG_MODULE_ENCODERS_SPI \
 
 dep_bool '  |-- Create Default encoders_spi config' CONFIG_MODULE_ENCODERS_SPI_CREATE_CONFIG \
 	$CONFIG_MODULE_ENCODERS_SPI
+
+#### ENCODERS
+bool 'Encoders_dspic (eurobotics eng.)' CONFIG_MODULE_DSPIC_ENCODERS_DSPIC \
+	 $CONFIG_MODULE_SPI
+
+dep_bool '  |-- Create Default encoders_dspic config' CONFIG_MODULE_DSPIC_ENCODERS_DSPIC_CREATE_CONFIG \
+	$CONFIG_MODULE_DSPIC_ENCODERS_DSPIC
+
 
 endmenu # (encoders)
 
