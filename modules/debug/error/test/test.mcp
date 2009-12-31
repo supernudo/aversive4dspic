@@ -229,7 +229,7 @@ file_048=oscillator_config.h
 file_049=..\general_errors.h
 [SUITE_INFO]
 suite_guid={479DDE59-4D56-455E-855E-FFF59A3DB57E}
-suite_state=build-library
+suite_state=
 [TOOL_SETTINGS]
 TS{7D9C6ECE-785D-44CB-BA22-17BF2E119622}=-g
 TS{25AC22BD-2378-4FDB-BFB6-7345A15512D3}=-g -Wall -Os

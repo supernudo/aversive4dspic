@@ -40,7 +40,7 @@ void mylog(struct error * e, ...)
 	vfprintf_P(stdout, e->text, ap); 
 	printf_P(PSTR(", "));
 	printf_P(e->file);
-	printf_P(PSTR(", L%d\n"), e->line);
+	printf_P(PSTR(", L%d\r\n"), e->line);
 	va_end(ap);
 }
 
@@ -48,7 +48,15 @@ int main(void)
 {
 
 #ifndef HOST_VERSION
+
 	oscillator_init();
+	
+	// uart
+	_U1RXR 	= 8;	// U1RX <- RP8
+	_TRISB8 = 1;	// U1RX is input
+  _RP7R 	= 3;	// U1TX -> RP7
+	_TRISB7	= 0;	// U1TX is output
+	
 	/* uart stuff */
 	uart_init();  
 	sei();
@@ -56,8 +64,8 @@ int main(void)
 #endif
 	
 	/* hello */
-	printf_P(PSTR("test error module\n"));
-	printf("%d\n",sizeof(va_list));
+	printf_P(PSTR("test error module\r\n"));
+	printf("%d\r\n",sizeof(va_list));
 	
 	/* don't display anything */
 	ERROR(54, "pouet");
@@ -75,5 +83,6 @@ int main(void)
 	DEBUG(6, "not displayed");
 	
 	while(1);
+	
 	return 0;
 }

@@ -44,7 +44,7 @@
 /* enable uart0 interrupts if == 1, disable if == 0 */
 #define UART0_INTERRUPT_ENABLED  1
 
-#define UART0_BAUDRATE 38400
+#define UART0_BAUDRATE 115200
 
 /* 
  * if you enable this, the maximum baudrate you can reach is 
@@ -54,7 +54,7 @@
 //#define UART0_USE_DOUBLE_SPEED 1
 
 #define UART0_RX_FIFO_SIZE 4
-#define UART0_TX_FIFO_SIZE 4
+#define UART0_TX_FIFO_SIZE 16
 
 #define UART0_NBITS 8
 //#define UART0_NBITS 9
