@@ -79,8 +79,8 @@ int main(void)
   sei();
 
   /* add dspic encoders management */
-  scheduler_add_periodical_event_priority(encoders_dspic_manage, NULL, 1, 200);
-  scheduler_add_periodical_event_priority(get_encoders, NULL, 5, 127);
+  scheduler_add_periodical_event_priority(encoders_dspic_manage, NULL, 5, 200);
+  scheduler_add_periodical_event_priority(get_encoders, NULL, 100, 127);
 
   while(1) {
 		Nop();
