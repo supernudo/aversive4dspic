@@ -19,9 +19,11 @@
  *
  */
 
-#include <avr/io.h>
 #include <aversive.h>
 
+#ifdef AVR
+#include <avr/io.h>
+#endif
 
 #include <uart.h>
 #include <aversive/wait.h>
@@ -40,23 +42,32 @@ void interrupt(void)
 {
 
   // introduces a delay
+  #ifdef AVR
   wait_4cyc(delay *4);
-  
+  #else
+  wait_ms(delay);
+  #endif
   
   // increments the delay, and prepares the string to print
   if(charcount-- == 0)
     {
     charcount = 200;
-    sprintf(buf, "\n%i", delay++);
+    sprintf(buf, "\n\r%i", delay++);
     buf_index = 0;
     }
   
   // prints the string
+#ifdef AVR
   if (buf[buf_index] == 0)
     uart0_send(' ');
-  else
+  else 
     uart0_send(buf[buf_index++]);
-
+#else
+  if (buf[buf_index] == 0)
+    uart_send(0,' ');
+  else
+		uart_send(0,buf[buf_index++]);
+#endif
 }
 
 
@@ -67,20 +78,27 @@ int test_int_show(void)
   // uart stuff
   uart_init();  
   sei();
+  
+  #ifdef AVR
   fdevopen(uart0_dev_send,NULL);
-
+	#endif
+	
   // bonjour
-  printf("\nhello, we will now test the int_show function\n");
-  printf("the counter shoud increment while you see the voltage decreasing on the pin\n");
-  printf("this is due to increasing processor charge\n");
+  printf("\n\rhello, we will now test the int_show function\n\r");
+  printf("the counter shoud increment while you see the voltage decreasing on the pin\n\r");
+  printf("this is due to increasing processor charge\n\r");
 
   wait_ms(500);
 
   // should be replaced by the scheduler
+#ifdef AVR
   uart0_register_tx_event((void *) interrupt);
+#else
+  uart_register_tx_event(0,(void *) interrupt);
+#endif
 
   // start characters
-  printf("\n");
+  printf("\n\r");
 
   show_int_loop();
 

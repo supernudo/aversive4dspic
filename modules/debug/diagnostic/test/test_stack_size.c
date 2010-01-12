@@ -19,9 +19,11 @@
  *
  */
 
-#include <avr/io.h>
 #include <aversive.h>
 
+#ifdef AVR
+#include <avr/io.h>
+#endif
 
 #include <uart.h>
 #include <aversive/wait.h>
@@ -38,11 +40,10 @@
 void recursive_call(void)
 {
   volatile int stack_size; // volatile necessary to put variable on stack
-
+	
   // printing the stacck space
   stack_size = min_stack_space_available();
-  printf("stack size : %i\n", stack_size);
-  
+  printf("stack size : %i\n\r", stack_size);
   
   wait_ms(50);
   
@@ -58,10 +59,13 @@ int test_stack_size(void)
   // uart stuff
   uart_init();  
   sei();
+  
+  #ifdef AVR
   fdevopen(uart0_dev_send,NULL);
+	#endif
 
   // bonjour
-  printf("\n\nhello, I just reset !\nperhaps a lack of stack space\n");
+  printf("\n\r\n\rhello, I just reset !\n\rperhaps a lack of stack space\n\r");
 
   // the beginning of the loop
   recursive_call();

@@ -49,7 +49,6 @@
 #include <oscillator.h>
 #endif
 
-
 #include <aversive/types.h>
 #include <aversive/errno.h>
 #include <aversive/irq_lock.h>
@@ -255,6 +254,11 @@ do {				     \
 #  define sei() do {SRbits.IPL=0;} while(0)
 #  define _BV(bit_num) (1<<bit_num)
 #endif /* DSPIC */
+
+#ifdef DSPIC
+#define _BV(bit_num) (1<<bit_num)
+#endif
+
 /**
  *   little bit toggeling macro 
  *  
@@ -280,13 +284,26 @@ do {				     \
 
 
 /** DDR and PINS from port adress */
+#ifdef AVR
 #define DDR(port) (*(&(port) -1))
 #define PIN(port) (*(&(port) -2))
+#define LAT(port)	(port)
+#endif
+
+#ifdef DSPIC
+#define TRIS(port) 	( *(&(port) +(-2)) )
+#define LAT(port) 	( *(&(port) +2) )
+#define ODC(port) 	( *(&(port) +4) )
+#define DDR(port)		TRIS(port)
+#define PIN(port)		PIN(port)
+#endif
 
 /** open collector simulation macros */
+#ifdef AVR
 #define OPEN_CO_INIT(port, bit) sbi(port,bit)
 #define OPEN_CO_HIGH(port, bit) cbi(DDR(port),bit)
 #define OPEN_CO_LOW(port, bit)  cbi(DDR(port),bit)
+#endif
 
 /** deprecated macros in libc, but they're almost used, so we implement them again ;) */
 #ifndef cbi

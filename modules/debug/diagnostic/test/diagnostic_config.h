@@ -24,14 +24,14 @@
 
 
 /** port line definition for the show_int_loop() function */
-#define INTERRUPT_SHOW_PORT PORTC
+#define INTERRUPT_SHOW_PORT PORTB
 #define INTERRUPT_SHOW_BIT  6
 
 
 
 /** memory mark for the min_stack_space_available() function
     the ram is filled with this value after a reset ! */
-#define MARK 0x55
+#define MARK 0x5555
 
 /** the mark is inserted in whole RAM if this is enabled 
     (could lead to problems if you need to hold values through a reset...)

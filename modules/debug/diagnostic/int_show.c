@@ -19,10 +19,13 @@
  *
  */
 
-#include <avr/io.h>
+
 #include <aversive.h>
 #include <diagnostic.h>
 
+#ifdef AVR
+#include <avr/io.h>
+#endif
 
 #ifdef INTERRUPT_SHOW_PORT
 
@@ -39,16 +42,20 @@
   * almost always free. */
 void show_int_loop(void)
 {
+#ifdef AVR
 	sbi(DDR(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT);
+#else
+//	cbi(DDR(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT);		
+#endif
 
 	while(1) {
-		cbi(INTERRUPT_SHOW_PORT, INTERRUPT_SHOW_BIT); // port to 0
+		//cbi(LAT(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT); // port to 0
 		
 		sei();
 		nop(); // ints can only arrive there (on low level of probe pin)
 		cli();
 		
-		sbi(INTERRUPT_SHOW_PORT, INTERRUPT_SHOW_BIT); // port to 1
+		//sbi(LAT(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT); // port to 1
 		
 		nop(); // is there to equalize the duty cycle
 	}

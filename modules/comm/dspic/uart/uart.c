@@ -110,7 +110,7 @@ const struct regs uart_regs[UART_HW_NUM] = {
 #ifdef UART0_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U1TXInterrupt(void) 
 {
-	IFS0bits.U1TXIF = 0;
+	IFS0bits.U1TXIF = 0;   
 	uart_send_next_char(0);
 }
 #endif
@@ -181,23 +181,25 @@ void uart_send_next_char(uint8_t num)
 	{ 
 		char elt = 0;
 
-		if (CIRBUF_IS_EMPTY(&g_tx_fifo[num])) {
-   		// disable tx interrupt
+		while(!((*uart_regs[num].usta) & UTXBF_MASK)){
+	
+			if (CIRBUF_IS_EMPTY(&g_tx_fifo[num])) {
+   			// disable tx interrupt
 //         cbi(*uart_regs[num].ucsrb, UDRIE);
-         uart_set_txie(num,0);
-			return;
-		}
+      	uart_set_txie(num,0);
+				return;
+			}
 
-		elt = cirbuf_get_tail(&g_tx_fifo[num]);
-		cirbuf_del_tail(&g_tx_fifo[num]);
+			elt = cirbuf_get_tail(&g_tx_fifo[num]);
+			cirbuf_del_tail(&g_tx_fifo[num]);
 		
-		// write on uart
+			// write on uart
 //      uart_set_udr(num, elt);
-      uart_set_utxreg(num, elt);
-      
-		// enable tx interrupt
+      	uart_set_utxreg(num, elt);      
+			// enable tx interrupt
 //      sbi(*uart_regs[num].ucsrb, UDRIE);
-      uart_set_txie(num, 1);	
+      	uart_set_txie(num, 1);	
+		}
 	}
 }
 
