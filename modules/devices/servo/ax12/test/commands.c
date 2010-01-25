@@ -125,7 +125,7 @@ struct cmd_reset_result {
 /* function called when cmd_reset is parsed successfully */
 static void cmd_reset_parsed(void * parsed_result, void * data)
 {
-	reset();
+//	reset();
 }
 
 prog_char str_reset_arg0[] = "reset";
@@ -190,13 +190,13 @@ struct cmd_baudrate_result {
 /* function called when cmd_baudrate is parsed successfully */
 static void cmd_baudrate_parsed(void * parsed_result, void * data)
 {
-	struct cmd_baudrate_result *res = parsed_result;
-	struct uart_config c;
-
-	uart_getconf(1, &c);
-	c.baudrate = res->arg1;
-	uart_setconf(1, &c);
-	printf_P(PSTR("%d %d\r\n"), UBRR1H, UBRR1L);
+//	struct cmd_baudrate_result *res = parsed_result;
+//	struct uart_config c;
+//
+//	uart_getconf(1, &c);
+//	c.baudrate = res->arg1;
+//	uart_setconf(1, &c);
+//	printf_P(PSTR("%d %d\r\n"), UBRR1H, UBRR1L);
 }
 
 prog_char str_baudrate_arg0[] = "baudrate";

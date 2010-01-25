@@ -44,7 +44,7 @@ int uart_send_nowait(uint8_t num, char c)
 //			uart_set_udr(num, c);
          uart_set_utxreg(num, c);
 			IRQ_UNLOCK(flags);
-			return (int)c;
+			return (int)((unsigned char)c);
 		}
 		else {
 			IRQ_UNLOCK(flags);
@@ -73,5 +73,5 @@ int uart_send_nowait(uint8_t num, char c)
 	}
 
 	IRQ_UNLOCK(flags);
-	return (int)c;
+	return (int)((unsigned char)c);
 }

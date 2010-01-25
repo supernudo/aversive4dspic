@@ -26,8 +26,7 @@
 #include <uart_private.h>
 
 int uart_send(uint8_t num, char c)
-{
-   
+{  
 	/* if cannot send the char */
 	if (uart_send_nowait(num, c) == -1) {
 

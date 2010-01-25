@@ -36,7 +36,7 @@ int uart_recv_nowait(uint8_t num)
 		elt = cirbuf_get_tail(&g_rx_fifo[num]);
 		cirbuf_del_tail(&g_rx_fifo[num]);
 		IRQ_UNLOCK(flags);
-		return (int)elt;
+		return (int)((unsigned char)elt);
 	}
 	IRQ_UNLOCK(flags);
 	return (-1);

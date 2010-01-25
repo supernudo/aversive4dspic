@@ -15,7 +15,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: scheduler_config.h,v 1.1.10.8 2007/11/27 23:16:15 zer0 Exp $
+ *  Revision : $Id: scheduler_config.h,v 1.1.2.1 2008/12/27 16:29:08 zer0 Exp $
  *
  */
 
@@ -25,41 +25,11 @@
 #define _SCHEDULER_CONFIG_VERSION_ 4
 
 /** maximum number of allocated events */
-#define SCHEDULER_NB_MAX_EVENT 5
+#define SCHEDULER_NB_MAX_EVENT 7
 
-
-/* define it only if CONFIG_MODULE_SCHEDULER_USE_TIMERS is enabled. In
-   this case, precaler is defined in timers_config.h in your project
-   directory. */
-#ifdef CONFIG_MODULE_SCHEDULER_USE_TIMERS
-/** the num of the timer to use for the scheduler */
-#define SCHEDULER_TIMER_NUM 0
-
-/* or set the prescaler manually (in this case, you use must TIMER0,
-   and the prescaler must be a correct value regarding the AVR device
-   you are using (look in include/aversive/parts.h). Obviously, the
-   values of SCHEDULER_CK and SCHEDULER_CLOCK_PRESCALER must also be
-   coherent (TIMER0_PRESCALER_DIV_VALUE and VALUE) */
-#endif /* CONFIG_MODULE_SCHEDULER_USE_TIMERS */
-
-
-#ifdef CONFIG_MODULE_SCHEDULER_TIMER0
-/* The 2 values below MUST be coherent: 
- * if  SCHEDULER_CK = TIMER0_PRESCALER_DIV_x, then 
- * you must have SCHEDULER_CLOCK_PRESCALER = x too !!! */
-#define SCHEDULER_CK TIMER0_PRESCALER_DIV_8
-#define SCHEDULER_CLOCK_PRESCALER 8 
-
-#endif /* CONFIG_MODULE_SCHEDULER_TIMER0 */
-
-/* last case, the scheduler is called manually. The user has to
-   define the period here */
-#ifdef CONFIG_MODULE_SCHEDULER_MANUAL
 
 #define SCHEDULER_UNIT_FLOAT 512.0
-#define SCHEDULER_UNIT 512UL
-
-#endif /* CONFIG_MODULE_SCHEDULER_MANUAL */
+#define SCHEDULER_UNIT 512L
 
 /** number of allowed imbricated scheduler interrupts. The maximum
  * should be SCHEDULER_NB_MAX_EVENT since we never need to imbricate
