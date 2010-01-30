@@ -50,7 +50,7 @@
 #endif
 
 // BUG: i don't know why this not works !!
-//#define FVCO (FIN*(M/N1))
+#define FVCO (FIN*(M/N1))
 //#if ((FVCO < 100000000) || (FVCO > 200000000))
 //#error FVCO exceeds the frequency range
 //#endif

@@ -90,15 +90,15 @@ AX12_SYNC_WRITE::0x83	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs
 AX12_WRITE::0x03	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	84;"	d	line:84
 AX12_checksum	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	62;"	f	line:62	signature:(AX12_Packet *packet)
 AX12_checksum	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	138;"	p	line:138	signature:(AX12_Packet *packet)
-AX12_get_load	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	447;"	f	line:447	signature:(AX12 *s, uint8_t id, uint16_t *load)
+AX12_get_load	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	446;"	f	line:446	signature:(AX12 *s, uint8_t id, uint16_t *load)
 AX12_get_load	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	202;"	p	line:202	signature:(AX12 *ax12, uint8_t id, uint16_t *load)
-AX12_get_position	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	437;"	f	line:437	signature:(AX12 *s, uint8_t id, uint16_t *pos)
+AX12_get_position	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	436;"	f	line:436	signature:(AX12 *s, uint8_t id, uint16_t *pos)
 AX12_get_position	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	196;"	p	line:196	signature:(AX12 *ax12, uint8_t id, uint16_t *pos)
-AX12_get_speed	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	442;"	f	line:442	signature:(AX12 *s, uint8_t id, uint16_t *speed)
+AX12_get_speed	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	441;"	f	line:441	signature:(AX12 *s, uint8_t id, uint16_t *speed)
 AX12_get_speed	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	199;"	p	line:199	signature:(AX12 *ax12, uint8_t id, uint16_t *speed)
 AX12_init	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	33;"	f	line:33	signature:(AX12 *s)
 AX12_init	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	122;"	p	line:122	signature:(AX12 *ax12)
-AX12_ping	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	452;"	f	line:452	signature:(AX12 *s, uint8_t id)
+AX12_ping	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	451;"	f	line:451	signature:(AX12 *s, uint8_t id)
 AX12_ping	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	206;"	p	line:206	signature:(AX12 *ax12, uint8_t id)
 AX12_read_byte	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	298;"	f	line:298	signature:(AX12 *s, uint8_t id, AX12_ADDRESS address, uint8_t *val)
 AX12_read_byte	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	174;"	p	line:174	signature:(AX12 *ax12, uint8_t id, AX12_ADDRESS address, uint8_t *val)
@@ -106,7 +106,7 @@ AX12_read_int	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversiv
 AX12_read_int	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	179;"	p	line:179	signature:(AX12 *ax12, uint8_t id, AX12_ADDRESS address, uint16_t *val)
 AX12_recv	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	167;"	f	line:167	signature:(AX12 *s, AX12_Packet *packet)
 AX12_recv	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	146;"	p	line:146	signature:(AX12 *ax12, AX12_Packet *packet)
-AX12_reset	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	474;"	f	line:474	signature:(AX12 *s, uint8_t id)
+AX12_reset	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	473;"	f	line:473	signature:(AX12 *s, uint8_t id)
 AX12_reset	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	209;"	p	line:209	signature:(AX12 *ax12, uint8_t id)
 AX12_send	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	80;"	f	line:80	signature:(AX12 *s, AX12_Packet *packet)
 AX12_send	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	142;"	p	line:142	signature:(AX12 *ax12, AX12_Packet *packet)
@@ -116,11 +116,11 @@ AX12_set_hardware_send	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\lib
 AX12_set_hardware_send	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	127;"	p	line:127	signature:(AX12 *ax12, int8_t(*)(uint8_t))
 AX12_set_hardware_switch	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	53;"	f	line:53	signature:(AX12 *s, void(*pf)(uint8_t))
 AX12_set_hardware_switch	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	133;"	p	line:133	signature:(AX12 *ax12, void(*)(uint8_t))
-AX12_set_position	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	365;"	f	line:365	signature:(AX12 *s,uint8_t id, uint16_t position)
+AX12_set_position	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	364;"	f	line:364	signature:(AX12 *s,uint8_t id, uint16_t position)
 AX12_set_position	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	185;"	p	line:185	signature:(AX12 *ax12,uint8_t id, uint16_t position)
-AX12_set_position2	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	370;"	f	line:370	signature:(AX12 *s, uint8_t id, uint16_t position, uint16_t speed)
+AX12_set_position2	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	369;"	f	line:369	signature:(AX12 *s, uint8_t id, uint16_t position, uint16_t speed)
 AX12_set_position2	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	188;"	p	line:188	signature:(AX12 *ax12, uint8_t id, uint16_t position, uint16_t speed)
-AX12_set_position3	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	402;"	f	line:402	signature:(AX12*s, uint8_t id, uint16_t position, uint16_t speed, uint16_t torque)
+AX12_set_position3	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	401;"	f	line:401	signature:(AX12*s, uint8_t id, uint16_t position, uint16_t speed, uint16_t torque)
 AX12_set_position3	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	192;"	p	line:192	signature:(AX12 *ax12, uint8_t id, uint16_t position, uint16_t speed, uint16_t torque)
 AX12_write_byte	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	228;"	f	line:228	signature:(AX12 *s, uint8_t id, AX12_ADDRESS address, uint8_t data)
 AX12_write_byte	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	160;"	p	line:160	signature:(AX12 *ax12, uint8_t id, AX12_ADDRESS address, uint8_t data)
@@ -1336,10 +1336,10 @@ p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modu
 p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	264;"	l	line:264
 p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	301;"	l	line:301
 p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	333;"	l	line:333
-p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	373;"	l	line:373
-p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	405;"	l	line:405
-p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	454;"	l	line:454
-p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	476;"	l	line:476
+p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	372;"	l	line:372
+p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	404;"	l	line:404
+p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	453;"	l	line:453
+p	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	475;"	l	line:475
 params	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.h	113;"	m	line:113	struct:AX12_Packet
 parity	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	73;"	m	line:73	struct:uart_config
 parse	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\ihm\parse\parse.c	162;"	f	line:162	signature:(parse_pgm_ctx_t ctx[], const char * buf)
@@ -1455,10 +1455,10 @@ ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\mo
 ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	265;"	l	line:265
 ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	302;"	l	line:302
 ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	334;"	l	line:334
-ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	374;"	l	line:374
-ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	406;"	l	line:406
-ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	455;"	l	line:455
-ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	477;"	l	line:477
+ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	373;"	l	line:373
+ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	405;"	l	line:405
+ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	454;"	l	line:454
+ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	476;"	l	line:476
 ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\commands.c	234;"	l	line:234
 ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\commands.c	268;"	l	line:268
 ret	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\commands.c	314;"	l	line:314
@@ -1474,10 +1474,10 @@ rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\mod
 rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	264;"	l	line:264
 rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	301;"	l	line:301
 rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	333;"	l	line:333
-rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	373;"	l	line:373
-rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	405;"	l	line:405
-rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	454;"	l	line:454
-rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	476;"	l	line:476
+rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	372;"	l	line:372
+rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	404;"	l	line:404
+rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	453;"	l	line:453
+rp	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\ax12.c	475;"	l	line:475
 rx_event	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	35;"	v	line:35
 s	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\base\time\time.h	48;"	m	line:48
 s	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\ihm\parse\parse_string.c	126;"	l	line:126

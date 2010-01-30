@@ -13,7 +13,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File001]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf.o
 Folder=Intermediary
@@ -26,7 +26,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File002]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_buf_head.o
 Folder=Intermediary
@@ -39,7 +39,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File003]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_buf_tail.o
 Folder=Intermediary
@@ -52,7 +52,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File004]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_head.o
 Folder=Intermediary
@@ -65,7 +65,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File005]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_tail.o
 Folder=Intermediary
@@ -78,7 +78,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File006]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_align.o
 Folder=Intermediary
@@ -91,7 +91,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File007]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_buf_head.o
 Folder=Intermediary
@@ -104,7 +104,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File008]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_buf_tail.o
 Folder=Intermediary
@@ -117,7 +117,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File009]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_head.o
 Folder=Intermediary
@@ -130,7 +130,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File010]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_tail.o
 Folder=Intermediary
@@ -143,7 +143,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File011]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_get_buf_head.o
 Folder=Intermediary
@@ -156,7 +156,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File012]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_get_buf_tail.o
 Folder=Intermediary
@@ -169,7 +169,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File013]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_get_head.o
 Folder=Intermediary
@@ -182,7 +182,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File014]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_setconf.o
 Folder=Intermediary
@@ -195,7 +195,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File015]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart.o
 Folder=Intermediary
@@ -208,7 +208,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File016]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_dev_io.o
 Folder=Intermediary
@@ -221,7 +221,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File017]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_getconf.o
 Folder=Intermediary
@@ -234,7 +234,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File018]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_recv.o
 Folder=Intermediary
@@ -247,7 +247,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File019]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_recv_nowait.o
 Folder=Intermediary
@@ -260,7 +260,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File020]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_send.o
 Folder=Intermediary
@@ -273,7 +273,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File021]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_send_nowait.o
 Folder=Intermediary
@@ -286,7 +286,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File022]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\oscillator.o
 Folder=Intermediary
@@ -299,7 +299,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File023]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\parse.o
 Folder=Intermediary
@@ -312,7 +312,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File024]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\parse_num.o
 Folder=Intermediary
@@ -325,7 +325,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File025]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\parse_string.o
 Folder=Intermediary
@@ -338,7 +338,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File026]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\rdline.o
 Folder=Intermediary
@@ -351,7 +351,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File027]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\vt100.o
 Folder=Intermediary
@@ -364,7 +364,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File028]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\commands.o
 Folder=Intermediary
@@ -377,7 +377,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File029]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\main.o
 Folder=Intermediary
@@ -390,7 +390,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File030]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\ax12.o
 Folder=Intermediary
@@ -403,7 +403,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File031]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\time.o
 Folder=Intermediary
@@ -416,7 +416,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File032]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_interrupt.o
 Folder=Intermediary
@@ -429,7 +429,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File033]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler.o
 Folder=Intermediary
@@ -442,7 +442,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File034]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_add.o
 Folder=Intermediary
@@ -455,7 +455,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File035]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_del.o
 Folder=Intermediary
@@ -468,7 +468,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File036]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_dump.o
 Folder=Intermediary
@@ -481,7 +481,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File037]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_events.o
 Folder=Intermediary
@@ -494,7 +494,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
+DebugOptions=
 [File038]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\.\output_files\test.cof
 Folder=Output
@@ -507,7 +507,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=--heap=512 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
 TraceCmdString=
-DebugOptions=--defsym=__MPLAB_DEBUG=1 --defsym=__MPLAB_DEBUGGER_ICD3=1 --defsym=__ICD2RAM=1
+DebugOptions=
 [File039]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\.\output_files\test.hex
 Folder=Output
@@ -520,7 +520,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=--heap=512 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
 TraceCmdString=
-DebugOptions=--defsym=__MPLAB_DEBUG=1 --defsym=__MPLAB_DEBUGGER_ICD3=1 --defsym=__ICD2RAM=1
+DebugOptions=
 [TOOL_LOC_STAMPS]
 tool_loc{069BD372-6CA0-40D4-BF2F-5DC806D05083}=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
 tool_loc{433C3D55-811D-409D-A6BF-159CF9355B42}=C:\Programas\Microchip\MPLAB C30\bin\pic30-ld.exe
