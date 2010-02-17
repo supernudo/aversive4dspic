@@ -285,7 +285,7 @@ int8_t uart_setconf(uint8_t num, struct uart_config *u)
 		//*uart_regs[num].ucsrb |= (1 << RXCIE);
 		uconfig_int_reg = UART_RX_INT_EN & UART_TX_INT_DIS;
 		// default priorities are 1, the application have to customize for de moment
-		uconfig_int_reg &= UART_RX_INT_PR5 & UART_TX_INT_PR5;
+		//uconfig_int_reg &= UART_RX_INT_PR5 & UART_TX_INT_PR5;
 	}		
    else
       uconfig_int_reg = UART_RX_INT_DIS & UART_TX_INT_DIS;
