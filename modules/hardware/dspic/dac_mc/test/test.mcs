@@ -4,7 +4,7 @@ Version=1.0
 [File000]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\dac_mc\test\compiled_files\oscillator.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -17,7 +17,7 @@ DebugOptions=
 [File001]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\dac_mc\test\compiled_files\main.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -30,7 +30,7 @@ DebugOptions=
 [File002]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\dac_mc\test\compiled_files\dac_mc.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -43,7 +43,7 @@ DebugOptions=
 [File003]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\dac_mc\test\.\output_files\test.cof
 Folder=Output
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-ld.exe
@@ -56,7 +56,7 @@ DebugOptions=
 [File004]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\dac_mc\test\.\output_files\test.hex
 Folder=Output
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-ld.exe

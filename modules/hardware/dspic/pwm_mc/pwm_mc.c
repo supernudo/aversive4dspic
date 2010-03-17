@@ -73,7 +73,7 @@ void pwm_mc_init(struct pwm_mc *pwm, uint16_t f_pwm, uint16_t pwm_pins_config){
 	num = pwm->module_num;
 	
 	// period - The PWM timebase period value to be stored in the PTPER SFR.
-	prescaler = 1;
+	prescaler = 4;
 	period = (uint16_t)((FCY / (f_pwm * prescaler))-1); 	// ecuation for free running mode
 														 														// XXX range depends of prescaler and FCY
 	
@@ -109,7 +109,7 @@ void pwm_mc_init(struct pwm_mc *pwm, uint16_t f_pwm, uint16_t pwm_pins_config){
 #if defined(_PWMIF)
 	// config1 - The parameters to be configured in the PTCON register.
 	config1 = PWM_EN & PWM_IDLE_STOP & PWM_OP_SCALE1 &
-				 PWM_IPCLK_SCALE1 & PWM_MOD_FREE;
+				 PWM_IPCLK_SCALE4 & PWM_MOD_FREE;
 	
 	//	config2 - The parameters to be configured in the PWMCONx register.
 	config2 = pwm_pins_config;
@@ -133,7 +133,7 @@ void pwm_mc_init(struct pwm_mc *pwm, uint16_t f_pwm, uint16_t pwm_pins_config){
 #elif defined(_FLTA1IF)
 	// config1 - The parameters to be configured in the PTCON register.
 	config1 = PWM1_EN & PWM1_IDLE_STOP & PWM1_OP_SCALE1 &
-				 PWM1_IPCLK_SCALE1 & PWM1_MOD_FREE;
+				 PWM1_IPCLK_SCALE4 & PWM1_MOD_FREE;
 	
 	//	config2 - The parameters to be configured in the PWMCONx register.
 	config2 = pwm_pins_config;

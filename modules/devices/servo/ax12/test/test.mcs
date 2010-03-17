@@ -4,7 +4,7 @@ Version=1.0
 [File000]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_get_tail.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -13,11 +13,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File001]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -26,11 +26,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File002]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_buf_head.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -39,11 +39,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File003]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_buf_tail.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -52,11 +52,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File004]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_head.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -65,11 +65,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File005]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_add_tail.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -78,11 +78,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File006]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_align.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -91,11 +91,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File007]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_buf_head.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -104,11 +104,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File008]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_buf_tail.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -117,11 +117,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File009]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_head.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -130,11 +130,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File010]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_del_tail.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -143,11 +143,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File011]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_get_buf_head.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -156,11 +156,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File012]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_get_buf_tail.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -169,11 +169,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File013]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\cirbuf_get_head.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -182,11 +182,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File014]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_setconf.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -195,11 +195,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File015]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -208,11 +208,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File016]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_dev_io.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -221,11 +221,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File017]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_getconf.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -234,11 +234,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File018]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_recv.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -247,11 +247,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File019]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_recv_nowait.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -260,11 +260,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File020]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_send.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -273,11 +273,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File021]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_send_nowait.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -286,11 +286,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File022]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\oscillator.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -299,11 +299,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File023]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\parse.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -312,11 +312,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File024]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\parse_num.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -325,11 +325,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File025]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\parse_string.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -338,11 +338,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File026]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\rdline.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -351,11 +351,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File027]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\vt100.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -364,11 +364,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File028]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\commands.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -377,11 +377,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File029]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\main.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -390,11 +390,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File030]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\ax12.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -403,11 +403,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File031]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\time.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -416,11 +416,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File032]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_interrupt.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -429,11 +429,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File033]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -442,11 +442,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File034]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_add.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -455,11 +455,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File035]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_del.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -468,11 +468,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File036]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\scheduler_dump.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -481,11 +481,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File037]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\compiled_files\uart_events.o
 Folder=Intermediary
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
@@ -494,11 +494,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=-g -Wall -Os
 TraceCmdString=
-DebugOptions=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1
 [File038]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\.\output_files\test.cof
 Folder=Output
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-ld.exe
@@ -507,11 +507,11 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=--heap=512 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
 TraceCmdString=
-DebugOptions=
+DebugOptions=--defsym=__MPLAB_DEBUG=1 --defsym=__MPLAB_DEBUGGER_ICD3=1 --defsym=__ICD2RAM=1
 [File039]
 Location=D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\.\output_files\test.hex
 Folder=Output
-DeviceName=dsPIC33FJ64MC804
+DeviceName=dsPIC33FJ128MC804
 LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
 LanguageToolLocation=C:\Programas\Microchip\MPLAB C30\bin\pic30-ld.exe
@@ -520,7 +520,7 @@ SOLK=<src>|..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c|..\..\..\..\..\m
 SuiteArgsString=
 ToolArgsString=--heap=512 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
 TraceCmdString=
-DebugOptions=
+DebugOptions=--defsym=__MPLAB_DEBUG=1 --defsym=__MPLAB_DEBUGGER_ICD3=1 --defsym=__ICD2RAM=1
 [TOOL_LOC_STAMPS]
 tool_loc{069BD372-6CA0-40D4-BF2F-5DC806D05083}=C:\Programas\Microchip\MPLAB C30\bin\pic30-gcc.exe
 tool_loc{433C3D55-811D-409D-A6BF-159CF9355B42}=C:\Programas\Microchip\MPLAB C30\bin\pic30-ld.exe

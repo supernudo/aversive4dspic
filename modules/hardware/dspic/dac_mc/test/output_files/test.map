@@ -4,7 +4,7 @@ Tool Name:
   c:\programas\microchip\mplab c30\bin\bin\..\bin/pic30-coff-ld.exe
 
 Command:
-  -p33FJ64MC804 \
+  -p33FJ128MC804 \
   -o.\output_files\test.cof \
   -Lc:/programas/microchip/mplab c30/bin/bin/.. \
   -Lc:/programas/microchip/mplab c30/bin/bin/../../lib \
@@ -20,7 +20,7 @@ Command:
   compiled_files\oscillator.o \
   compiled_files\main.o \
   compiled_files\dac_mc.o \
-  -Tp33FJ64MC804.gld.00 \
+  -Tp33FJ128MC804.gld.00 \
   --defsym=__MPLAB_BUILD=1 \
   --heap=512 \
   -Map=.\output_files\test.map \
@@ -41,7 +41,7 @@ c:/programas/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(data_init_sta
                               c:/programas/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(crt0_standard.o) (_data_init_standard)
 
 
-Program Memory  [Origin = 0x200, Length = 0xaa00]
+Program Memory  [Origin = 0x200, Length = 0x15600]
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
@@ -50,7 +50,7 @@ section                    address   length (PC units)   length (bytes) (dec)
 .dinit                       0x500                 0x8             0xc  (12)
 .isr                         0x508                 0x2             0x3  (3)
 
-                     Total program memory used (bytes):          0x48f  (1167) 1%
+                     Total program memory used (bytes):          0x48f  (1167) <1%
 
 
 Data Memory  [Origin = 0x800, Length = 0x4000]
@@ -120,7 +120,7 @@ data             0x000800           0x004000           a !xr
 reset            0x000000           0x000004  
 ivt              0x000004           0x0000fc  
 aivt             0x000104           0x0000fc  
-program          0x000200           0x00aa00           xr
+program          0x000200           0x015600           xr
 FBS              0xf80000           0x000002  
 FSS              0xf80002           0x000002  
 FGS              0xf80004           0x000002  
@@ -140,7 +140,7 @@ Linker script and memory map
 LOAD compiled_files\oscillator.o
 LOAD compiled_files\main.o
 LOAD compiled_files\dac_mc.o
-LOAD c:/programas/microchip/mplab c30/bin/bin/../../lib/dsPIC33F\libp33FJ64MC804-coff.a
+LOAD c:/programas/microchip/mplab c30/bin/bin/../../lib/dsPIC33F\libp33FJ128MC804-coff.a
                     0xf80000                  __FBS = 0xf80000
                     0xf80002                  __FSS = 0xf80002
                     0xf80004                  __FGS = 0xf80004
@@ -153,7 +153,6 @@ LOAD c:/programas/microchip/mplab c30/bin/bin/../../lib/dsPIC33F\libp33FJ64MC804
                     0xf80012                  __FUID1 = 0xf80012
                     0xf80014                  __FUID2 = 0xf80014
                     0xf80016                  __FUID3 = 0xf80016
-                    0x0001                  __NO_HANDLES = 0x1
                     0x0004                  __IVT_BASE = 0x4
                     0x0104                  __AIVT_BASE = 0x104
                     0x0800                  __DATA_BASE = 0x800

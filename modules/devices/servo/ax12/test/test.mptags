@@ -297,6 +297,7 @@ FLOAT_POS	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4ds
 FLOAT_POS_OK	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\ihm\parse\parse_num.c	51;"	e	line:51	enum:num_parse_state_t	file:
 FOSC::(FCY*2)	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	37;"	d	line:37
 FREF::(FIN/N1)	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	47;"	d	line:47
+FVCO::(FIN*(M/N1))	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	53;"	d	line:53
 FWDTEN_OFF	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\modules\devices\servo\ax12\test\configuration_bits_config.h	54;"	v	line:54
 F_CPU::((unsignedlong)CONFIG_QUARTZ)	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\include\aversive.h	72;"	d	line:72
 F_CPU::CONFIG_F_CPU	D:\Javier\Proyectos\Proyectos_2010\Eurobot_2010\mplab\libs\aversive4dspic\include\aversive.h	69;"	d	line:69
