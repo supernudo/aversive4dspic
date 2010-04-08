@@ -62,7 +62,7 @@ uint8_t is_in_boundingbox(const point_t *p);
  *  are used to compute visibility to start/stop points)
  */
 
-uint8_t 
+uint16_t 
 calc_rays(poly_t *polys, uint8_t npolys, uint8_t *rays);
 
 /* Compute the weight of every rays: the length of the rays is used
@@ -73,6 +73,6 @@ calc_rays(poly_t *polys, uint8_t npolys, uint8_t *rays);
  * B, C) the algorithm will prefer (A, C) instead of (A, B, C) */
 void 
 calc_rays_weight(poly_t *polys, uint8_t npolys, uint8_t *rays, 
-		 uint8_t ray_n, uint16_t *weight);
+		 uint16_t ray_n, uint16_t *weight);
 
 #endif

@@ -190,14 +190,14 @@ is_crossing_poly(point_t p1, point_t p2, point_t *intersect_pt,
  *  are used to compute visibility to start/stop points)
  */
 
-uint8_t 
+uint16_t 
 calc_rays(poly_t *polys, uint8_t npolys, uint8_t *rays)
 {
-	uint8_t i, ii, index;
-	uint8_t ray_n=0;
-	uint8_t is_ok;
-	uint8_t n;
-	uint8_t pt1, pt2;
+	uint16_t i, ii, index;
+	uint16_t ray_n=0;
+	uint16_t is_ok;
+	uint16_t n;
+	uint16_t pt1, pt2;
 
 	/* !\\first poly is the start stop point */
 
@@ -294,9 +294,9 @@ calc_rays(poly_t *polys, uint8_t npolys, uint8_t *rays)
  * B, C) the algorithm will prefer (A, C) instead of (A, B, C) */
 void 
 calc_rays_weight(poly_t *polys, uint8_t npolys, uint8_t *rays, 
-		 uint8_t ray_n, uint16_t *weight)
+		 uint16_t ray_n, uint16_t *weight)
 {
-	uint8_t i;
+	uint16_t i;
 	vect_t v;
 
 	for (i=0;i<ray_n;i+=4) {

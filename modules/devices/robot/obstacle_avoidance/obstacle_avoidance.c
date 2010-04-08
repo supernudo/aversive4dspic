@@ -152,7 +152,7 @@ point_t * oa_get_path(void)
 
 void oa_dump(void)
 {
-	uint8_t i,j;
+	uint16_t i,j;
 	poly_t *poly;
 	point_t *pt;
 
@@ -188,9 +188,9 @@ void oa_dump(void)
 void 
 dijkstra(uint8_t start_p, uint8_t start)
 {
-	uint8_t i;
-	int8_t add;
-	int8_t finish = 0;
+	uint16_t i;
+	int16_t add;
+	int16_t finish = 0;
 	/* weight == 0 means not visited */
 	/* weight == 1 for start */
 	
@@ -259,7 +259,8 @@ dijkstra(uint8_t start_p, uint8_t start)
 int8_t
 get_path(poly_t *polys, uint8_t *rays)
 {
-	uint8_t p, pt, p1, pt1, i;
+	uint16_t p, pt, p1, pt1;
+	uint16_t i;
 
 	p=0;
 	pt=1;
@@ -292,8 +293,8 @@ get_path(poly_t *polys, uint8_t *rays)
 int8_t 
 oa_process(void)
 {
-	uint8_t ret;
-	uint8_t i;
+	uint16_t ret;
+	uint16_t i;
 
 	/* First we compute the visibility graph */
 	ret = calc_rays(oa.polys, oa.cur_poly_idx, oa.u.rays);

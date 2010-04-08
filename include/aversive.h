@@ -255,9 +255,6 @@ do {				     \
 #  define _BV(bit_num) (1<<bit_num)
 #endif /* DSPIC */
 
-#ifdef DSPIC
-#define _BV(bit_num) (1<<bit_num)
-#endif
 
 /**
  *   little bit toggeling macro 

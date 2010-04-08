@@ -64,7 +64,7 @@ struct obstacle_avoidance {
 
 
 	
-	uint8_t ray_n;
+	uint16_t ray_n;
 	uint8_t cur_poly_idx;
 	uint8_t cur_pt_idx;
 
