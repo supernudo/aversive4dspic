@@ -58,7 +58,7 @@ struct obstacle_avoidance {
 	poly_t polys[MAX_POLY];  /* tab of polygons (obstacles) */
 	point_t points[MAX_PTS]; /* tab of points, referenced by polys */
 	uint8_t valid[MAX_PTS];
-	int32_t pweight[MAX_PTS];
+	int16_t pweight[MAX_PTS];
 	uint8_t p[MAX_PTS];
 	uint8_t pt[MAX_PTS];
 
