@@ -19,6 +19,14 @@
  *
  */
 
+/*	
+ *	Copyright Asoc. de Robótica de Coslada and Eurobotics Engineering (2011)
+ *	Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *	Added compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *
+ */
+
 #ifndef _AVERSIVE_ERROR_H_
 #define _AVERSIVE_ERROR_H_
 

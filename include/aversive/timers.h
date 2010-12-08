@@ -19,6 +19,14 @@
  *
  */
 
+/*	
+ *	Copyright Asoc. de Robótica de Coslada and Eurobotics Engineering (2011)
+ *	Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *	Added compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *
+ */
+
 /*
  * This file contains definitions used for timer use
  *
@@ -31,6 +39,8 @@
 
 #ifndef _AVERSIVE_TIMERS_H_
 #define _AVERSIVE_TIMERS_H_
+
+#ifdef AVR
 
 // Timer WGM bits
 #define TIMER_8_MODE_NORMAL      0
@@ -192,5 +202,11 @@
 #else
 //#error No timer/prescaler definitions for your AVR type
 #endif
+
+#else /* DSPIC */
+
+#warning ""timers.h" is specific for AVR microcontrollers"
+
+#endif /* AVR */
 
 #endif

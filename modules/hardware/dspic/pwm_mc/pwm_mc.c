@@ -32,6 +32,8 @@
 #include <string.h>
 
 #include <aversive.h>
+#include <pwm.h>
+#include <pwm12.h>
 #include <pwm_mc.h>
 
 

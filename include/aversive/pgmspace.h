@@ -19,6 +19,14 @@
  *
  */
 
+/*	
+ *	Copyright Asoc. de Robótica de Coslada and Eurobotics Engineering (2011)
+ *	Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *	Added compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *
+ */
+
 /**
  * This file is used for compatibility between host and avr : with
  * this we can emulate pgmspace on a host.
@@ -27,17 +35,15 @@
 #ifndef _AVERSIVE_PGMSPACE_H_
 #define _AVERSIVE_PGMSPACE_H_
 
-#include <aversive.h>
+#ifndef HOST_VERSION
 
-#if (defined AVR) 
+#ifdef AVR
 
 #include <avr/pgmspace.h>
 
-
-#elif (defined DSPIC)
+#else /* DSPIC*/
 
 #include <stdint.h>
-#include <inttypes.h>
 
 #define printf_P printf
 #define memcmp_P memcmp
@@ -68,6 +74,8 @@ typedef uint16_t prog_uint16_t;
 typedef int32_t prog_int32_t;
 typedef uint32_t prog_uint32_t;
 typedef int64_t prog_int64_t;
+
+#endif /* AVR else DSPIC */
 
 #else
 
@@ -102,6 +110,7 @@ typedef uint32_t prog_uint32_t;
 typedef int64_t prog_int64_t;
 
 #endif /* HOST_VERSION */
+
 #endif /* _AVERSIVE_PGMSPACE_H_ */
 
 

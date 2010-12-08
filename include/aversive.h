@@ -19,6 +19,14 @@
  *
  */
 
+/*	
+ *	Copyright Asoc. de Robótica de Coslada and Eurobotics Engineering (2011)
+ *	Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *	Added compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *
+ */
+
 /**
  * here are some cute little macros, and other stuff, microcontroller
  * related ! 
@@ -30,15 +38,6 @@
 
 #include <autoconf.h>
 #include <math.h>
-
-//#ifndef HOST_VERSION
-//#ifndef DSPIC
-//#define AVR
-//#include <avr/interrupt.h>
-//#include <avr/io.h>
-//#endif
-//#endif
-
 
 #ifdef AVR
 #include <avr/interrupt.h>
@@ -54,7 +53,8 @@
 #include <aversive/irq_lock.h>
 
 
-#ifndef __AVR_LIBC_VERSION__ /* version.h should be included by avr/io.h */
+/* version.h should be included by avr/io.h */
+#ifndef __AVR_LIBC_VERSION__ 
 #define __AVR_LIBC_VERSION__ 0UL 
 #endif
 
@@ -64,21 +64,19 @@
 #endif
 #endif
 
-#ifdef DSPIC
-//#  define F_CPU ((CONFIG_QUARTZ)/2) /* Do NOT make it unsigned, it breaks S_MAX(). */
-#  define F_CPU   CONFIG_F_CPU
-#  define FCY     F_CPU
-#else
-#  define F_CPU ((unsigned long)CONFIG_QUARTZ)
+#ifdef AVR
+#define F_CPU	((unsigned long)CONFIG_QUARTZ)
+#else /* DSPIC */
+#define F_CPU	CONFIG_F_CPU
+#define FCY	F_CPU
 #endif
 
 #define Hz  1l
 #define KHz 1000l
 #define MHz 1000000l
 
-
 #ifndef M_PI
-#  define M_PI 3.141592653589
+#define M_PI 3.141592653589
 #endif
 
 /*
@@ -215,7 +213,6 @@ struct extract16 {
 
 
 /* a few asm utilities */
-
 #ifdef AVR
 #ifndef nop
 #define nop() __asm__ __volatile__ ("NOP\n") /** nop instruction, 1 CPU cycle consumed */
@@ -229,6 +226,7 @@ struct extract16 {
 #ifndef sei
 #define sei() __asm__ __volatile__ ("SEI\n") /** enable interrupts */
 #endif
+
 /** simple software reset, but doesn't initialize the registers */
 #ifndef reset
 #define reset()                      \
@@ -248,11 +246,11 @@ do {				     \
 #endif /* HOST_VERSION */
 
 #ifdef DSPIC
-#  define nop() do {__asm__ volatile ("nop");} while(0)
-#  define nothing() do {} while(0)
-#  define cli() do {SRbits.IPL=7;} while(0)
-#  define sei() do {SRbits.IPL=0;} while(0)
-#  define _BV(bit_num) (1<<bit_num)
+#define nop() do {__asm__ volatile ("nop");} while(0)
+#define nothing() do {} while(0)
+#define cli() do {SRbits.IPL=7;} while(0)
+#define sei() do {SRbits.IPL=0;} while(0)
+#define _BV(bit_num) (1<<bit_num)
 #endif /* DSPIC */
 
 
@@ -285,9 +283,7 @@ do {				     \
 #define DDR(port) (*(&(port) -1))
 #define PIN(port) (*(&(port) -2))
 #define LAT(port)	(port)
-#endif
-
-#ifdef DSPIC
+#else /* DSPIC */
 #define TRIS(port) 	( *(&(port) +(-2)) )
 #define LAT(port) 	( *(&(port) +2) )
 #define ODC(port) 	( *(&(port) +4) )

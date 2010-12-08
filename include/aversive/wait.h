@@ -19,6 +19,14 @@
  *
  */
 
+/*	
+ *	Copyright Asoc. de Robótica de Coslada and Eurobotics Engineering (2011)
+ *	Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *	Added compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *
+ */
+
 /** 
  * This file is an interface for wait functions, in order to put the 
  * microcontroller in a loop state.
@@ -39,21 +47,7 @@
 
 #else /* HOST_VERSION */
 
-#ifdef DSPIC
-
-#include <libpic30.h>
-
-/** wait n milliseconds 
- * n is 16 bits
- */
-static inline void wait_ms(uint16_t n) 
-{
-  while ( n -- ) 
-    __delay32(F_CPU/1000);
-} 
-
-
-#else /* DSPIC */
+#ifdef AVR
 
 #if __AVR_LIBC_VERSION__ < 10403UL
 #include <avr/delay.h>
@@ -71,6 +65,7 @@ static inline void wait_ms(uint16_t n)
 
 /** wait n milliseconds 
  * n is 16 bits
+
  */
 static inline void wait_ms(uint16_t n) 
 {
@@ -78,8 +73,22 @@ static inline void wait_ms(uint16_t n)
     wait_4cyc(F_CPU/4000);
 } 
 
-#endif /* DSPIC */
 
-#endif /* else HOST_VERSION */
+#else /* DSPIC */
+
+#include <libpic30.h>
+
+/** wait n milliseconds 
+ * n is 16 bits
+ */
+static inline void wait_ms(uint16_t n) 
+{
+  while ( n -- ) 
+    __delay32(F_CPU/1000);
+} 
+
+#endif /* AVR else DSPIC */
+
+#endif /* HOST_VERSION */
 
 #endif /* _AVERSIVE_WAIT_ */

@@ -52,6 +52,7 @@ file_024=.
 file_025=.
 file_026=.
 file_027=.
+file_028=.
 [GENERATED_FILES]
 file_000=no
 file_001=no
@@ -81,6 +82,7 @@ file_024=no
 file_025=no
 file_026=no
 file_027=no
+file_028=no
 [OTHER_FILES]
 file_000=no
 file_001=no
@@ -110,6 +112,7 @@ file_024=no
 file_025=no
 file_026=no
 file_027=no
+file_028=no
 [FILE_INFO]
 file_000=..\..\..\..\..\modules\base\cirbuf\cirbuf_get_tail.c
 file_001=..\..\..\..\..\modules\base\cirbuf\cirbuf.c
@@ -139,6 +142,7 @@ file_024=autoconf.h
 file_025=configuration_bits_config.h
 file_026=oscillator_config.h
 file_027=uart_config.h
+file_028=..\..\..\..\..\include\aversive\wait.h
 [SUITE_INFO]
 suite_guid={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 suite_state=

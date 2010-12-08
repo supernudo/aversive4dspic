@@ -19,6 +19,14 @@
  *
  */
 
+/*	
+ *	Copyright Asoc. de Robótica de Coslada and Eurobotics Engineering (2011)
+ *	Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *	Added compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *
+ */
+
 /** \file modules/base/utils/irq_lock_macros.h
  *  \brief Interface of the utils module
  *   
@@ -40,7 +48,28 @@
 #ifndef _AVERSIVE_IRQ_LOCK_H_
 #define _AVERSIVE_IRQ_LOCK_H_
 
-#ifdef DSPIC
+#ifdef HOST_VERSION
+
+/* we must use 'flags' to avoid a warning */
+#define IRQ_UNLOCK(flags) flags=0
+#define IRQ_LOCK(flags) flags=0
+#define GLOBAL_IRQ_ARE_MASKED() (1)
+
+#else
+
+#ifdef AVR
+#define GLOBAL_IRQ_ARE_MASKED() (!(bit_is_set(SREG,7)))
+
+#define IRQ_LOCK(flags) do {         \
+  flags = SREG;                      \
+  cli();                             \
+  } while(0)
+
+#define IRQ_UNLOCK(flags) do {       \
+  SREG = flags;                      \
+  } while ( 0 )
+
+#else /* DSPIC */
 
 #if defined(__dsPIC30F__)
 #include <p30fxxxx.h>
@@ -61,30 +90,9 @@
   SRbits.IPL = flags;                \
   } while ( 0 )
 
-#else
 
+#endif /* AVR else DSPIC */
 
-#ifdef HOST_VERSION
+#endif /* HOST_VERSION */
 
-/* we must use 'flags' to avoid a warning */
-#define IRQ_UNLOCK(flags) flags=0
-#define IRQ_LOCK(flags) flags=0
-#define GLOBAL_IRQ_ARE_MASKED() (1)
-
-#else
-
-#define GLOBAL_IRQ_ARE_MASKED() (!(bit_is_set(SREG,7)))
-
-#define IRQ_LOCK(flags) do {         \
-  flags = SREG;                      \
-  cli();                             \
-  } while(0)
-
-#define IRQ_UNLOCK(flags) do {       \
-  SREG = flags;                      \
-  } while ( 0 )
-
-#endif /* ! HOST_VERSION */
-
-#endif /* ! DSPIC */
 #endif /* _AVERSIVE_IRQ_LOCK_H_ */

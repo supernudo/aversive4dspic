@@ -29,7 +29,8 @@
 
 int main(void)
 {
-	struct pwm_mc pwm_r, pwm_l, pwm_beacon;
+	//struct pwm_mc pwm_r, pwm_l; 
+	struct pwm_mc pwm_beacon;
 
 	oscillator_init();
 
@@ -118,7 +119,7 @@ int main(void)
 	
 	pwm_mc_set(&pwm_beacon, 2666);
 
-	pwm_mc_init(2, 15000, MOD1_COMP&PEN1H&PEN1L);
+	pwm_mc_init(&pwm_beacon, 15000, CH1_COMP&PEN1H&PEN1L);
 
 	pwm_mc_set(&pwm_beacon, 0);
 	
