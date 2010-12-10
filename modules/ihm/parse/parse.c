@@ -1,6 +1,7 @@
 /*  
  *  Copyright Droids Corporation (2007)
- *  Olivier MATZ <zer0@droids-corp.org>
+ *  Olivier MATZ <zer0@droids-corp.org>,
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,6 +19,13 @@
  *
  *  Revision : $Id: parse.c,v 1.1.2.11 2009/04/07 20:00:46 zer0 Exp $
  *
+ *
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
 

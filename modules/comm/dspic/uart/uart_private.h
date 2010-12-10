@@ -1,5 +1,6 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,7 +20,16 @@
  *
  */
 
-/* Olivier MATZ, Droids-corp 2004 - 2009 */
+/* Olivier MATZ, Droids-corp 2004 - 2009 
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  uart_private.h,v 1.1.2.5 2009/01/03 16:24:50 zer0 Exp.
+ *
+ */
 
 #ifndef _UART_PRIVATE_H_
 #define _UART_PRIVATE_H_
@@ -30,17 +40,6 @@
 #include <uart.h>
 #include <uart_defs.h>
 #include <uart_config.h>
-
-//typedef volatile uint8_t *uart_reg_t;
-//
-//struct regs {
-//        uart_reg_t udr;
-//        uart_reg_t ucsra;
-//        uart_reg_t ucsrb;
-//        uart_reg_t ucsrc;
-//        uart_reg_t ubrrl;
-//        uart_reg_t ubrrh;
-//};
 
 typedef volatile uint16_t *uart_reg_t;
 
@@ -120,25 +119,12 @@ extern event *tx_event[UART_HW_NUM];
 void uart_send_next_char(uint8_t num);
 int8_t uart_setconf(uint8_t num, struct uart_config *u);
 
-//static inline char uart_get_udr(uint8_t num)
-//{
-//	return *uart_regs[num].udr;
-//}
-//
 static inline char uart_get_urxreg(uint8_t num)
 {
 	return ((*uart_regs[num].urxreg) & 0xFF);
 }
 
 
-//static inline void uart_set_udr(uint8_t num, char c)
-//{
-//	*uart_regs[num].udr = c;
-//	/* tx event function. We suppose interrupts are already
-//	 * locked, so no pb with tx_event pointer */
-//	if (tx_event[num])
-//		tx_event[num](c);
-//}
 static inline void uart_set_utxreg(uint8_t num, char c)
 {
 	*uart_regs[num].utxreg = c & 0xFF;
@@ -149,27 +135,5 @@ static inline void uart_set_utxreg(uint8_t num, char c)
 		tx_event[num](c);
 }
 
-//#ifdef CONFIG_MODULE_UART_9BITS
-//static inline int uart_get_udr_9bits(uint8_t num)
-//{
-//	int val = *uart_regs[num].udr;
-//	val |= (*uart_regs[num].ucsrb & ((1 << RXB8) ? 0x100 : 0));
-//	return val;
-//}
-//
-//static inline void uart_set_udr_9bits(uint8_t num, int c)
-//{
-//	if (c & 0x100 )
-//		*uart_regs[num].ucsrb |= (1 << RXB8);
-//	else
-//		*uart_regs[num].ucsrb &= ~(1 << RXB8);
-//	*uart_regs[num].udr = c;
-//
-//	/* tx event function. We suppose interrupts are already
-//	 * locked, so no pb with tx_event pointer */
-//	if (tx_event[num])
-//		((event_9bits *)tx_event[num])(c);
-//}
-//#endif /* CONFIG_MODULE_UART_9BITS */
-
 #endif /* _UART_PRIVATE_H_ */
+

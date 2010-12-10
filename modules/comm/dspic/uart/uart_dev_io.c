@@ -1,5 +1,6 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,7 +20,16 @@
  *
  */
 
-/* Olivier MATZ, Droids-corp 2004 - 2009 */
+/*  Olivier MATZ, Droids-corp 2004 - 2009 
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  uart_dev_io.c,v 1.1.2.2 2009/04/07 20:00:47 zer0 Exp.
+ *
+ */
 
 #include <uart.h>
 #include <uart_defs.h>
@@ -50,90 +60,5 @@ int write(int handle, void *buffer, unsigned int len) {
   return(len);
 }
 
-//#ifdef UART0_COMPILE
-//int uart0_dev_send_nowait(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send_nowait(0, c);
-//}
-//
-//int uart0_dev_send(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send(0, c);
-//}
-//
-//int uart0_dev_recv_nowait(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv_nowait(0);
-//}
-//
-//int uart0_dev_recv(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv(0);
-//}                                                                            
-//#endif
-//
-//#ifdef UART1_COMPILE
-//int uart1_dev_send_nowait(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send_nowait(1, c);
-//}
-//
-//int uart1_dev_send(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send(1, c);
-//}
-//
-//int uart1_dev_recv_nowait(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv_nowait(1);
-//}
-//
-//int uart1_dev_recv(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv(1);
-//}                                                                            
-//#endif
-//
-//#ifdef UART2_COMPILE
-//int uart2_dev_send_nowait(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send_nowait(2, c);
-//}
-//
-//int uart2_dev_send(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send(2, c);
-//}
-//
-//int uart2_dev_recv_nowait(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv_nowait(2);
-//}
-//
-//int uart2_dev_recv(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv(2);
-//}                                                                            
-//#endif
-//
-//#ifdef UART3_COMPILE
-//int uart3_dev_send_nowait(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send_nowait(3, c);
-//}
-//
-//int uart3_dev_send(char c, __attribute__((unused)) FILE *f)
-//{
-//	return uart_send(3, c);
-//}
-//
-//int uart3_dev_recv_nowait(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv_nowait(3);
-//}
-//
-//int uart3_dev_recv(__attribute__((unused)) FILE *f)
-//{
-//	return uart_recv(3);
-//}                                                                            
-//#endif
+
+

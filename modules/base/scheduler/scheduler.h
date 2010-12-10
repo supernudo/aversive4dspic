@@ -1,5 +1,6 @@
 /*  
- *  Copyright Droids Corporation (2007)
+ *  Copyright Droids Corporation (2007),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,8 +20,15 @@
  *
  */
 
-/* Olivier MATZ <zer0@droids-corp.org>
- * Interface of the SCHEDULER Module
+/*  Olivier MATZ <zer0@droids-corp.org>
+ *  Interface of the SCHEDULER Module
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *
  */
 
 /** \file scheduler.h
@@ -34,7 +42,7 @@
  * Functions with a high priority value will be call before others
  * (default is 128).
  *
- * This module uses Timer 0
+ * This module uses Timer 0 (Timer 1 for PIC24 and dsPICS)
  */
 
 
@@ -112,12 +120,12 @@
 #define TIMER_UNIT_FLOAT ( 65536000000.0 / (double)(CONFIG_QUARTZ) )
 #endif
 
-#else // DSPIC
+#else /* DSPIC */
 #ifdef CONFIG_MODULE_SCHEDULER_TIMER1
 #define TIMER_UNIT_FLOAT ( 65536000000.0 / (double)(CONFIG_F_CPU) )
-#endif
+#endif 
 
-#endif
+#endif /* AVR else DSPIC */
 
 /** SCHEDULER_UNIT is the number of microseconds between each
  *  scheduler interruption. We can use it like this :
@@ -127,14 +135,12 @@
 #ifdef AVR 
 #define SCHEDULER_UNIT_FLOAT ( TIMER_UNIT_FLOAT * (double)SCHEDULER_CLOCK_PRESCALER )
 #define SCHEDULER_UNIT ( (unsigned long) SCHEDULER_UNIT_FLOAT )
-#else // DSPIC
+#else /* DSPIC */
 #define SCHEDULER_UNIT_FLOAT  (TIMER_UNIT_FLOAT)
 #define SCHEDULER_UNIT ( (unsigned long) TIMER_UNIT_FLOAT )
-#endif
+#endif /* AVR else DSPIC */
 
 #endif /* ! CONFIG_MODULE_SCHEDULER_MANUAL */
-
-
 
 #define SCHEDULER_PERIODICAL 0
 #define SCHEDULER_SINGLE 1

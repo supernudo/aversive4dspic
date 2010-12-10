@@ -1,6 +1,7 @@
 /*  
  *  Copyright Droids Corporation
- *  Olivier Matz <zer0@droids-corp.org>
+ *  Olivier Matz <zer0@droids-corp.org>,
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,6 +18,13 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  *  Revision : $Id: main.c,v 1.1.4.4 2008/12/27 16:29:08 zer0 Exp $
+ *
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Compatibility with families of microcontrollers dsPIC with remapeable pins.
  *
  */
 
@@ -128,7 +136,8 @@ static void ax12_send_callback(char c)
 	if (ax12_state == AX12_STATE_READ) {
 		/* disable TX when last byte is pushed. */
 		if (CIRBUF_IS_EMPTY(&g_tx_fifo[1])){
-			//UCSR1B &= ~(1<<TXEN);			_TRISB9 = 1;	// U2RX/TX pin is input
+			//UCSR1B &= ~(1<<TXEN);
+			_TRISB9 = 1;	// U2RX/TX pin is input
 		}	
 
 	}
@@ -175,7 +184,8 @@ static void ax12_switch_uart(uint8_t state)
 		while (uart_recv_nowait(1) != -1);
 		
 		_TRISB9	= 0;	// U2RX/TX pin is output
-		_ODCB9 	= 1;	// open collector on		//UCSR1B |= (1<<TXEN);
+		_ODCB9 	= 1;	// open collector on
+		//UCSR1B |= (1<<TXEN);
 		
 		ax12_state = AX12_STATE_WRITE;
 		IRQ_UNLOCK(flags);
@@ -204,7 +214,17 @@ static void main_timer_interrupt(void)
 }
 
 void timer_init(void)
-{	/* Init Timer1 */	unsigned int match_value;	ConfigIntTimer1(T1_INT_PRIOR_4 & T1_INT_ON);	WriteTimer1(0);	match_value = SCHEDULER_UNIT * (unsigned long)((double)FCY / 1000000.0);	OpenTimer1(T1_ON & T1_GATE_OFF & T1_IDLE_STOP &              T1_PS_1_1 & T1_SYNC_EXT_OFF &              T1_SOURCE_INT, match_value);}
+{
+	/* Init Timer1 */
+	unsigned int match_value;
+	ConfigIntTimer1(T1_INT_PRIOR_4 & T1_INT_ON);
+	WriteTimer1(0);
+	match_value = SCHEDULER_UNIT * (unsigned long)((double)FCY / 1000000.0);
+	OpenTimer1(T1_ON & T1_GATE_OFF & T1_IDLE_STOP &
+              T1_PS_1_1 & T1_SYNC_EXT_OFF &
+              T1_SOURCE_INT, match_value);
+}
+
 /* Timer 1 interrupt handler */
 void __attribute__((__interrupt__, no_auto_psv)) _T1Interrupt(void)
 {
@@ -213,24 +233,38 @@ void __attribute__((__interrupt__, no_auto_psv)) _T1Interrupt(void)
 
   // Register scheduler interrupt
   main_timer_interrupt();
-}
-
-void io_pins_init(void){
+}
+
+
+
+void io_pins_init(void)
+{
 	// wt11 reset (output)
 	_TRISA8	= 0;	// RESET_BLUE
-	_LATA8	= 0;	// RESET_BLUE OFF
+	_LATA8	= 0;	// RESET_BLUE OFF
+
 //	// cmdline uart
-#if CMDLINE_UART == 0	_U1RXR 	= 8;	// U1RX <- RP8	_TRISB8 = 1;	// U1RX is input  _RP7R 	= 3;	// U1TX -> RP7	_TRISB7	= 0;	// U1TX is output
+#if CMDLINE_UART == 0
+	_U1RXR 	= 8;	// U1RX <- RP8
+	_TRISB8 = 1;	// U1RX is input
+  _RP7R 	= 3;	// U1TX -> RP7
+	_TRISB7	= 0;	// U1TX is output
 #else
-	_U2RXR 	= 8;	// U2RX <- RP8	_TRISB8 = 1;	// U2RX is input  _RP7R 	= 5;	// U2TX -> RP7	_TRISB7	= 0;	// U2TX is output
+	_U2RXR 	= 8;	// U2RX <- RP8
+	_TRISB8 = 1;	// U2RX is input
+  _RP7R 	= 5;	// U2TX -> RP7
+	_TRISB7	= 0;	// U2TX is output
 #endif	
 
 	// ax12 half duplex uart
-#if CMDLINE_UART == 0	_U2RXR 	= 9;	// U2RX <- RP9
-  _RP9R 	= 5;	// U2TX -> RP9	_TRISB9	= 0;	// U2TX is output
+#if CMDLINE_UART == 0
+	_U2RXR 	= 9;	// U2RX <- RP9
+  _RP9R 	= 5;	// U2TX -> RP9
+	_TRISB9	= 0;	// U2TX is output
  	_ODCB9 	= 1;	// RP9 as TX is open collector
 #else
-  _RP9R 	= 3;	// U1TX -> RP9	_TRISB9	= 0;	// U2TX is output
+  _RP9R 	= 3;	// U1TX -> RP9
+	_TRISB9	= 0;	// U2TX is output
  	_ODCB9 	= 1;	// RP9 as TX is open collector
 #endif
 }
@@ -245,7 +279,8 @@ int main(void)
 	int8_t ret;
 
 	/* oscillator */
-	oscillator_init();
+	oscillator_init();
+
 	/* remapeable pins */
 	io_pins_init();
 

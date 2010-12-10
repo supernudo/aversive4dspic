@@ -1,5 +1,6 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,7 +20,16 @@
  *
  */
 
-/* Olivier MATZ, Droids-corp 2004 - 2009 */
+/*  Olivier MATZ, Droids-corp 2004 - 2009 
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  uart_send.c,v 1.1.2.1 2008/12/27 16:29:08 zer0 Exp.
+ *
+ */
 
 #include <uart.h>
 #include <uart_defs.h>
@@ -32,7 +42,6 @@ int uart_send(uint8_t num, char c)
 
 		/* if irq lock are masked and interrupt mode is on, we
 		 * have to poll the status register */
-//		  if (GLOBAL_IRQ_ARE_MASKED() && (*uart_regs[num].ucsrb & (1 << RXCIE)) ) {
 		if (GLOBAL_IRQ_ARE_MASKED() && uart_get_rxie(num)) {
    		
 			//while( !(*uart_regs[num].ucsra & (1 << UDRE)) );
@@ -50,3 +59,4 @@ int uart_send(uint8_t num, char c)
 	}
 	return c;
 }
+

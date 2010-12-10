@@ -1,5 +1,6 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2007)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2007),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,11 +20,10 @@
  *
  */
 
-/*	
- *	Copyright Asoc. de Robótica de Coslada and Eurobotics Engineering (2011)
- *	Javier Baliñas Santos <javier@arc-robots.org>
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
  *	
- *	Added compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
 

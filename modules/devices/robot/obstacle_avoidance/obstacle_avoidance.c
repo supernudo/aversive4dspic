@@ -1,5 +1,6 @@
 /*  
- *  Copyright Droids Corporation (2007)
+ *  Copyright Droids Corporation (2007),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -21,6 +22,14 @@
  *  Integration in Aversive: Olivier MATZ <zer0@droids-corp.org>
  */
 
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  - Incremented number of point and rays range and location.
+ *  - Realocated obstacle avoidance structure to far memory section for DSPIC compilation.
+ *
+ */
+
 #include <aversive.h>
 #include <aversive/error.h>
 
@@ -37,7 +46,11 @@
 
 #define GET_PT(a) (&(a) - &(oa.points[0]))
 
+#ifdef AVR
+static struct obstacle_avoidance oa;
+#else /* DSPIC */
 static struct obstacle_avoidance oa  __attribute__ ((far));
+#endif
 
 static void __oa_start_end_points(int32_t st_x, int32_t st_y,
 				  int32_t en_x, int32_t en_y);

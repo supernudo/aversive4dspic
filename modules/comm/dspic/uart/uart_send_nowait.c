@@ -1,5 +1,6 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,7 +20,16 @@
  *
  */
 
-/* Olivier MATZ, Droids-corp 2004 - 2009 */
+/*  Olivier MATZ, Droids-corp 2004 - 2009 
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  uart_send_nowait.c,v 1.1.2.2 2008/12/27 16:50:01 zer0 Exp.
+ *
+ */
 
 #include <uart.h>
 #include <uart_defs.h>
@@ -36,13 +46,10 @@ int uart_send_nowait(uint8_t num, char c)
 
 	/* if uart intrp mode is disabled (note that we look rx */
 	/* intrp -- RXCIE is 0) */
-//	  if ( !(*uart_regs[num].ucsrb & (1 << RXCIE )) ) {
 	if ( !(uart_get_rxie(num)) ) {
 		/* we have to poll the status register before xmit */
-//		  if (*uart_regs[num].ucsra & (1<<UDRE)) {
 		if (!((*uart_regs[num].usta) & UTXBF_MASK)) {
-//			uart_set_udr(num, c);
-         uart_set_utxreg(num, c);
+      uart_set_utxreg(num, c);
 			IRQ_UNLOCK(flags);
 			return (int)((unsigned char)c);
 		}
@@ -59,13 +66,10 @@ int uart_send_nowait(uint8_t num, char c)
 
 	/* uart is ready to send */
 	if (CIRBUF_IS_EMPTY(&g_tx_fifo[num]) && 
-//	    *uart_regs[num].ucsra & (1<<UDRE)) {
 	    !((*uart_regs[num].usta) & UTXBF_MASK)) {
 
-//      uart_set_udr(num, c);
       uart_set_utxreg(num,c);
 
-//      sbi(*uart_regs[num].ucsrb, UDRIE); /* XXX */
       uart_set_txie(num, 1);
 	}
 	else { /* not ready, put char in fifo */
@@ -75,3 +79,4 @@ int uart_send_nowait(uint8_t num, char c)
 	IRQ_UNLOCK(flags);
 	return (int)((unsigned char)c);
 }
+

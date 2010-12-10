@@ -1,6 +1,7 @@
 /*  
  *  Copyright Droids Corporation (2007)
- *  Olivier MATZ <zer0@droids-corp.org>
+ *  Olivier MATZ <zer0@droids-corp.org>,
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,6 +19,13 @@
  *
  *  Revision : $Id: parse.h,v 1.1.2.9 2009/01/03 16:25:13 zer0 Exp $
  *
+ *
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
 
@@ -52,7 +60,7 @@ struct token_hdr_pgm {
 } PROGMEM;
 #ifdef AVR
 typedef struct token_hdr_pgm parse_pgm_token_hdr_t;
-#else
+#else /* DSPIC */
 typedef const struct token_hdr_pgm parse_pgm_token_hdr_t;
 #endif
 
@@ -109,7 +117,7 @@ struct inst_pgm {
 } PROGMEM;
 #ifdef AVR
 typedef struct inst_pgm parse_pgm_inst_t;
-#else
+#else /* DSPIC */
 typedef const struct inst_pgm parse_pgm_inst_t;
 #endif
 
@@ -121,7 +129,7 @@ typedef const struct inst_pgm parse_pgm_inst_t;
 typedef parse_pgm_inst_t * parse_ctx_t;
 #ifdef AVR
 typedef PROGMEM parse_ctx_t parse_pgm_ctx_t;
-#else
+#else /* DSPIC */
 typedef const parse_ctx_t parse_pgm_ctx_t;
 #endif
 

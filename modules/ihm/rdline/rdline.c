@@ -1,6 +1,7 @@
 /*  
  *  Copyright Droids Corporation (2007)
- *  Olivier MATZ <zer0@droids-corp.org>
+ *  Olivier MATZ <zer0@droids-corp.org>,
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,6 +21,14 @@
  *
  *
  */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Implementation contitional of isblank function.
+ *
+ */
+
 
 #include <stdlib.h>
 #include <stdio.h>

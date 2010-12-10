@@ -21,11 +21,8 @@ struct token_string_pgm {
 	struct token_hdr hdr;
 	struct token_string_data string_data;
 } PROGMEM;
-#ifdef AVR
+
 typedef struct token_string_pgm parse_pgm_token_string_t;
-#else
-typedef struct token_string_pgm parse_pgm_token_string_t;
-#endif
 
 extern struct token_ops token_string_ops;
 

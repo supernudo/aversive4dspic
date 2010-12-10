@@ -1,6 +1,13 @@
 #ifndef _POLYGON_H_
 #define _POLYGON_H_
 
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Incremented the number of rays calculated up to unsigned integer range.
+ *
+ */
+
 typedef struct _poly {
 	point_t * pts;
 	uint8_t l;

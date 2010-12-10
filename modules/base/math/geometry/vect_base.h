@@ -1,7 +1,3 @@
-
-#include<inttypes.h>	
-		
-			
 typedef struct _vect_t {
   int32_t x;
   int32_t y;

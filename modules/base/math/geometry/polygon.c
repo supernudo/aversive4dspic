@@ -1,3 +1,11 @@
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Incremented the number of rays calculated up to unsigned integer range.
+ *
+ */
+
 #include <stdint.h>
 #include <inttypes.h>
 #include <stdlib.h>

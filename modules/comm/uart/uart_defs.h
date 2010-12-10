@@ -43,6 +43,7 @@
 #define UART_HW_NUM 1
 #endif
 
+
 /* For arch with only one UART, we consider that UART0 = UART */
 #if !defined(SIG_UART0_DATA) && !defined(SIG_USART0_DATA)
 #if defined SIG_UART_DATA

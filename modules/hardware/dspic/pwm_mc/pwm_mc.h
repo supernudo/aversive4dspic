@@ -1,6 +1,6 @@
-
 /*  
- *  Copyright EuRobotics Engineering (2010)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
+ *  Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -16,15 +16,16 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Copyright EuRobotics Ingeneering (2010) 
- *  Javier Baliñas Santos <balinas@gmail.com>
- * 
- *  Based on pwm_ng aversive module:
- *
- *  Copyright Droids Corporation (2009) - Olivier MATZ -
- *  Copyright Microb Technology, Eirbot (2005)
+ *  Copyright Droids-corporation - Olivier MATZ - 2009
  *
  *  Revision : $Id$
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Code ported to families of microcontrollers dsPIC, with DAC module,
+ *  from pwm_ng.h made by Olivier MATZ.
  *
  */
 
@@ -55,22 +56,58 @@
  * PWM pins configuration 
  */
 #if defined(_PWMIF)
-#define CH3_COMP PWM_MOD3_COMP	 /*3th channel in complimentary mode*/#define CH2_COMP PWM_MOD2_COMP  /*2th channel in complimentary mode*/#define CH1_COMP PWM_MOD1_COMP  /*1th channel in complimentary mode*/
-#define CH3_IND PWM_MOD3_IND    /*3th channel in independant mode*/#define CH2_IND PWM_MOD2_IND    /*2th channel in independant mode*/#define CH1_IND PWM_MOD1_IND    /*1th channel in independant mode*/
-#define PEN3H  PWM_PEN3H         /*H of channel 3 works as PWM*/#define PDIS3H PWM_PDIS3H        /*H of channel 3 works as IO*/
-#define PEN2H  PWM_PEN2H         /*H of channel 2 works as PWM*/#define PDIS2H PWM_PDIS2H        /*H of channel 2 works as IO*/
-#define PEN1H  PWM_PEN1H         /*H of channel 1 works as PWM*/#define PDIS1H PWM_PDIS1H        /*H of channel 1 works as IO*/#define PEN3L  PWM_PEN3L         /*L of channel 3 works as PWM*/#define PDIS3L PWM_PDIS3L        /*L of channel 3 works as IO*/
-#define PEN2L  PWM_PEN2L         /*L of channel 2 works as PWM*/#define PDIS2L PWM_PDIS2L        /*L of channel 2 works as IO*/
-#define PEN1L  PWM_PEN1L         /*L of channel 1 works as PWM*/#define PDIS1L PWM_PDIS1L        /*L of channel 1 works as IO*/
+#define CH3_COMP PWM_MOD3_COMP	 /*3th channel in complimentary mode*/
+#define CH2_COMP PWM_MOD2_COMP  /*2th channel in complimentary mode*/
+#define CH1_COMP PWM_MOD1_COMP  /*1th channel in complimentary mode*/
+
+#define CH3_IND PWM_MOD3_IND    /*3th channel in independant mode*/
+#define CH2_IND PWM_MOD2_IND    /*2th channel in independant mode*/
+#define CH1_IND PWM_MOD1_IND    /*1th channel in independant mode*/
+
+#define PEN3H  PWM_PEN3H         /*H of channel 3 works as PWM*/
+#define PDIS3H PWM_PDIS3H        /*H of channel 3 works as IO*/
+
+#define PEN2H  PWM_PEN2H         /*H of channel 2 works as PWM*/
+#define PDIS2H PWM_PDIS2H        /*H of channel 2 works as IO*/
+
+#define PEN1H  PWM_PEN1H         /*H of channel 1 works as PWM*/
+#define PDIS1H PWM_PDIS1H        /*H of channel 1 works as IO*/
+
+#define PEN3L  PWM_PEN3L         /*L of channel 3 works as PWM*/
+#define PDIS3L PWM_PDIS3L        /*L of channel 3 works as IO*/
+
+#define PEN2L  PWM_PEN2L         /*L of channel 2 works as PWM*/
+#define PDIS2L PWM_PDIS2L        /*L of channel 2 works as IO*/
+
+#define PEN1L  PWM_PEN1L         /*L of channel 1 works as PWM*/
+#define PDIS1L PWM_PDIS1L        /*L of channel 1 works as IO*/
 
 #elif defined(_FLTA1IF)
-#define CH3_COMP PWM1_MOD3_COMP	/*3th channel in complimentary mode*/#define CH2_COMP PWM1_MOD2_COMP  /*2th channel in complimentary mode*/#define CH1_COMP PWM1_MOD1_COMP  /*1th channel in complimentary mode*/
-#define CH3_IND PWM1_MOD3_IND    /*3th channel in independant mode*/#define CH2_IND PWM1_MOD2_IND    /*2th channel in independant mode*/#define CH1_IND PWM1_MOD1_IND    /*1th channel in independant mode*/
-#define PEN3H  PWM1_PEN3H         /*H of channel 3 works as PWM*/#define PDIS3H PWM1_PDIS3H        /*H of channel 3 works as IO*/
-#define PEN2H  PWM1_PEN2H         /*H of channel 2 works as PWM*/#define PDIS2H PWM1_PDIS2H        /*H of channel 2 works as IO*/
-#define PEN1H  PWM1_PEN1H         /*H of channel 1 works as PWM*/#define PDIS1H PWM1_PDIS1H        /*H of channel 1 works as IO*/#define PEN3L  PWM1_PEN3L         /*L of channel 3 works as PWM*/#define PDIS3L PWM1_PDIS3L        /*L of channel 3 works as IO*/
-#define PEN2L  PWM1_PEN2L         /*L of channel 2 works as PWM*/#define PDIS2L PWM1_PDIS2L        /*L of channel 2 works as IO*/
-#define PEN1L  PWM1_PEN1L         /*L of channel 1 works as PWM*/#define PDIS1L PWM1_PDIS1L        /*L of channel 1 works as IO*/
+#define CH3_COMP PWM1_MOD3_COMP	/*3th channel in complimentary mode*/
+#define CH2_COMP PWM1_MOD2_COMP  /*2th channel in complimentary mode*/
+#define CH1_COMP PWM1_MOD1_COMP  /*1th channel in complimentary mode*/
+
+#define CH3_IND PWM1_MOD3_IND    /*3th channel in independant mode*/
+#define CH2_IND PWM1_MOD2_IND    /*2th channel in independant mode*/
+#define CH1_IND PWM1_MOD1_IND    /*1th channel in independant mode*/
+
+#define PEN3H  PWM1_PEN3H         /*H of channel 3 works as PWM*/
+#define PDIS3H PWM1_PDIS3H        /*H of channel 3 works as IO*/
+
+#define PEN2H  PWM1_PEN2H         /*H of channel 2 works as PWM*/
+#define PDIS2H PWM1_PDIS2H        /*H of channel 2 works as IO*/
+
+#define PEN1H  PWM1_PEN1H         /*H of channel 1 works as PWM*/
+#define PDIS1H PWM1_PDIS1H        /*H of channel 1 works as IO*/
+
+#define PEN3L  PWM1_PEN3L         /*L of channel 3 works as PWM*/
+#define PDIS3L PWM1_PDIS3L        /*L of channel 3 works as IO*/
+
+#define PEN2L  PWM1_PEN2L         /*L of channel 2 works as PWM*/
+#define PDIS2L PWM1_PDIS2L        /*L of channel 2 works as IO*/
+
+#define PEN1L  PWM1_PEN1L         /*L of channel 1 works as PWM*/
+#define PDIS1L PWM1_PDIS1L        /*L of channel 1 works as IO*/
 #else
 #error "This target don't have MCPWM"
 #endif
