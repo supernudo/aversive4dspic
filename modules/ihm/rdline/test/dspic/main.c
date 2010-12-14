@@ -24,6 +24,14 @@
 /* test program for rdline, works on AVR and HOST... but there are a
  * lot of defines... ;) */
 
+#if defined(__dsPIC30F__)
+#include <p30fxxxx.h>
+#elif defined(__dsPIC33F__)
+#include <p33Fxxxx.h>
+#elif defined(__PIC24H__)
+#include <p24Hxxxx.h>
+#endif 
+
 #include <stdio.h>
 #include <string.h>
 
@@ -44,9 +52,14 @@
 #include <sys/un.h>
 #endif
 
+#include <aversive.h>
+#include <aversive/pgmspace.h>
 #include <aversive/wait.h>
 #include <uart.h>
-#include "rdline.h"
+#include <oscillator.h>
+#include <configuration_bits_config.h>
+
+#include <rdline.h>
 
 /* globals */
 struct rdline rdl;
@@ -65,7 +78,13 @@ void sock_printf(const char * fmt, ...)
 	int n;
 
 	va_start(ap, fmt);
+
+#ifdef AVR
 	n=vsnprintf(buf, BUFSIZ, fmt, ap);
+#else
+	n=vsprintf(buf, fmt, ap);
+#endif	
+	
 	if (s>0) write(s, buf, n);
 	va_end(ap);
 }
@@ -103,7 +122,8 @@ write_char(char c) {
 #else
 void
 write_char(char c) {
-	uart0_send(c);
+//	uart0_send(c);
+	uart_send(0,c);
 }
 
 static void
@@ -113,7 +133,11 @@ rx(char c)
 	ret = rdline_char_in(&rdl, c);
 	if (ret == 1) {
 		rdline_add_history(&rdl, rdline_get_buffer(&rdl));
+#ifdef AVR
 		snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);
+#else
+		sprintf(prompt, "toto[%d] > ", cpt++);
+#endif
 		rdline_newline(&rdl, prompt);
 	}
 	else if (ret == -2) {
@@ -139,9 +163,10 @@ const char * dummy_complete[] = {
 
 #define TEST_COMPLETION 1
 //#define TEST_COMPLETION 2
-int8_t complete_buffer(const char * buf, uint8_t size, 
-		     char * dstbuf, uint8_t dstsize,
-		     int * state)
+//int8_t 
+//complete_buffer(const char * buf, uint8_t size, char * dstbuf, uint8_t dstsize, int * state)
+int8_t 
+complete_buffer(const char * buf, char * dstbuf, uint8_t dstsize,int16_t * state)
 {
 	sock_printf("complete -> %d\n", *state);
 #if TEST_COMPLETION == 1
@@ -201,20 +226,34 @@ int main(void)
 	tcsetattr(0, TCSANOW, &term);
 	setbuf(stdin, NULL);
 #else
+
+	oscillator_init();
+	
+	/* remap io config */
+   _U1RXR = 8;
+   _RP7R = 0b00011;
+   _TRISB8 = 1; 
+   _TRISB7 = 0;
+	
 	uart_init();
-	fdevopen(uart0_dev_send, uart0_dev_recv);
+//	fdevopen(uart0_dev_send, uart0_dev_recv);
 
 	wait_ms(5000);
 	printf("Start\n");
-	uart0_register_rx_event(rx);
-	
+//	uart0_register_rx_event(rx);
+	uart_register_rx_event(0,rx);
+
 	sei();
 #endif
 
 
 	/* common init */
 	rdline_init(&rdl, write_char, display_buffer, complete_buffer);
+#ifdef AVR
 	snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);	
+#else
+	sprintf(prompt, "toto[%d] > ", cpt++);	
+#endif	
 	rdline_newline(&rdl, prompt);
 
 
@@ -231,7 +270,11 @@ int main(void)
 			ret = rdline_char_in(&rdl, buf[i]);
 			if (ret == 1) {
 				rdline_add_history(&rdl, rdline_get_buffer(&rdl));
-				snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);
+#ifdef AVR
+				snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);	
+#else
+				sprintf(prompt, "toto[%d] > ", cpt++);	
+#endif
 				rdline_newline(&rdl, prompt);
 			}
 			else if (ret == -2) {

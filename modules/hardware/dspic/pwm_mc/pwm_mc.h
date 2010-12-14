@@ -35,8 +35,9 @@
 #include <aversive.h>
 #include <parts.h>
 
-#include <pwm.h>
 #include <pwm12.h>
+#include <pwm.h>
+
 
 /*
  * The pwm mode is defined be the following flags:

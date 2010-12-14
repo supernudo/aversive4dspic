@@ -1,3 +1,4 @@
+
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
@@ -34,7 +35,7 @@ static void cmd_float_parsed(void * parsed_result, void * data)
 	case '/': res = cmd->a / cmd->b; break;
 	default: break;
 	}
-	printf_P(PSTR("%f\n"), res);
+	printf_P(PSTR("%f\n"), (double)res);
 }
 
 parse_pgm_token_num_t cmd_float_a = TOKEN_NUM_INITIALIZER(struct cmd_float_result, a, FLOAT);
@@ -83,7 +84,7 @@ static void cmd_trigo_parsed(void * parsed_result, void * data)
 		res = tan(cmd->a);
 	}
 
-	printf_P(PSTR("%f\n"), res);
+	printf_P(PSTR("%f\n"), (double)res);
 }
 
 prog_char str_trigo_op[] = "sin#tan#cos";
@@ -114,11 +115,11 @@ struct cmd_help_result {
 /* function called when cmd_help is parsed successfully */
 static void cmd_help_parsed(void * parsed_result, void * data)
 {
-	printf_P(PSTR("== Simple calculator program ==\n"
-		      "You can do simple operations on floats, like '1 + 3'\n"
-		      "or '4.4 * 2.' (space is important).\n"
-		      "Some trigonometric operations are available, like\n"
-		      "'sin 4.5'.\n"));
+	printf_P(PSTR(	"== Simple calculator program ==\r\n"
+		      		"You can do simple operations on floats, like '1 + 3'\r\n"
+		      		"or '4.4 * 2.' (space is important).\r\n"
+		      		"Some trigonometric operations are available, like\r\n"
+		      		"'sin 4.5'.\r\n"));
 }
 
 prog_char str_help_arg0[] = "help";

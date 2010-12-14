@@ -19,17 +19,28 @@
  *
  */
 
+#if defined(__dsPIC30F__)
+#include <p30fxxxx.h>
+#elif defined(__dsPIC33F__)
+#include <p33Fxxxx.h>
+#elif defined(__PIC24H__)
+#include <p24Hxxxx.h>
+#endif 
 
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 
+#include <aversive.h>
 #include <aversive/pgmspace.h>
 #include <aversive/error.h>
 #include <aversive/wait.h>
 
 #include <rdline.h>
 #include <parse.h>
+
+
+
 
 struct rdline rdl;
 char prompt[RDLINE_PROMPT_SIZE];
@@ -52,11 +63,15 @@ write_char(char c) {
 }
 
 #else
+
+#include <configuration_bits_config.h>
+#include <oscillator.h>
 #include <uart.h>
 
 void
 write_char(char c) {
-	uart0_send(c);
+//	uart0_send(c);
+	uart_send(0,c);
 }
 #endif
 
@@ -66,11 +81,11 @@ valid_buffer(const char * buf, uint8_t size)
 	int8_t ret;
 	ret = parse(main_ctx, buf);
 	if (ret == PARSE_AMBIGUOUS)
-		printf_P(PSTR("Ambiguous command\n"));
+		printf_P(PSTR("Ambiguous command\r\n"));
 	else if (ret == PARSE_NOMATCH)
-		printf_P(PSTR("Command not found\n"));
+		printf_P(PSTR("Command not found\r\n"));
 	else if (ret == PARSE_BAD_ARGS)
-		printf_P(PSTR("Bad arguments\n"));
+		printf_P(PSTR("Bad arguments\r\n"));
 }
 
 int8_t 
@@ -84,7 +99,7 @@ complete_buffer(const char * buf, char * dstbuf, uint8_t dstsize,
 /*** main */
 
 int main(void) 
-{
+{	
 #ifdef HOST_VERSION
 	struct termios oldterm, term;
 	int n;
@@ -99,17 +114,32 @@ int main(void)
 	tcsetattr(0, TCSANOW, &term);
 	setbuf(stdin, NULL);
 #else
-	fdevopen(uart0_dev_send, uart0_dev_recv);
+
+	/* initialize oscillator with the default parameters ( see
+	 * oscillator_config.h ) */
+	oscillator_init();
+	
+	/* remap io config */
+   _U1RXR = 8;
+   _RP7R = 0b00011;
+   _TRISB8 = 1; 
+   _TRISB7 = 0;
+
+//	fdevopen(uart0_dev_send, uart0_dev_recv);
 	uart_init();
 	sei();
 #endif
 
-	printf_P(PSTR("Start\n"));
 	wait_ms(500);
-
+	printf_P(PSTR("\n\rStart\r\n"));
+	wait_ms(500);
+	
 	rdline_init(&rdl, write_char, valid_buffer, complete_buffer);
-	snprintf(prompt, sizeof(prompt), "main > ");	
-
+#if (defined snprintf)
+	snprintf(prompt, sizeof(prompt), "\rmain > ");	
+#else
+	sprintf(prompt, "\rmain > ");	// XXX take care, buffer overruns?
+#endif	
 	rdline_newline(&rdl, prompt);
 
 	c = -1;
@@ -119,7 +149,8 @@ int main(void)
 		if (n<=0)
 			break;
 #else
-		c=uart0_recv();
+//		c=uart0_recv();
+		c=uart_recv(0);
 #endif
 		
 		ret = rdline_char_in(&rdl, c);

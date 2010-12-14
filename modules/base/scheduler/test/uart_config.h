@@ -15,7 +15,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: uart_config.h,v 1.3.10.1 2006/11/26 21:06:02 zer0 Exp $
+ *  Revision : $Id: uart_config.h,v 1.1.2.1 2006/12/02 18:17:42 zer0 Exp $
  *
  */
 
@@ -27,12 +27,7 @@
 #define UART_CONFIG_H
 
 /*
- * STDIO redireccion (only output for the moment) 
- */
- #define STDIO_UART	0
-
-/*
- * UART0 definitions (dspic UART1) 
+ * UART0 definitions 
  */
 
 /* compile uart0 fonctions, undefine it to pass compilation */
@@ -44,7 +39,7 @@
 /* enable uart0 interrupts if == 1, disable if == 0 */
 #define UART0_INTERRUPT_ENABLED  1
 
-#define UART0_BAUDRATE 115200
+#define UART0_BAUDRATE 57600
 
 /* 
  * if you enable this, the maximum baudrate you can reach is 
@@ -55,7 +50,9 @@
 
 #define UART0_RX_FIFO_SIZE 4
 #define UART0_TX_FIFO_SIZE 16
-
+//#define UART0_NBITS 5
+//#define UART0_NBITS 6
+//#define UART0_NBITS 7
 #define UART0_NBITS 8
 //#define UART0_NBITS 9
 
@@ -66,7 +63,52 @@
 #define UART0_STOP_BIT UART_STOP_BITS_1
 //#define UART0_STOP_BIT UART_STOP_BITS_2
 
+
+
+
 /* .... same for uart 1, 2, 3 ... */
+
+
+
+
+/*
+ * UART1 definitions 
+ */
+
+/* compile uart0 fonctions, undefine it to pass compilation */
+#define UART1_COMPILE  
+
+/* enable uart0 if == 1, disable if == 0 */
+#define UART1_ENABLED  1
+
+/* enable uart0 interrupts if == 1, disable if == 0 */
+#define UART1_INTERRUPT_ENABLED  1
+
+#define UART1_BAUDRATE 57600
+
+/* 
+ * if you enable this, the maximum baudrate you can reach is 
+ * higher, but the precision is lower. 
+ */
+#define UART1_USE_DOUBLE_SPEED 0
+//#define UART1_USE_DOUBLE_SPEED 1
+
+#define UART1_RX_FIFO_SIZE 4
+#define UART1_TX_FIFO_SIZE 16
+//#define UART1_NBITS 5
+//#define UART1_NBITS 6
+//#define UART1_NBITS 7
+#define UART1_NBITS 8
+//#define UART1_NBITS 9
+
+#define UART1_PARITY UART_PARTITY_NONE
+//#define UART1_PARITY UART_PARTITY_ODD
+//#define UART1_PARITY UART_PARTITY_EVEN
+
+#define UART1_STOP_BIT UART_STOP_BITS_1
+//#define UART1_STOP_BIT UART_STOP_BITS_2
+
+
 
 #endif
 

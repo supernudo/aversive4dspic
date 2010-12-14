@@ -15,31 +15,29 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: main.c,v 1.8.4.2 2007/05/23 17:18:12 zer0 Exp $
+ *  Revision : $Id: diagnostic_config.h,v 1.3.10.1 2006/11/26 21:06:03 zer0 Exp $
  *
  */
 
-#include <avr/io.h>
-#include <aversive.h>
-
-extern int test_stack_size(void);
-extern int test_int_show(void);
+#ifndef _DEBUG_CONFIG_
+#define _DEBUG_CONFIG_ 1.0 // version
 
 
+/** port line definition for the show_int_loop() function */
+#define INTERRUPT_SHOW_PORT PORTB
+#define INTERRUPT_SHOW_BIT  6
 
 
-// change this value to test either the stack size utility or the int show one
-//volatile uint8_t test_ss = 1; // stack size demo
-volatile uint8_t test_ss = 0; // int show demo
 
-int main(void)
-{
+/** memory mark for the min_stack_space_available() function
+    the ram is filled with this value after a reset ! */
+#define MARK 0x5555
 
-  if (test_ss)
-    test_stack_size();
-  else
-    test_int_show();
+/** the mark is inserted in whole RAM if this is enabled 
+    (could lead to problems if you need to hold values through a reset...)
+    so it's better to disable it.
+    stack counting is not affected */
+//#ifdef DIAG_FILL_ENTIRE_RAM
 
 
-  return 0;
-}
+#endif //_DEBUG_CONFIG_
