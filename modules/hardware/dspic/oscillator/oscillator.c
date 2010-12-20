@@ -26,17 +26,15 @@
  *	Initialize the oscillator
  */
 void oscillator_init(void){
-     	
+  
+	#if defined(__dsPIC33F__) || defined(__PIC24H__) 
 	// Configure PLL prescaler, PLL postscaler, PLL divisor
-   PLLFBD = M-2;	
+	PLLFBD = M-2;	
 	CLKDIVbits.PLLPOST = N1-2;	
 	CLKDIVbits.PLLPRE = (N2/2)-1;		
 	
 	// Tune FRC oscillator, if FRC is used
 	//OSCTUN=0;					   
-	
-	// Disable Watch Dog Timer
-	//RCONbits.SWDTEN=0;
 	
 	// Initiate Clock Switch to Primary Oscillator with PLL (NOSC = 0b011)
 	__builtin_write_OSCCONH(0x03);		   			
@@ -47,6 +45,8 @@ void oscillator_init(void){
 	
 	// Wait for PLL to lock
 	while(OSCCONbits.LOCK!=1) {};
+
+	#endif /* defined(__dsPIC33F__) || defined(__PIC24H__) */
 }
 
 

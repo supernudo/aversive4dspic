@@ -27,7 +27,7 @@
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
  *	
- *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F from
  *  uart_defs.h,v 1.2.4.13 2009/06/29 20:28:27 zer0 Exp.
  *
  */
@@ -45,7 +45,7 @@
 #define UxRXREG_VALUE           0x0000
 #define UxBRG_VALUE             0x0000
 
-#if defined(__dsPIC33F__) || defined(__PIC24H__) || \
+#if defined(__dsPIC33F__) || defined(__PIC24H__) || defined(__PIC24F__) ||\
     defined(__dsPIC30F1010__) || defined(__dsPIC30F2020__) || defined(__dsPIC30F2023__) || defined(__dsPIC30F4011__)
 
 #define _UART_V2
@@ -161,31 +161,6 @@
 #define UART_TX_INT_PR6         0xFFEF  /*Priority TX interrupt 6*/
 #define UART_TX_INT_PR7         0xFFFF  /*Priority TX interrupt 7*/
 
-/* Macros to  Enable/Disable interrupts and set Interrupt priority of UART1 */
-
-#define EnableIntU1RX                    _U1RXIE = 1
-#define EnableIntU1TX                    _U1TXIE = 1
-
-#define DisableIntU1RX                   _U1RXIE = 0
-#define DisableIntU1TX                   _U1TXIE = 0
-
-#define SetPriorityIntU1RX(priority)     _U1RXIP = priority
-#define SetPriorityIntU1TX(priority)     _U1TXIP = priority
-
-#ifdef _U2RXIF
-
-/* Macros to  Enable/Disable interrupts and set Interrupt priority of UART2 */
-
-#define EnableIntU2RX                    _U2RXIE = 1
-#define EnableIntU2TX                    _U2TXIE = 1
-
-#define DisableIntU2RX                   _U2RXIE = 0
-#define DisableIntU2TX                   _U2TXIE = 0
-
-#define SetPriorityIntU2RX(priority)     _U2RXIP = priority
-#define SetPriorityIntU2TX(priority)     _U2TXIP = priority
-
-#endif
 
 #elif defined(_UART_V1)
 
@@ -261,34 +236,7 @@
 #define UART_TX_INT_PR6         0xFFEF  /*Priority TX interrupt 6*/
 #define UART_TX_INT_PR7         0xFFFF  /*Priority TX interrupt 7*/
 
-/* Macros to  Enable/Disable interrupts and set Interrupt priority of UART1 */
-
-#define EnableIntU1RX                    _U1RXIE = 1
-#define EnableIntU1TX                    _U1TXIE = 1
-
-#define DisableIntU1RX                   _U1RXIE = 0
-#define DisableIntU1TX                   _U1TXIE = 0
-
-#define SetPriorityIntU1RX(priority)     _U1RXIP = priority
-#define SetPriorityIntU1TX(priority)     _U1TXIP = priority
-
-#ifdef _U2RXIF
-
-/* Macros to  Enable/Disable interrupts and set Interrupt priority of UART2 */
-
-#define EnableIntU2RX                    _U2RXIE = 1
-#define EnableIntU2TX                    _U2TXIE = 1
-
-#define DisableIntU2RX                   _U2RXIE = 0
-#define DisableIntU2TX                   _U2TXIE = 0
-
-#define SetPriorityIntU2RX(priority)     _U2RXIP = priority
-#define SetPriorityIntU2TX(priority)     _U2TXIP = priority
-
 #endif
-
-#endif
-
 
 #define UART_PARTITY_NONE  0
 #define UART_PARTITY_ODD   UART_ODD_PAR_8BIT
@@ -297,7 +245,11 @@
 #define UART_STOP_BITS_1 UART_1STOPBIT
 #define UART_STOP_BITS_2 UART_2STOPBITS
 
-#if (defined _U2TXIE)
+#if (defined _U4TXIE)
+#define UART_HW_NUM 4
+#elif (defined _U3TXIE)
+#define UART_HW_NUM 3
+#elif (defined _U2TXIE)
 #define UART_HW_NUM 2
 #else /* assume 1 uart */
 #define UART_HW_NUM 1

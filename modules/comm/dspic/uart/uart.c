@@ -26,7 +26,7 @@
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
  *	
- *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F from
  *  uart.c,v 1.33.4.7 2009/01/23 23:08:42 zer0 Exp.
  *
  */
@@ -64,6 +64,24 @@ const struct regs uart_regs[UART_HW_NUM] = {
                 .ubrg         = &U2BRG,
         },
 #endif
+#ifdef _U3TXIE
+        {
+                .umode        = &U3MODE,
+                .usta         = &U3STA,
+                .utxreg       = &U3TXREG,
+                .urxreg       = &U3RXREG,
+                .ubrg         = &U3BRG,
+        },
+#endif
+#ifdef _U4TXIE
+        {
+                .umode        = &U4MODE,
+                .usta         = &U4STA,
+                .utxreg       = &U4TXREG,
+                .urxreg       = &U4RXREG,
+                .ubrg         = &U4BRG,
+        },
+#endif
 };
 
 /**
@@ -75,7 +93,7 @@ const struct regs uart_regs[UART_HW_NUM] = {
 #ifdef UART0_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U1TXInterrupt(void) 
 {
-	IFS0bits.U1TXIF = 0;   
+	_U1TXIF = 0;   
 	uart_send_next_char(0);
 }
 #endif
@@ -83,8 +101,24 @@ void __attribute__((interrupt, no_auto_psv)) _U1TXInterrupt(void)
 #ifdef UART1_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U2TXInterrupt(void) 
 {
-	IFS1bits.U2TXIF = 0;
+	_U2TXIF = 0;
 	uart_send_next_char(1);
+}
+#endif
+
+#ifdef UART2_COMPILE
+void __attribute__((interrupt, no_auto_psv)) _U3TXInterrupt(void) 
+{
+	_U3TXIF = 0;
+	uart_send_next_char(2);
+}
+#endif
+
+#ifdef UART3_COMPILE
+void __attribute__((interrupt, no_auto_psv)) _U4TXInterrupt(void) 
+{
+	_U4TXIF = 0;
+	uart_send_next_char(3);
 }
 #endif
 
@@ -98,19 +132,35 @@ static void uart_recv_next_char(uint8_t num);
 #ifdef UART0_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U1RXInterrupt(void)
 {
-	IFS0bits.U1RXIF = 0;
+	_U1RXIF = 0;
 	uart_recv_next_char(0);
 
 }
 #endif
+
 #ifdef UART1_COMPILE
 void __attribute__((interrupt, no_auto_psv)) _U2RXInterrupt(void)
 {
-	IFS1bits.U2RXIF = 0;
+	_U2RXIF = 0;
 	uart_recv_next_char(1);
 }
 #endif
 
+#ifdef UART2_COMPILE
+void __attribute__((interrupt, no_auto_psv)) _U3RXInterrupt(void)
+{
+	_U3RXIF = 0;
+	uart_recv_next_char(1);
+}
+#endif
+
+#ifdef UART3_COMPILE
+void __attribute__((interrupt, no_auto_psv)) _U4RXInterrupt(void)
+{
+	_U4RXIF = 0;
+	uart_recv_next_char(1);
+}
+#endif
 
 /** 
  * transmit next character of fifo if any, and call the event function.
@@ -214,6 +264,20 @@ void uart_init(void)
 	
 	/* wait at least (1/baudrate) before sending first char */
    __delay32(F_CPU/UART1_BAUDRATE);
+#endif
+
+#if (defined _U3TXIE) && (defined UART2_COMPILE)
+	uart_setconf(2, NULL);
+	
+	/* wait at least (1/baudrate) before sending first char */
+   __delay32(F_CPU/UART2_BAUDRATE);
+#endif
+
+#if (defined _U4TXIE) && (defined UART3_COMPILE)
+	uart_setconf(3, NULL);
+	
+	/* wait at least (1/baudrate) before sending first char */
+   __delay32(F_CPU/UART3_BAUDRATE);
 #endif
 
 }

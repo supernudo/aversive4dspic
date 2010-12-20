@@ -27,14 +27,14 @@
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
  *	
- *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F from
  *  uart_config.h,v 1.3.10.1 2006/11/26 21:06:02 zer0 Exp.
  *
  */
 
 
-#ifndef UART_CONFIG_H
-#define UART_CONFIG_H
+#ifndef _UART_CONFIG_H_
+#define _UART_CONFIG_H_
 
 /*
  * STDIO redirection (UART0 = 0, UART1 = 1)

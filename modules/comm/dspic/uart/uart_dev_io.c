@@ -26,7 +26,7 @@
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
  *	
- *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F from
  *  uart_dev_io.c,v 1.1.2.2 2009/04/07 20:00:47 zer0 Exp.
  *
  */
@@ -50,6 +50,14 @@ int write(int handle, void *buffer, unsigned int len) {
 				
 	 			#if (STDIO_UART == 1) && (defined UART1_COMPILE)
 				uart_send(1,*(char*)buffer++);
+				#endif
+
+	 			#if (STDIO_UART == 2) && (defined UART2_COMPILE)
+				uart_send(2,*(char*)buffer++);
+				#endif
+
+	 			#if (STDIO_UART == 3) && (defined UART3_COMPILE)
+				uart_send(3,*(char*)buffer++);
 				#endif
 
 			}

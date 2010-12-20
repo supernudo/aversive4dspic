@@ -26,7 +26,7 @@
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
  *	
- *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F from
  *  uart_recv.c,v 1.1.2.1 2008/12/27 16:29:08 zer0 Exp.
  *
  */

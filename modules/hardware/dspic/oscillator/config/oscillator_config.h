@@ -21,9 +21,12 @@
  */
 
 
-#ifndef OSCILLATOR_CONFIG_H
-#define OSCILLATOR_CONFIG_H
+#ifndef _OSCILLATOR_CONFIG_H_
+#define _OSCILLATOR_CONFIG_H_
 
+/* ***************************  PIC24F  *****************************/
+/* PLL x4 configuration */
+//#define PLLX4 1
 
 #endif
 

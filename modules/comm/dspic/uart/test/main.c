@@ -19,26 +19,18 @@
  *
  */ 
  
-#if defined(__dsPIC30F__)
-#include <p30fxxxx.h>
-#elif defined(__dsPIC33F__)
-#include <p33Fxxxx.h>
-#elif defined(__PIC24H__)
-#include <p24Hxxxx.h>
-#endif 
-
-#include <uart.h>
-#include <configuration_bits_config.h>
-#include <aversive/wait.h>
-
 #include <stdio.h>
 
-//#include <avr/io.h>
-//#include <avr/pgmspace.h>
 
+#include <aversive.h>
+#include <configuration_bits_config.h>
 #include <pgmspace.h>
-
 #include <oscillator.h>
+#include <aversive/wait.h>
+#include <uart.h>
+
+#define DRM12_BOARD
+#define TEST_SW_LOOPBACK
 
 /*
  * This code sends a counter value to uart.
@@ -51,11 +43,18 @@ int main(void)
 	 * oscillator_config.h ) */
 	oscillator_init();  
 
-   /* remap io config */
-   _U1RXR = 8;
-   _RP7R = 0b00011;
-   _TRISB8 = 1; 
-   _TRISB7 = 0;
+   /* remap and io config */
+	#if defined(DUMMYBOT_BOARD)	
+		_U1RXR = 8;
+	  	_RP7R = 0b00011;
+	  	_TRISB8 = 1; 
+	  	_TRISB7 = 0;
+	#elif defined(DRM12_BOARD)
+	  	_U1RXR = 12;
+	  	_RP9R = 0b00011;
+	  	_TRISD11 = 1; 
+	  	_TRISB9 = 0;
+	#endif
 
 	/* initialize uart with the default parameters ( see
 	 * uart_config.h ) */
@@ -74,24 +73,17 @@ int main(void)
 	uart_send(0, '\r');
 
 	/* test loopback mode */
-//   while(1){
-//      uart_send(0,uart_recv(0));
-//   };
-  
-	/* now we want to do a printf : we must register the
-	 * uart0_send as stdout. Here no receive function is
-	 * specified. */
-//	fdevopen(uart0_dev_send, NULL);
+	#ifdef TEST_SW_LOOPBACK
+   while(1){
+		uart_send(0,uart_recv(0));
+   };
+	#endif
   
 	/** ready to do a nice printf on the uart */
 	printf("Uart is cool !!\r\n");
   
-  	/* one drawback of the previous printf is that the format
-	 * chain is srored in RAM and this can take a huge size if
-	 * there are many printf. To avoid this problem, please use
-	 * printf_P together with PSTR, like in the next example. */ 
 	while (1) {
-		printf_P(PSTR("This format string takes no RAM "
+		printf(PSTR("This format string takes no RAM "
 			      "space. %i\r\n"), i++);
 		wait_ms(1000);
 	}

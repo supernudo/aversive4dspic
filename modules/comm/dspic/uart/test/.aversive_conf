@@ -8,5 +8,5 @@ AVRDUDE_BAUDRATE =
 AVRDUDE_FLAGS_SIGNATURE_CHECK = -F
 AVARICE_PORT = 
 AVARICE_DEBUG_PORT = 
-MODULES = comm/uart base/cirbuf hardware/dspic/oscillator
+MODULES = comm/uart hardware/dspic/oscillator hardware/dspic/configuration_bits base/cirbuf
 

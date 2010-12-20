@@ -45,6 +45,7 @@
 #endif
 
 #ifdef DSPIC
+#include <parts.h>
 #include <oscillator.h>
 #endif
 
@@ -67,8 +68,10 @@
 #ifdef AVR
 #define F_CPU	((unsigned long)CONFIG_QUARTZ)
 #else /* DSPIC */
+#if !defined(__PIC24F__)
 #define F_CPU	CONFIG_F_CPU
 #define FCY	F_CPU
+#endif
 #endif
 
 #define Hz  1l

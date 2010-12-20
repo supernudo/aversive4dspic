@@ -26,7 +26,7 @@
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
  *	
- *  Code ported to families of microcontrollers dsPIC and PIC24H from
+ *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F from
  *  uart_private.h,v 1.1.2.5 2009/01/03 16:24:50 zer0 Exp.
  *
  */
@@ -58,50 +58,68 @@ extern const struct regs uart_regs[UART_HW_NUM];
 
 /* uart set TX enable/disable interrupt */
 static inline void uart_set_txie(num, val){         
-   if(num)                   
-      _U2TXIE = val;          
-   else                       
-      _U1TXIE = val;          
+	switch(num){                   
+   	case 0: _U1TXIE = val; break;
+   	case 1: _U2TXIE = val; break;          
+   	case 2: _U3TXIE = val; break;          
+   	case 3: _U4TXIE = val; break;          
+		default: break;
+	}       
 }
  
 /* uart set RX enable/disable interrupt */ 
 static inline void uart_set_rxie(num, val){
-   if(num)                    
-      _U2RXIE = val;          
-   else                       
-      _U1RXIE = val;         
+	switch(num){                   
+   	case 0: _U1RXIE = val; break;
+   	case 1: _U2RXIE = val; break;          
+   	case 2: _U3RXIE = val; break;          
+   	case 3: _U4RXIE = val; break;          
+		default: break;
+	}               
 }
 
 /* uart get TX enable/disable interrupt */
-static inline uint8_t uart_get_txie(num, val){         
-   if(num)                   
-      return _U2TXIE;          
-   else                       
-      return _U1TXIE;          
+static inline uint8_t uart_get_txie(num){         
+ 	switch(num){                   
+   	case 0: return _U1TXIE; break;
+   	case 1: return _U2TXIE; break;          
+   	case 2: return _U3TXIE; break;          
+   	case 3: return _U4TXIE; break;          
+		default: return 0; break;
+	}          
 }
 
 /* uart get RX enable/disable interrupt */
-static inline uint8_t uart_get_rxie(num, val){         
-   if(num)                   
-      return _U2RXIE;          
-   else                       
-      return _U1RXIE;          
+static inline uint8_t uart_get_rxie(num){         
+ 	switch(num){                   
+   	case 0: return _U1RXIE; break;
+   	case 1: return _U2RXIE; break;          
+   	case 2: return _U3RXIE; break;          
+   	case 3: return _U4RXIE; break;          
+		default: return 0; break;
+	}         
 }
 
 /* uart clear TX interrupt flag */
 static inline void uart_clear_txif(num){         
-   if(num)                   
-      _U2TXIF = 0;          
-   else                       
-      _U1TXIF = 0;          
+	switch(num){                   
+   	case 0: _U1TXIF = 0; break;
+   	case 1: _U2TXIF = 0; break;          
+   	case 2: _U3TXIF = 0; break;          
+   	case 3: _U4TXIF = 0; break;          
+		default: break;
+	}             
 }
 
 /* uart clear RX interrupt flag */
 static inline void uart_clear_rxif(num){         
-   if(num)                   
-      _U2RXIF = 0;          
-   else                       
-      _U1RXIF = 0;          
+	switch(num){                   
+   	case 0: _U1RXIF = 0; break;
+   	case 1: _U2RXIF = 0; break;          
+   	case 2: _U3RXIF = 0; break;          
+   	case 3: _U4RXIF = 0; break;          
+		default: break;
+	}         
 }
 
 typedef void (event)(char);

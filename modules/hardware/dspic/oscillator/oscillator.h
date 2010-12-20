@@ -20,12 +20,20 @@
  *  Javier Baliñas Santos <javier@arc-robots.org>
  */
 
-#ifndef OSCILLATOR_H
-#define OSCILLATOR_H
+#ifndef _OSCILLATOR_H_
+#define _OSCILLATOR_H_
 
 #include <aversive.h>
 #include <oscillator_config.h>
 
+#if defined(__PIC24F__) && defined(PLLX4)
+#define FOSC 	((unsigned long)(CONFIG_QUARTZ*4))
+#define FCY		(FOSC/2)
+#define F_CPU (FOSC/2)
+#endif
+
+
+#if defined(__dsPIC33F__) || defined(__PIC24H__)
 
 // Configure Oscillator
 // Fosc= Fin*(M/(N1*N2)), Fcy=Fosc/2
@@ -55,6 +63,7 @@
 //#error FVCO exceeds the frequency range
 //#endif
 
+#endif /* defined(__dsPIC33F__) || defined(__PIC24H__) */
 
 /**
  *	Initialize the oscillator
