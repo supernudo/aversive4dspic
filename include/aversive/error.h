@@ -34,13 +34,7 @@
 #include <autoconf.h>
 
 #ifdef CONFIG_MODULE_ERROR
-
-#ifdef DSPIC
-#include <error/error.h>
-#else
 #include <error.h>
-#endif
-
 #else
 
 #define EMERG(num, text...)  do {} while(0)

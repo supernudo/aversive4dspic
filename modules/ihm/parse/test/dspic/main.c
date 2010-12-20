@@ -19,13 +19,8 @@
  *
  */
 
-#if defined(__dsPIC30F__)
-#include <p30fxxxx.h>
-#elif defined(__dsPIC33F__)
-#include <p33Fxxxx.h>
-#elif defined(__PIC24H__)
-#include <p24Hxxxx.h>
-#endif 
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010) *  Javier Baliñas Santos <javier@arc-robots.org> *	 *   *  Test on Microchip microcontrollers, coder ported from *  main.c,v 1.1.2.6 2007/11/24 22:57:54 zer0 Exp. * */
+
 
 #include <stdio.h>
 #include <string.h>
@@ -38,9 +33,6 @@
 
 #include <rdline.h>
 #include <parse.h>
-
-
-
 
 struct rdline rdl;
 char prompt[RDLINE_PROMPT_SIZE];
@@ -70,7 +62,6 @@ write_char(char c) {
 
 void
 write_char(char c) {
-//	uart0_send(c);
 	uart_send(0,c);
 }
 #endif
@@ -96,8 +87,8 @@ complete_buffer(const char * buf, char * dstbuf, uint8_t dstsize,
 }
 
 
+//#define DUMYBOT_BOARD#define DRM12_BOARD
 /*** main */
-
 int main(void) 
 {	
 #ifdef HOST_VERSION
@@ -120,12 +111,8 @@ int main(void)
 	oscillator_init();
 	
 	/* remap io config */
-   _U1RXR = 8;
-   _RP7R = 0b00011;
-   _TRISB8 = 1; 
-   _TRISB7 = 0;
+	#if defined(DUMMYBOT_BOARD)	   _U1RXR = 8;	   _RP7R = 0b00011;	   _TRISB8 = 1; 	   _TRISB7 = 0;	#elif defined(DRM12_BOARD)	   _U1RXR = 12;	   _RP9R = 0b00011;	   _TRISD11 = 1; 	   _TRISB9 = 0;	#endif
 
-//	fdevopen(uart0_dev_send, uart0_dev_recv);
 	uart_init();
 	sei();
 #endif
@@ -149,7 +136,6 @@ int main(void)
 		if (n<=0)
 			break;
 #else
-//		c=uart0_recv();
 		c=uart_recv(0);
 #endif
 		
