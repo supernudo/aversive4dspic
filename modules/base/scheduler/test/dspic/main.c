@@ -19,16 +19,22 @@
  *
  */
 
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  
+ *  Test on Microchip microcontrollers, coder ported from
+ *  main.c,v 1.9.4.5 2007/06/01 09:37:22 zer0 Exp.c,v 1.33.4.7 2009/01/23 23:08:42 zer0 Exp.
+ *
+ */
+
+#include <stdio.h>
+
+#include <aversive.h>
 #include <scheduler.h>
 #include <aversive/wait.h>
-#include <stdio.h>
 #include <uart.h>
 #include <configuration_bits_config.h>
-
-#ifdef CONFIG_MODULE_SCHEDULER_MANUAL
-#include <timer.h>
-#endif
-
 #include <time.h>
 
 uint8_t event_id;
@@ -67,6 +73,9 @@ void __attribute__((__interrupt__, no_auto_psv)) _T1Interrupt(void)
 }
 #endif
 
+//#define DUMYBOT_BOARD
+#define DRM12_BOARD
+
 int main(void)
 {
 	/* initialize oscillator with the default parameters ( see
@@ -74,25 +83,30 @@ int main(void)
 	oscillator_init();
 	
 	/* remap io config */
-	// uart
-   _U1RXR = 8;
-   _RP7R = 0b00011;
-   _TRISB8 = 1; 
-   _TRISB7 = 0;
+	/* UART */
+	#if defined(DUMMYBOT_BOARD)
+	   _U1RXR = 8;
+	   _RP7R = 0b00011;
+	   _TRISB8 = 1; 
+	   _TRISB7 = 0;
+	#elif defined(DRM12_BOARD)
+	   _U1RXR = 12;
+	   _RP9R = 0b00011;
+	   _TRISD11 = 1; 
+	   _TRISB9 = 0;
+	#endif
 	
 #ifndef HOST_VERSION
 	uart_init();
-//	fdevopen(uart0_dev_send, uart0_dev_recv);
 
 #ifdef CONFIG_MODULE_SCHEDULER_MANUAL
 	/* Init Timer1 */
-	unsigned int match_value;
-	ConfigIntTimer1(T1_INT_PRIOR_4 & T1_INT_ON);
-	WriteTimer1(0);
-	match_value = SCHEDULER_UNIT * (unsigned long)((double)FCY / 1000000.0);
-	OpenTimer1(T1_ON & T1_GATE_OFF & T1_IDLE_STOP &
-              T1_PS_1_1 & T1_SYNC_EXT_OFF &
-              T1_SOURCE_INT, match_value);
+	T1CON = 0;              // Timer reset
+	IFS0bits.T1IF = 0;      // Reset Timer1 interrupt flag
+	IEC0bits.T1IE = 1;      // Enable Timer1 interrupt
+	TMR1 = 0x0000;  	
+	PR1 = SCHEDULER_UNIT * (unsigned long)((double)FCY / 1000000.0);
+	T1CONbits.TON = 1;      // Enable Timer1 and start the counter
 #endif
 
 	sei();
