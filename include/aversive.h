@@ -287,11 +287,11 @@ do {				     \
 #define PIN(port) (*(&(port) -2))
 #define LAT(port)	(port)
 #else /* DSPIC */
-#define TRIS(port) 	( *(&(port) +(-2)) )
-#define LAT(port) 	( *(&(port) +2) )
-#define ODC(port) 	( *(&(port) +4) )
-#define DDR(port)		TRIS(port)
-#define PIN(port)		PIN(port)
+//#define TRIS(port) 	( *(&(port) +(-2)) )
+//#define LAT(port) 	( *(&(port) +2) )
+//#define ODC(port) 	( *(&(port) +4) )
+//#define DDR(port)		TRIS(port)
+//#define PIN(port)		PIN(port)
 #endif
 
 /** open collector simulation macros */

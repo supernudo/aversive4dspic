@@ -1,6 +1,5 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
- *  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Copyright Robotics Association of Coslada, Eurobotics Engineering (2010)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -16,42 +15,20 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: error.h,v 1.1.2.2 2007/06/01 09:37:22 zer0 Exp $
+ *  Revision : $Id$
  *
- */
-
-/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
- *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
- *
  */
 
 
-#ifndef _AVERSIVE_ERROR_H_
-#define _AVERSIVE_ERROR_H_
+/**************************** SPI 1  *********************************/
 
-#include <autoconf.h>
 
-#ifdef CONFIG_MODULE_ERROR
+/* Number of slave devices per SPI channel (up to 3 channels).
+ * Each slave have a dedicated SS line that you have to register
+ * before using the SPI module
+ */
+#define SPI1_MAX_SLAVES	3
+#define SPI2_MAX_SLAVES	0
+#define SPI3_MAX_SLAVES	0
 
-#ifdef DSPIC
-#include <error/error.h>
-#else
-#include <error.h>
-#endif
-
-#else
-
-#define EMERG(num, text...)  do {} while(0)
-
-#define ERROR(num, text...)  do {} while(0)
-
-#define WARNING(num, text...)  do {} while(0)
-
-#define NOTICE(num, text...)  do {} while(0)
-
-#define DEBUG(num, text...)  do {} while(0)
-
-#endif
-#endif

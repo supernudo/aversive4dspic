@@ -7,8 +7,8 @@ mainmenu_option next_comment
 comment 'Development Platform'
 choice 'Processor' "\
  avr AVR \
- dspic DSPIC \
-" dspic
+ pic DSPIC \
+" pic
 
 
 comment 'Hardware'
@@ -67,10 +67,19 @@ choice 'Avr type' "\
 
 int 'Quartz Frequency (Hz)' CONFIG_QUARTZ '10000000'
 
-else # DSPIC 
+else # PICs 
 
+choice 'PIC family' "\
+dspic DSPIC_FAMILY \
+pic24f PIC24F_FAMILY \
+" dspic
+
+if [ "$DSPIC_FAMILY" = "y" ]; then
 int 'Quartz Frequency (Hz)' CONFIG_QUARTZ '10000000'
 int 'CPU Frequency (Hz)' CONFIG_F_CPU '40000000'
+else
+int 'Quartz Frequency (Hz)' CONFIG_QUARTZ '10000000'
+fi
 
 fi # if AVR else DSPIC
 
@@ -174,7 +183,7 @@ choice 'Scheduler config' "use_timer_module CONFIG_MODULE_SCHEDULER_USE_TIMERS\
 
 fi
 
-else # DSPIC
+else # PIC
 
 choice 'Scheduler config' "use_timer1 CONFIG_MODULE_SCHEDULER_TIMER1\
  manual CONFIG_MODULE_SCHEDULER_MANUAL" use_timer1
@@ -236,7 +245,7 @@ dep_bool '  |-- Create Default i2c config' CONFIG_MODULE_I2C_CREATE_CONFIG \
 	$CONFIG_MODULE_I2C
 
 
-else # DSPIC
+else # PIC
 
 #### UART
 dep_bool 'Uart' CONFIG_MODULE_UART \
@@ -246,10 +255,10 @@ dep_bool '  |-- Create Default uart config' CONFIG_MODULE_DSPIC_UART_CREATE_CONF
 	$CONFIG_MODULE_DSPIC_UART
 
 #### SPI
-bool 'spi (not yet on DSPIC)' CONFIG_MODULE_SPI
+bool 'spi' CONFIG_MODULE_DSPIC_SPI
 
-#dep_bool '  |-- Create Default spi config' CONFIG_MODULE_SPI_CREATE_CONFIG \
-#	$CONFIG_MODULE_SPI
+dep_bool '  |-- Create Default spi config' CONFIG_MODULE_DSPIC_SPI_CREATE_CONFIG \
+	$CONFIG_MODULE_DSPIC_SPI
 
 #### I2C
 bool 'i2c (not yet on DSPIC)' CONFIG_MODULE_I2C

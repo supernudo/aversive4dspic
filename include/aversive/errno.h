@@ -54,10 +54,19 @@
 #define EBUSY    16
 /** Invalid argument */
 #define EINVAL   22
+
+#ifdef AVR
 /** Domain error */
 /* #define EDOM       33 */ /* in libc */
 /** Range error */
 /* #define ERANGE     34 */ /* in libc */
+#else
+/** Domain error */
+#define EDOM       33 
+/** Range error */
+#define ERANGE     34
+#endif
+
 /** Not supported */
 #define ENOTSUP  126 /* the correct number is 128 */
 /** Unkwow error */

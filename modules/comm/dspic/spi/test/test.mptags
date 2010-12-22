@@ -1,0 +1,1042 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ABS::(val)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	139;"	d	line:139
+AUTOCONF_INCLUDED	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	4;"	d	line:4
+AVR	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	9;"	d	line:9
+BIT_TOGGLE::(port,bit)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	272;"	d	line:272
+CIRCLEQ_EMPTY::(head)((head)->cqh_first==(voi	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	438;"	d	line:438
+CIRCLEQ_ENTRY::(type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	433;"	d	line:433
+CIRCLEQ_FIRST::(head)((head)->cqh_first)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	440;"	d	line:440
+CIRCLEQ_FOREACH::(var,head,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	445;"	d	line:445
+CIRCLEQ_FOREACH_REVERSE::(var,head,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	450;"	d	line:450
+CIRCLEQ_HEAD::(name,type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	424;"	d	line:424
+CIRCLEQ_HEAD_INITIALIZER::(head)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	427;"	d	line:427
+CIRCLEQ_INIT::(head)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	455;"	d	line:455
+CIRCLEQ_INSERT_AFTER::(head,listelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	465;"	d	line:465
+CIRCLEQ_INSERT_BEFORE::(head,listelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	475;"	d	line:475
+CIRCLEQ_INSERT_HEAD::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	485;"	d	line:485
+CIRCLEQ_INSERT_TAIL::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	495;"	d	line:495
+CIRCLEQ_LAST::(head)((head)->cqh_last)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	497;"	d	line:497
+CIRCLEQ_NEXT::(elm,field)((elm)->field.cqe_n	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	499;"	d	line:499
+CIRCLEQ_PREV::(elm,field)((elm)->field.cqe_p	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	501;"	d	line:501
+CIRCLEQ_REMOVE::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	514;"	d	line:514
+CONFIG_MODULE_ADC	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	67;"	d	line:67
+CONFIG_MODULE_AES	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	155;"	d	line:155
+CONFIG_MODULE_AES_CTR	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	156;"	d	line:156
+CONFIG_MODULE_AX12	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	88;"	d	line:88
+CONFIG_MODULE_AX12_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	89;"	d	line:89
+CONFIG_MODULE_BASE64	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	168;"	d	line:168
+CONFIG_MODULE_BIQUAD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	136;"	d	line:136
+CONFIG_MODULE_BLOCKING_DETECTION_MANAGER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	119;"	d	line:119
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	94;"	d	line:94
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	95;"	d	line:95
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL_DOUBLE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	96;"	d	line:96
+CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL_DOUBLE_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	97;"	d	line:97
+CONFIG_MODULE_CC2420	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	145;"	d	line:145
+CONFIG_MODULE_CC2420_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	146;"	d	line:146
+CONFIG_MODULE_CIRBUF::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	26;"	d	line:26
+CONFIG_MODULE_CIRBUF_LARGE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	27;"	d	line:27
+CONFIG_MODULE_COMPENSATE_CENTRIFUGAL_FORCE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	117;"	d	line:117
+CONFIG_MODULE_CONTROL_SYSTEM_MANAGER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	126;"	d	line:126
+CONFIG_MODULE_DIAGNOSTIC	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	178;"	d	line:178
+CONFIG_MODULE_DIAGNOSTIC_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	179;"	d	line:179
+CONFIG_MODULE_DSPIC_CONFIGURATION_BITS::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	61;"	d	line:61
+CONFIG_MODULE_DSPIC_CONFIGURATION_BITS_CREATE_CONFIG::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	62;"	d	line:62
+CONFIG_MODULE_DSPIC_ENCODERS_DSPIC	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	108;"	d	line:108
+CONFIG_MODULE_DSPIC_ENCODERS_DSPIC_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	109;"	d	line:109
+CONFIG_MODULE_DSPIC_OSCILLATOR::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	63;"	d	line:63
+CONFIG_MODULE_DSPIC_OSCILLATOR_CREATE_CONFIG::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	64;"	d	line:64
+CONFIG_MODULE_DSPIC_PWM_MC	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	66;"	d	line:66
+CONFIG_MODULE_DSPIC_SPI::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	49;"	d	line:49
+CONFIG_MODULE_DSPIC_SPI_CREATE_CONFIG::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	50;"	d	line:50
+CONFIG_MODULE_DSPIC_UART_CREATE_CONFIG::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	48;"	d	line:48
+CONFIG_MODULE_ENCODERS_EIRBOT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	104;"	d	line:104
+CONFIG_MODULE_ENCODERS_EIRBOT_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	105;"	d	line:105
+CONFIG_MODULE_ENCODERS_MICROB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	102;"	d	line:102
+CONFIG_MODULE_ENCODERS_MICROB_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	103;"	d	line:103
+CONFIG_MODULE_ENCODERS_SPI	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	106;"	d	line:106
+CONFIG_MODULE_ENCODERS_SPI_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	107;"	d	line:107
+CONFIG_MODULE_ERROR::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	180;"	d	line:180
+CONFIG_MODULE_ERROR_CREATE_CONFIG::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	181;"	d	line:181
+CONFIG_MODULE_FIXED_POINT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	28;"	d	line:28
+CONFIG_MODULE_GEOMETRY	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	30;"	d	line:30
+CONFIG_MODULE_HAMMING	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	169;"	d	line:169
+CONFIG_MODULE_I2C	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	51;"	d	line:51
+CONFIG_MODULE_LCD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	84;"	d	line:84
+CONFIG_MODULE_LCD_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	85;"	d	line:85
+CONFIG_MODULE_MD5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	157;"	d	line:157
+CONFIG_MODULE_MD5_HMAC	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	158;"	d	line:158
+CONFIG_MODULE_MENU	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	72;"	d	line:72
+CONFIG_MODULE_MF2_CLIENT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	52;"	d	line:52
+CONFIG_MODULE_MF2_CLIENT_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	54;"	d	line:54
+CONFIG_MODULE_MF2_CLIENT_USE_SCHEDULER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	53;"	d	line:53
+CONFIG_MODULE_MF2_SERVER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	55;"	d	line:55
+CONFIG_MODULE_MF2_SERVER_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	56;"	d	line:56
+CONFIG_MODULE_MULTISERVO	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	86;"	d	line:86
+CONFIG_MODULE_MULTISERVO_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	87;"	d	line:87
+CONFIG_MODULE_OBSTACLE_AVOIDANCE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	120;"	d	line:120
+CONFIG_MODULE_OBSTACLE_AVOIDANCE_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	121;"	d	line:121
+CONFIG_MODULE_PARSE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	78;"	d	line:78
+CONFIG_MODULE_PARSE_NO_FLOAT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	79;"	d	line:79
+CONFIG_MODULE_PID	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	131;"	d	line:131
+CONFIG_MODULE_PID_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	132;"	d	line:132
+CONFIG_MODULE_POSITION_MANAGER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	116;"	d	line:116
+CONFIG_MODULE_QUADRAMP	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	134;"	d	line:134
+CONFIG_MODULE_QUADRAMP_DERIVATE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	135;"	d	line:135
+CONFIG_MODULE_RAMP	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	133;"	d	line:133
+CONFIG_MODULE_RC4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	159;"	d	line:159
+CONFIG_MODULE_RDLINE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	74;"	d	line:74
+CONFIG_MODULE_RDLINE_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	75;"	d	line:75
+CONFIG_MODULE_RDLINE_HISTORY	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	77;"	d	line:77
+CONFIG_MODULE_RDLINE_KILL_BUF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	76;"	d	line:76
+CONFIG_MODULE_ROBOT_SYSTEM	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	114;"	d	line:114
+CONFIG_MODULE_ROBOT_SYSTEM_MOT_AND_EXT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	115;"	d	line:115
+CONFIG_MODULE_SCHEDULER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	31;"	d	line:31
+CONFIG_MODULE_SCHEDULER_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	32;"	d	line:32
+CONFIG_MODULE_SCHEDULER_MANUAL	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	34;"	d	line:34
+CONFIG_MODULE_SCHEDULER_TIMER1::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	33;"	d	line:33
+CONFIG_MODULE_TIME	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	35;"	d	line:35
+CONFIG_MODULE_TIMER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	65;"	d	line:65
+CONFIG_MODULE_TIME_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	36;"	d	line:36
+CONFIG_MODULE_TIME_EXT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	37;"	d	line:37
+CONFIG_MODULE_TIME_EXT_CREATE_CONFIG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	38;"	d	line:38
+CONFIG_MODULE_TRAJECTORY_MANAGER	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	118;"	d	line:118
+CONFIG_MODULE_UART::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	47;"	d	line:47
+CONFIG_MODULE_VECT2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	29;"	d	line:29
+CONFIG_MODULE_VT100	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	73;"	d	line:73
+CONFIG_QUARTZ::(8000000)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	17;"	d	line:17
+CR::"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	263;"	d	line:263
+CR::"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	265;"	d	line:265
+DDR::(port)(*(&(port)-1))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	286;"	d	line:286
+DDR::(port)TRIS(port)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	293;"	d	line:293
+DEBUG::(num,text,...)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	135;"	d	line:135
+DEBUG::(num,text...)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\error.h	54;"	d	line:54
+DRM12_BOARD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	38;"	d	line:38	file:
+DSPIC::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	10;"	d	line:10
+DSPIC_FAMILY	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	15;"	d	line:15
+E2BIG::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	46;"	d	line:46
+E2BIG_COMMENT::"Argumentlisttoolong"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	42;"	d	line:42
+EAGAIN::11	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	48;"	d	line:48
+EAGAIN_COMMENT::"Tryagain"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	45;"	d	line:45
+EBUSY::16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	54;"	d	line:54
+EBUSY_COMMENT::"Deviceorresourcebusy"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	54;"	d	line:54
+EDOM::33	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	65;"	d	line:65
+EFAULT::14	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	52;"	d	line:52
+EFAULT_COMMENT::"Badaddress"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	51;"	d	line:51
+EINVAL::22	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	56;"	d	line:56
+EINVAL_COMMENT::"Invalidargument"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	57;"	d	line:57
+EIO::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	42;"	d	line:42
+EIO_COMMENT::"I/Oerror"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	36;"	d	line:36
+EMERG::(num,text,...)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	91;"	d	line:91
+EMERG::(num,text...)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\error.h	46;"	d	line:46
+ENOENT::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	40;"	d	line:40
+ENOENT_COMMENT::"Nosuchfileordirectory"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	33;"	d	line:33
+ENOMEM::12	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	50;"	d	line:50
+ENOMEM_COMMENT::"Outofmemory"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	48;"	d	line:48
+ENOTSUP::126	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	71;"	d	line:71
+ENXIO::6	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	44;"	d	line:44
+ENXIO_COMMENT::"Nosuchdeviceoraddress"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	39;"	d	line:39
+EPERM::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	38;"	d	line:38
+EPERM_COMMENT::"Operationnotpermitted"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	30;"	d	line:30
+ERANGE::34	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	67;"	d	line:67
+ERROR::(num,text,...)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	102;"	d	line:102
+ERROR::(num,text...)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\error.h	48;"	d	line:48
+ERROR_DUMP_FILE_LINE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\error_config.h	29;"	d	line:29
+ERROR_DUMP_TEXTLOG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\error_config.h	26;"	d	line:26
+ERROR_SEVERITY_DEBUG::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	39;"	d	line:39
+ERROR_SEVERITY_EMERG::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	35;"	d	line:35
+ERROR_SEVERITY_ERROR::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	36;"	d	line:36
+ERROR_SEVERITY_NOTICE::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	38;"	d	line:38
+ERROR_SEVERITY_WARNING::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	37;"	d	line:37
+ESUCCESS::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	36;"	d	line:36
+EUNKNOW::127	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	73;"	d	line:73
+EUNKNOW_COMMENT::"Unkwowerror"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	60;"	d	line:60
+E_BLOCKING_DETECTION_MANAGER::134	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	70;"	d	line:70
+E_CC2420::137	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	73;"	d	line:73
+E_I2C::133	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	69;"	d	line:69
+E_MULTISERVO::131	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	67;"	d	line:67
+E_OA::135	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	71;"	d	line:71
+E_ROBOT_SYSTEM::130	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	66;"	d	line:66
+E_SPI::136	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	72;"	d	line:72
+E_TIME_EXT::138	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	74;"	d	line:74
+E_TRAJECTORY::132	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	68;"	d	line:68
+E_UART::129	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\general_errors.h	65;"	d	line:65
+FALSE::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	276;"	d	line:276
+FCY::(FOSC/2)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	31;"	d	line:31
+FCY::F_CPU	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	73;"	d	line:73
+FIN::CONFIG_QUARTZ	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	44;"	d	line:44
+FOSC::((unsignedlong)(CONFIG_QUARTZ*	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	30;"	d	line:30
+FOSC::(FCY*2)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	45;"	d	line:45
+FREF::(FIN/N1)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	55;"	d	line:55
+FVCO::(FIN*(M/N1))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	61;"	d	line:61
+FWDTEN_OFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\configuration_bits_config.h	57;"	v	line:57
+F_CPU::((unsignedlong)CONFIG_QUARTZ)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	69;"	d	line:69
+F_CPU::(FOSC/2)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	32;"	d	line:32
+F_CPU::CONFIG_F_CPU	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	72;"	d	line:72
+False::FALSE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	278;"	d	line:278
+GLOBAL_IRQ_ARE_MASKED::(!(bit_is_set(SREG,7)))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	61;"	d	line:61
+GLOBAL_IRQ_ARE_MASKED::(1)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	56;"	d	line:56
+GLOBAL_IRQ_ARE_MASKED::(SRbits.IPL==7)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	82;"	d	line:82
+Hz::1l	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	77;"	d	line:77
+IRQ_LOCK::(flags)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	66;"	d	line:66
+IRQ_LOCK::(flags)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	87;"	d	line:87
+IRQ_LOCK::(flags)flags=0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	55;"	d	line:55
+IRQ_UNLOCK::(flags)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	70;"	d	line:70
+IRQ_UNLOCK::(flags)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	91;"	d	line:91
+IRQ_UNLOCK::(flags)flags=0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	54;"	d	line:54
+KHz::1000l	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	78;"	d	line:78
+LAT::(port)(*(&(port)+2))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	291;"	d	line:291
+LAT::(port)(port)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	288;"	d	line:288
+LIST_ALIGN_LEFT::(list)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	530;"	d	line:530
+LIST_ARRAY_PULL_END::(list,array,nb)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	488;"	d	line:488
+LIST_ARRAY_PULL_START::(list,array,nb)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	477;"	d	line:477
+LIST_ARRAY_PUSH_END::(list,array,nb)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	467;"	d	line:467
+LIST_ARRAY_PUSH_START::(list,array,nb)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	457;"	d	line:457
+LIST_CURSIZE::(list)(list.hdr.cur_size)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	320;"	d	line:320
+LIST_DEBUG::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	254;"	d	line:254
+LIST_EMPTY::(head)((head)->lh_first==NULL)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	282;"	d	line:282
+LIST_EMPTY::(list)(list.hdr.cur_size==0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	315;"	d	line:315
+LIST_ENTRY::(type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	276;"	d	line:276
+LIST_FIRST::(head)((head)->lh_first)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	284;"	d	line:284
+LIST_FOREACH::(var,head,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	289;"	d	line:289
+LIST_FREESIZE::(list)(list.hdr.size-list.hdr.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	330;"	d	line:330
+LIST_FULL::(list)(list.hdr.size==list.hdr	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	310;"	d	line:310
+LIST_HEAD::(name,type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	267;"	d	line:267
+LIST_HEAD_INITIALIZER::(head)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	270;"	d	line:270
+LIST_INIT::(head)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	293;"	d	line:293
+LIST_INIT::(list,beginning)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	304;"	d	line:304
+LIST_INSERT_AFTER::(listelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	301;"	d	line:301
+LIST_INSERT_BEFORE::(listelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	308;"	d	line:308
+LIST_INSERT_HEAD::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	315;"	d	line:315
+LIST_NEXT::(elm,field)((elm)->field.le_ne	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	317;"	d	line:317
+LIST_PULL_END::(list,elt_p)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	445;"	d	line:445
+LIST_PULL_START::(list,elt_p)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	432;"	d	line:432
+LIST_PUSH_END::(list,e)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	418;"	d	line:418
+LIST_PUSH_START::(list,e)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	405;"	d	line:405
+LIST_READ::(list,elt_p)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	391;"	d	line:391
+LIST_READ_END::(list,elt_p)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	350;"	d	line:350
+LIST_READ_GOTO::(list,elt_p,i)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	364;"	d	line:364
+LIST_READ_MOVE::(list,elt_p,i)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	386;"	d	line:386
+LIST_READ_START::(list,elt_p)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	341;"	d	line:341
+LIST_REMOVE::(elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	324;"	d	line:324
+LIST_SIZE::(list)(list.hdr.size)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	325;"	d	line:325
+LIST_TO_ARRAY::(list,array,nb)({	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	501;"	d	line:501
+LIST_TYPEDEF::(typename,elttype,size)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	296;"	d	line:296
+M::((FOSC*N1*N2)/FIN)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	53;"	d	line:53
+MAX::(to_saturate,value_max)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	118;"	d	line:118
+MHz::1000000l	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	79;"	d	line:79
+MIN::(to_saturate,value_min)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	127;"	d	line:127
+M_PI::3.141592653589	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	82;"	d	line:82
+N1::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	51;"	d	line:51
+N2::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	52;"	d	line:52
+NOTICE::(num,text,...)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	124;"	d	line:124
+NOTICE::(num,text...)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\error.h	52;"	d	line:52
+OCR0A_BIT::6	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	187;"	d	line:187
+OCR0A_BIT::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	97;"	d	line:97
+OCR0A_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	96;"	d	line:96
+OCR0A_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	186;"	d	line:186
+OCR0B_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	189;"	d	line:189
+OCR0B_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	99;"	d	line:99
+OCR0B_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	188;"	d	line:188
+OCR0B_DDR::DDRG	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	98;"	d	line:98
+OCR0_BIT::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	139;"	d	line:139
+OCR0_BIT::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	73;"	d	line:73
+OCR0_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	138;"	d	line:138
+OCR0_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	72;"	d	line:72
+OCR1A_BIT::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	153;"	d	line:153
+OCR1A_BIT::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	192;"	d	line:192
+OCR1A_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	101;"	d	line:101
+OCR1A_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	141;"	d	line:141
+OCR1A_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	175;"	d	line:175
+OCR1A_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	75;"	d	line:75
+OCR1A_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	100;"	d	line:100
+OCR1A_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	152;"	d	line:152
+OCR1A_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	191;"	d	line:191
+OCR1A_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	74;"	d	line:74
+OCR1A_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	140;"	d	line:140
+OCR1A_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	174;"	d	line:174
+OCR1B_BIT::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	155;"	d	line:155
+OCR1B_BIT::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	194;"	d	line:194
+OCR1B_BIT::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	143;"	d	line:143
+OCR1B_BIT::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	177;"	d	line:177
+OCR1B_BIT::6	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	103;"	d	line:103
+OCR1B_BIT::6	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	77;"	d	line:77
+OCR1B_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	102;"	d	line:102
+OCR1B_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	154;"	d	line:154
+OCR1B_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	193;"	d	line:193
+OCR1B_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	76;"	d	line:76
+OCR1B_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	142;"	d	line:142
+OCR1B_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	176;"	d	line:176
+OCR1C_BIT::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	105;"	d	line:105
+OCR1C_BIT::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	79;"	d	line:79
+OCR1C_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	104;"	d	line:104
+OCR1C_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	78;"	d	line:78
+OCR2A_BIT::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	197;"	d	line:197
+OCR2A_BIT::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	107;"	d	line:107
+OCR2A_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	106;"	d	line:106
+OCR2A_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	196;"	d	line:196
+OCR2B_BIT::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	199;"	d	line:199
+OCR2B_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	198;"	d	line:198
+OCR2_BIT::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	157;"	d	line:157
+OCR2_BIT::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	145;"	d	line:145
+OCR2_BIT::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	179;"	d	line:179
+OCR2_BIT::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	81;"	d	line:81
+OCR2_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	156;"	d	line:156
+OCR2_DDR::DDRB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	80;"	d	line:80
+OCR2_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	144;"	d	line:144
+OCR2_DDR::DDRD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	178;"	d	line:178
+OCR3A_BIT::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	109;"	d	line:109
+OCR3A_BIT::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	83;"	d	line:83
+OCR3A_DDR::DDRE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	108;"	d	line:108
+OCR3A_DDR::DDRE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	82;"	d	line:82
+OCR3B_BIT::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	111;"	d	line:111
+OCR3B_BIT::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	85;"	d	line:85
+OCR3B_DDR::DDRE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	110;"	d	line:110
+OCR3B_DDR::DDRE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	84;"	d	line:84
+OCR3C_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	113;"	d	line:113
+OCR3C_BIT::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	87;"	d	line:87
+OCR3C_DDR::DDRE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	112;"	d	line:112
+OCR3C_DDR::DDRE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	86;"	d	line:86
+ODC::(port)(*(&(port)+4))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	292;"	d	line:292
+OPEN_CO_HIGH::(port,bit)cbi(DDR(port),bit)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	300;"	d	line:300
+OPEN_CO_INIT::(port,bit)sbi(port,bit)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	299;"	d	line:299
+OPEN_CO_LOW::(port,bit)cbi(DDR(port),bit)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	301;"	d	line:301
+PGM_P::constchar*	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	58;"	d	line:58
+PGM_P::constchar*	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	92;"	d	line:92
+PIC24F_FAMILY::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\autoconf.h	16;"	d	line:16
+PIN::(port)(*(&(port)-2))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	287;"	d	line:287
+PIN::(port)PIN(port)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	294;"	d	line:294
+PLLX4::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\oscillator_config.h	29;"	d	line:29
+PRIX16::"X"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	70;"	d	line:70
+PRIX32::"lX"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	82;"	d	line:82
+PRIX8::"X"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	58;"	d	line:58
+PRIXFAST16::"X"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	72;"	d	line:72
+PRIXFAST32::"lX"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	84;"	d	line:84
+PRIXFAST8::"X"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	60;"	d	line:60
+PRIXLEAST16::"X"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	71;"	d	line:71
+PRIXLEAST32::"lX"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	83;"	d	line:83
+PRIXLEAST8::"X"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	59;"	d	line:59
+PRIXPTR::PRIX16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	88;"	d	line:88
+PRId16::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	35;"	d	line:35
+PRId32::"ld"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	41;"	d	line:41
+PRId8::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	29;"	d	line:29
+PRIdFAST16::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	37;"	d	line:37
+PRIdFAST32::"ld"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	43;"	d	line:43
+PRIdFAST8::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	31;"	d	line:31
+PRIdLEAST16::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	36;"	d	line:36
+PRIdLEAST32::"ld"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	42;"	d	line:42
+PRIdLEAST8::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	30;"	d	line:30
+PRIdPTR::PRId16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	47;"	d	line:47
+PRIi16::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	38;"	d	line:38
+PRIi32::"li"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	44;"	d	line:44
+PRIi8::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	32;"	d	line:32
+PRIiFAST16::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	40;"	d	line:40
+PRIiFAST32::"li"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	46;"	d	line:46
+PRIiFAST8::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	34;"	d	line:34
+PRIiLEAST16::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	39;"	d	line:39
+PRIiLEAST32::"li"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	45;"	d	line:45
+PRIiLEAST8::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	33;"	d	line:33
+PRIiPTR::PRIi16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	48;"	d	line:48
+PRIo16::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	61;"	d	line:61
+PRIo32::"lo"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	73;"	d	line:73
+PRIo8::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	49;"	d	line:49
+PRIoFAST16::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	63;"	d	line:63
+PRIoFAST32::"lo"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	75;"	d	line:75
+PRIoFAST8::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	51;"	d	line:51
+PRIoLEAST16::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	62;"	d	line:62
+PRIoLEAST32::"lo"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	74;"	d	line:74
+PRIoLEAST8::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	50;"	d	line:50
+PRIoPTR::PRIo16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	85;"	d	line:85
+PRIu16::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	64;"	d	line:64
+PRIu32::"lu"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	76;"	d	line:76
+PRIu8::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	52;"	d	line:52
+PRIuFAST16::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	66;"	d	line:66
+PRIuFAST32::"lu"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	78;"	d	line:78
+PRIuFAST8::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	54;"	d	line:54
+PRIuLEAST16::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	65;"	d	line:65
+PRIuLEAST32::"lu"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	77;"	d	line:77
+PRIuLEAST8::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	53;"	d	line:53
+PRIuPTR::PRIu16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	86;"	d	line:86
+PRIx16::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	67;"	d	line:67
+PRIx32::"lx"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	79;"	d	line:79
+PRIx8::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	55;"	d	line:55
+PRIxFAST16::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	69;"	d	line:69
+PRIxFAST32::"lx"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	81;"	d	line:81
+PRIxFAST8::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	57;"	d	line:57
+PRIxLEAST16::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	68;"	d	line:68
+PRIxLEAST32::"lx"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	80;"	d	line:80
+PRIxLEAST8::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	56;"	d	line:56
+PRIxPTR::PRIx16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	87;"	d	line:87
+PROGMEM	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	60;"	d	line:60
+PROGMEM	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	94;"	d	line:94
+PSTR::(x)((constchar*)(x))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	59;"	d	line:59
+PSTR::(x)x	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	93;"	d	line:93
+S08_MAX::0x7F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	36;"	d	line:36
+S08_MIN::0x80	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	35;"	d	line:35
+S16_MAX::0x7FFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	38;"	d	line:38
+S16_MIN::0x8000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	37;"	d	line:37
+S32_MAX::0x7FFFFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	40;"	d	line:40
+S32_MIN::0x80000000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	39;"	d	line:39
+S64_MAX::0x7FFFFFFFFFFFFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	42;"	d	line:42
+S64_MIN::0x8000000000000000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	41;"	d	line:41
+SCNd16::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	89;"	d	line:89
+SCNd32::"ld"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	95;"	d	line:95
+SCNdFAST16::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	91;"	d	line:91
+SCNdFAST32::"ld"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	97;"	d	line:97
+SCNdLEAST16::"d"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	90;"	d	line:90
+SCNdLEAST32::"ld"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	96;"	d	line:96
+SCNdPTR::SCNd16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	101;"	d	line:101
+SCNi16::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	92;"	d	line:92
+SCNi32::"li"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	98;"	d	line:98
+SCNiFAST16::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	94;"	d	line:94
+SCNiFAST32::"li"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	100;"	d	line:100
+SCNiLEAST16::"i"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	93;"	d	line:93
+SCNiLEAST32::"li"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	99;"	d	line:99
+SCNiPTR::SCNi16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	102;"	d	line:102
+SCNo16::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	103;"	d	line:103
+SCNo32::"lo"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	112;"	d	line:112
+SCNoFAST16::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	105;"	d	line:105
+SCNoFAST32::"lo"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	114;"	d	line:114
+SCNoLEAST16::"o"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	104;"	d	line:104
+SCNoLEAST32::"lo"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	113;"	d	line:113
+SCNoPTR::SCNo16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	121;"	d	line:121
+SCNu16::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	106;"	d	line:106
+SCNu32::"lu"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	115;"	d	line:115
+SCNuFAST16::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	108;"	d	line:108
+SCNuFAST32::"lu"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	117;"	d	line:117
+SCNuLEAST16::"u"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	107;"	d	line:107
+SCNuLEAST32::"lu"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	116;"	d	line:116
+SCNuPTR::SCNu16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	122;"	d	line:122
+SCNx16::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	109;"	d	line:109
+SCNx32::"lx"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	118;"	d	line:118
+SCNxFAST16::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	111;"	d	line:111
+SCNxFAST32::"lx"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	120;"	d	line:120
+SCNxLEAST16::"x"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	110;"	d	line:110
+SCNxLEAST32::"lx"	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	119;"	d	line:119
+SCNxPTR::SCNx16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	123;"	d	line:123
+SLIST_EMPTY::(head)((head)->slh_first==NULL	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	134;"	d	line:134
+SLIST_ENTRY::(type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	129;"	d	line:129
+SLIST_FIRST::(head)((head)->slh_first)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	136;"	d	line:136
+SLIST_FOREACH::(var,head,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	141;"	d	line:141
+SLIST_HEAD::(name,type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	121;"	d	line:121
+SLIST_HEAD_INITIALIZER::(head)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	124;"	d	line:124
+SLIST_INIT::(head)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	145;"	d	line:145
+SLIST_INSERT_AFTER::(slistelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	150;"	d	line:150
+SLIST_INSERT_HEAD::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	155;"	d	line:155
+SLIST_NEXT::(elm,field)((elm)->field.sle_n	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	157;"	d	line:157
+SLIST_REMOVE::(head,elm,type,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	170;"	d	line:170
+SLIST_REMOVE_HEAD::(head,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	174;"	d	line:174
+SPI1_MAX_SLAVES::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\spi_config.h	31;"	d	line:31
+SPI2_MAX_SLAVES::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\spi_config.h	32;"	d	line:32
+SPI3_MAX_SLAVES::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\spi_config.h	33;"	d	line:33
+SPI_CLK_RATE1_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	94;"	e	line:94
+SPI_CLK_RATE1_16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	96;"	e	line:96
+SPI_CLK_RATE1_4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	95;"	e	line:95
+SPI_CLK_RATE1_64	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	97;"	e	line:97
+SPI_CLK_RATE2_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	101;"	e	line:101
+SPI_CLK_RATE2_2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	102;"	e	line:102
+SPI_CLK_RATE2_3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	103;"	e	line:103
+SPI_CLK_RATE2_4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	104;"	e	line:104
+SPI_CLK_RATE2_5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	105;"	e	line:105
+SPI_CLK_RATE2_6	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	106;"	e	line:106
+SPI_CLK_RATE2_7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	107;"	e	line:107
+SPI_CLK_RATE2_8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	108;"	e	line:108
+SPI_FORMAT_0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	75;"	e	line:75
+SPI_FORMAT_0_SCK_INV	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	81;"	e	line:81
+SPI_FORMAT_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	76;"	e	line:76
+SPI_FORMAT_1_SCK_INV	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	82;"	e	line:82
+SPI_FORMAT_2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	77;"	e	line:77
+SPI_FORMAT_2_SCK_INV	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	83;"	e	line:83
+SPI_FORMAT_3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	78;"	e	line:78
+SPI_FORMAT_3_SCK_INV	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	84;"	e	line:84
+SPI_HW_NUM::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	39;"	d	line:39	file:
+SPI_HW_NUM::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	37;"	d	line:37	file:
+SPI_HW_NUM::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	35;"	d	line:35	file:
+SPI_MODE_MASTER_16BITS	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	63;"	e	line:63
+SPI_MODE_MASTER_8BITS	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	62;"	e	line:62
+SPI_MODE_UNINIT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	61;"	e	line:61
+STAILQ_EMPTY::(head)((head)->stqh_first==NUL	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	196;"	d	line:196
+STAILQ_ENTRY::(type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	191;"	d	line:191
+STAILQ_FIRST::(head)((head)->stqh_first)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	198;"	d	line:198
+STAILQ_FOREACH::(var,head,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	203;"	d	line:203
+STAILQ_HEAD::(name,type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	183;"	d	line:183
+STAILQ_HEAD_INITIALIZER::(head)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	186;"	d	line:186
+STAILQ_INIT::(head)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	208;"	d	line:208
+STAILQ_INSERT_AFTER::(head,tqelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	214;"	d	line:214
+STAILQ_INSERT_HEAD::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	220;"	d	line:220
+STAILQ_INSERT_TAIL::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	226;"	d	line:226
+STAILQ_LAST::(head,type,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	232;"	d	line:232
+STAILQ_NEXT::(elm,field)((elm)->field.stqe_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	234;"	d	line:234
+STAILQ_REMOVE::(head,elm,type,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	248;"	d	line:248
+STAILQ_REMOVE_HEAD::(head,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	254;"	d	line:254
+STAILQ_REMOVE_HEAD_UNTIL::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	259;"	d	line:259
+STDIO_UART::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	42;"	d	line:42
+S_MAX::(to_saturate,value_max)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	98;"	d	line:98
+TAILQ_EMPTY::(head)((head)->tqh_first==NULL	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	347;"	d	line:347
+TAILQ_ENTRY::(type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	342;"	d	line:342
+TAILQ_FIRST::(head)((head)->tqh_first)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	349;"	d	line:349
+TAILQ_FOREACH::(var,head,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	354;"	d	line:354
+TAILQ_FOREACH_REVERSE::(var,head,headname,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	359;"	d	line:359
+TAILQ_HEAD::(name,type)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	333;"	d	line:333
+TAILQ_HEAD_INITIALIZER::(head)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	336;"	d	line:336
+TAILQ_INIT::(head)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	364;"	d	line:364
+TAILQ_INSERT_AFTER::(head,listelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	374;"	d	line:374
+TAILQ_INSERT_BEFORE::(listelm,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	381;"	d	line:381
+TAILQ_INSERT_HEAD::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	391;"	d	line:391
+TAILQ_INSERT_TAIL::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	398;"	d	line:398
+TAILQ_LAST::(head,headname)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	401;"	d	line:401
+TAILQ_NEXT::(elm,field)((elm)->field.tqe_n	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	403;"	d	line:403
+TAILQ_PREV::(elm,headname,field)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	406;"	d	line:406
+TAILQ_REMOVE::(head,elm,field)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	415;"	d	line:415
+TEST_TOGGLE_PIN	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	40;"	d	line:40	file:
+TIMER_16_MODE_CTC1::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	55;"	d	line:55
+TIMER_16_MODE_CTC2::12	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	63;"	d	line:63
+TIMER_16_MODE_NORMAL::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	51;"	d	line:51
+TIMER_16_MODE_PWM_10::7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	58;"	d	line:58
+TIMER_16_MODE_PWM_8::5	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	56;"	d	line:56
+TIMER_16_MODE_PWM_9::6	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	57;"	d	line:57
+TIMER_16_MODE_PWM_F1::14	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	64;"	d	line:64
+TIMER_16_MODE_PWM_F2::15	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	65;"	d	line:65
+TIMER_16_MODE_PWM_PC1::10	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	61;"	d	line:61
+TIMER_16_MODE_PWM_PC2::11	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	62;"	d	line:62
+TIMER_16_MODE_PWM_PC_10::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	54;"	d	line:54
+TIMER_16_MODE_PWM_PC_8::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	52;"	d	line:52
+TIMER_16_MODE_PWM_PC_9::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	53;"	d	line:53
+TIMER_16_MODE_PWM_PFC1::8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	59;"	d	line:59
+TIMER_16_MODE_PWM_PFC2::9	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	60;"	d	line:60
+TIMER_8_MODE_CTC::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	48;"	d	line:48
+TIMER_8_MODE_NORMAL::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	46;"	d	line:46
+TIMER_8_MODE_PWM::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	49;"	d	line:49
+TIMER_8_MODE_PWM_PC::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	47;"	d	line:47
+TRIS::(port)(*(&(port)+(-2)))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	290;"	d	line:290
+TRUE::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	277;"	d	line:277
+True::TRUE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	280;"	d	line:280
+U08_MAX::0xFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	28;"	d	line:28
+U08_MIN::0x00	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	27;"	d	line:27
+U16_MAX::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	30;"	d	line:30
+U16_MIN::0x0000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	29;"	d	line:29
+U32_MAX::0xFFFFFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	32;"	d	line:32
+U32_MIN::0x00000000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	31;"	d	line:31
+U64_MAX::0xFFFFFFFFFFFFFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	34;"	d	line:34
+U64_MIN::0x0000000000000000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	33;"	d	line:33
+UART0_BAUDRATE::19200	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	57;"	d	line:57
+UART0_COMPILE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	49;"	d	line:49
+UART0_ENABLED::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	52;"	d	line:52
+UART0_INTERRUPT_ENABLED::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	55;"	d	line:55
+UART0_NBITS::8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	69;"	d	line:69
+UART0_PARITY::UART_PARTITY_NONE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	71;"	d	line:71
+UART0_RX_FIFO_SIZE::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	66;"	d	line:66
+UART0_STOP_BIT::UART_STOP_BITS_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	75;"	d	line:75
+UART0_TX_FIFO_SIZE::16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	67;"	d	line:67
+UART0_USE_DOUBLE_SPEED::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	63;"	d	line:63
+UART1_BAUDRATE::38400	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	91;"	d	line:91
+UART1_INTERRUPT_ENABLED::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	89;"	d	line:89
+UART1_NBITS::8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	104;"	d	line:104
+UART1_PARITY::UART_PARTITY_NONE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	106;"	d	line:106
+UART1_RX_FIFO_SIZE::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	101;"	d	line:101
+UART1_STOP_BIT::UART_STOP_BITS_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	110;"	d	line:110
+UART1_TX_FIFO_SIZE::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	102;"	d	line:102
+UART1_USE_DOUBLE_SPEED::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	98;"	d	line:98
+UART_1STOPBIT::0xFFFE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	109;"	d	line:109
+UART_1STOPBIT::0xFFFE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	192;"	d	line:192
+UART_2STOPBITS::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	108;"	d	line:108
+UART_2STOPBITS::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	191;"	d	line:191
+UART_ADR_DETECT_DIS::0xFFDF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	134;"	d	line:134
+UART_ADR_DETECT_DIS::0xFFDF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	210;"	d	line:210
+UART_ADR_DETECT_EN::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	133;"	d	line:133
+UART_ADR_DETECT_EN::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	209;"	d	line:209
+UART_ALTRX_ALTTX::0xFFE7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	76;"	d	line:76
+UART_BRGH_FOUR::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	100;"	d	line:100
+UART_BRGH_SIXTEEN::0xFFF7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	101;"	d	line:101
+UART_DIS::0x7FE7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	171;"	d	line:171
+UART_DIS::0x7FFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	64;"	d	line:64
+UART_DIS_ABAUD::0xFFDF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	184;"	d	line:184
+UART_DIS_ABAUD::0xFFDF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	95;"	d	line:95
+UART_DIS_LOOPBACK::0xFFBF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	181;"	d	line:181
+UART_DIS_LOOPBACK::0xFFBF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	92;"	d	line:92
+UART_DIS_WAKE::0xFF7F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	178;"	d	line:178
+UART_DIS_WAKE::0xFF7F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	89;"	d	line:89
+UART_EN::0xFFE7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	170;"	d	line:170
+UART_EN::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	63;"	d	line:63
+UART_EN_ABAUD::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	183;"	d	line:183
+UART_EN_ABAUD::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	94;"	d	line:94
+UART_EN_LOOPBACK::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	180;"	d	line:180
+UART_EN_LOOPBACK::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	91;"	d	line:91
+UART_EN_WAKE::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	177;"	d	line:177
+UART_EN_WAKE::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	88;"	d	line:88
+UART_EVEN_PAR_8BIT::0xFFFB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	105;"	d	line:105
+UART_EVEN_PAR_8BIT::0xFFFB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	188;"	d	line:188
+UART_HW_NUM::1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	255;"	d	line:255
+UART_HW_NUM::2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	253;"	d	line:253
+UART_HW_NUM::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	251;"	d	line:251
+UART_HW_NUM::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	249;"	d	line:249
+UART_IDLE_CON::0xDFE7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	173;"	d	line:173
+UART_IDLE_CON::0xDFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	66;"	d	line:66
+UART_IDLE_STOP::0xFFE7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	174;"	d	line:174
+UART_IDLE_STOP::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	67;"	d	line:67
+UART_INT_RX_3_4_FUL::0xFFBF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	130;"	d	line:130
+UART_INT_RX_3_4_FUL::0xFFBF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	206;"	d	line:206
+UART_INT_RX_BUF_FUL::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	129;"	d	line:129
+UART_INT_RX_BUF_FUL::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	205;"	d	line:205
+UART_INT_RX_CHAR::0xFF7F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	131;"	d	line:131
+UART_INT_RX_CHAR::0xFF7F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	207;"	d	line:207
+UART_INT_TX::0x5FFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	115;"	d	line:115
+UART_INT_TX::0x7FFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	197;"	d	line:197
+UART_INT_TX_BUF_EMPTY::0xDFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	113;"	d	line:113
+UART_INT_TX_BUF_EMPTY::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	196;"	d	line:196
+UART_INT_TX_LAST_CH::0x7FFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	114;"	d	line:114
+UART_IrDA_DISABLE::0xEFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	70;"	d	line:70
+UART_IrDA_ENABLE::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	69;"	d	line:69
+UART_IrDA_POL_INV_ONE::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	117;"	d	line:117
+UART_IrDA_POL_INV_ZERO::0xBFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	118;"	d	line:118
+UART_MODE_FLOW::0xF7FF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	81;"	d	line:81
+UART_MODE_SIMPLEX::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	80;"	d	line:80
+UART_NO_PAR_8BIT::0xFFF9	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	106;"	d	line:106
+UART_NO_PAR_8BIT::0xFFF9	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	189;"	d	line:189
+UART_NO_PAR_9BIT::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	103;"	d	line:103
+UART_NO_PAR_9BIT::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	186;"	d	line:186
+UART_ODD_PAR_8BIT::0xFFFD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	104;"	d	line:104
+UART_ODD_PAR_8BIT::0xFFFD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	187;"	d	line:187
+UART_PARTITY_EVEN::UART_EVEN_PAR_8BIT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	243;"	d	line:243
+UART_PARTITY_NONE::0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	241;"	d	line:241
+UART_PARTITY_ODD::UART_ODD_PAR_8BIT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	242;"	d	line:242
+UART_RX_INT_DIS::0xFFF7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	141;"	d	line:141
+UART_RX_INT_DIS::0xFFF7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	216;"	d	line:216
+UART_RX_INT_EN::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	140;"	d	line:140
+UART_RX_INT_EN::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	215;"	d	line:215
+UART_RX_INT_PR0::0xFFF8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	143;"	d	line:143
+UART_RX_INT_PR0::0xFFF8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	218;"	d	line:218
+UART_RX_INT_PR1::0xFFF9	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	144;"	d	line:144
+UART_RX_INT_PR1::0xFFF9	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	219;"	d	line:219
+UART_RX_INT_PR2::0xFFFA	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	145;"	d	line:145
+UART_RX_INT_PR2::0xFFFA	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	220;"	d	line:220
+UART_RX_INT_PR3::0xFFFB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	146;"	d	line:146
+UART_RX_INT_PR3::0xFFFB	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	221;"	d	line:221
+UART_RX_INT_PR4::0xFFFC	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	147;"	d	line:147
+UART_RX_INT_PR4::0xFFFC	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	222;"	d	line:222
+UART_RX_INT_PR5::0xFFFD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	148;"	d	line:148
+UART_RX_INT_PR5::0xFFFD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	223;"	d	line:223
+UART_RX_INT_PR6::0xFFFE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	149;"	d	line:149
+UART_RX_INT_PR6::0xFFFE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	224;"	d	line:224
+UART_RX_INT_PR7::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	150;"	d	line:150
+UART_RX_INT_PR7::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	225;"	d	line:225
+UART_RX_OVERRUN_CLEAR::0xFFFD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	136;"	d	line:136
+UART_RX_OVERRUN_CLEAR::0xFFFD	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	212;"	d	line:212
+UART_RX_TX::0xFBE7	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	77;"	d	line:77
+UART_SET_STATICCONF::(x)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	119;"	d	line:119	file:
+UART_STOP_BITS_1::UART_1STOPBIT	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	245;"	d	line:245
+UART_STOP_BITS_2::UART_2STOPBITS	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	246;"	d	line:246
+UART_SYNC_BREAK_DISABLED::0xF7FF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	121;"	d	line:121
+UART_SYNC_BREAK_ENABLED::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	120;"	d	line:120
+UART_TX_BUF_FUL::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	126;"	d	line:126
+UART_TX_BUF_NOT_FUL::0xFDFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	127;"	d	line:127
+UART_TX_DISABLE::0xFBFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	124;"	d	line:124
+UART_TX_DISABLE::0xFBFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	203;"	d	line:203
+UART_TX_ENABLE::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	123;"	d	line:123
+UART_TX_ENABLE::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	202;"	d	line:202
+UART_TX_INT_DIS::0xFF7F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	153;"	d	line:153
+UART_TX_INT_DIS::0xFF7F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	228;"	d	line:228
+UART_TX_INT_EN::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	152;"	d	line:152
+UART_TX_INT_EN::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	227;"	d	line:227
+UART_TX_INT_PR0::0xFF8F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	155;"	d	line:155
+UART_TX_INT_PR0::0xFF8F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	230;"	d	line:230
+UART_TX_INT_PR1::0xFF9F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	156;"	d	line:156
+UART_TX_INT_PR1::0xFF9F	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	231;"	d	line:231
+UART_TX_INT_PR2::0xFFAF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	157;"	d	line:157
+UART_TX_INT_PR2::0xFFAF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	232;"	d	line:232
+UART_TX_INT_PR3::0xFFBF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	158;"	d	line:158
+UART_TX_INT_PR3::0xFFBF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	233;"	d	line:233
+UART_TX_INT_PR4::0xFFCF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	159;"	d	line:159
+UART_TX_INT_PR4::0xFFCF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	234;"	d	line:234
+UART_TX_INT_PR5::0xFFDF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	160;"	d	line:160
+UART_TX_INT_PR5::0xFFDF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	235;"	d	line:235
+UART_TX_INT_PR6::0xFFEF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	161;"	d	line:161
+UART_TX_INT_PR6::0xFFEF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	236;"	d	line:236
+UART_TX_INT_PR7::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	162;"	d	line:162
+UART_TX_INT_PR7::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	237;"	d	line:237
+UART_TX_PIN_LOW::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	200;"	d	line:200
+UART_TX_PIN_NORMAL::0xF7FF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	199;"	d	line:199
+UART_UEN_00::0xFCFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	86;"	d	line:86
+UART_UEN_01::0xFDFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	85;"	d	line:85
+UART_UEN_10::0xFEFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	84;"	d	line:84
+UART_UEN_11::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	83;"	d	line:83
+UART_UXRX_IDLE_ONE::0xFFEF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	98;"	d	line:98
+UART_UXRX_IDLE_ZERO::0xFFFF	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	97;"	d	line:97
+URXDA_MASK::0x0001	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	57;"	d	line:57
+UTXBF_MASK::0x0200	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	56;"	d	line:56
+U_MAX::(to_saturate,value_max)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	109;"	d	line:109
+UxBRG_VALUE::0x0000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	46;"	d	line:46
+UxMODE_VALUE::0x0000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	42;"	d	line:42
+UxRXREG_VALUE::0x0000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	45;"	d	line:45
+UxSTA_VALUE::0x0110	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	43;"	d	line:43
+UxTXREG_VALUE::0x0000	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	44;"	d	line:44
+WARNING::(num,text,...)do{	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	113;"	d	line:113
+WARNING::(num,text...)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\error.h	50;"	d	line:50
+WGM00::PWM0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	131;"	d	line:131
+WGM01::CTC0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	132;"	d	line:132
+WGM10::PWM10	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	126;"	d	line:126
+WGM10::PWM10	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	168;"	d	line:168
+WGM11::PWM11	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	127;"	d	line:127
+WGM11::PWM11	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	169;"	d	line:169
+WGM12::3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	128;"	d	line:128
+WGM12::CTC1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	170;"	d	line:170
+WGM13::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	129;"	d	line:129
+WGM13::4	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	171;"	d	line:171
+WGM20::PWM2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	123;"	d	line:123
+WGM20::PWM2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	165;"	d	line:165
+WGM21::CTC2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	124;"	d	line:124
+WGM21::CTC2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	166;"	d	line:166
+WOVERWRAPPED::-1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	259;"	d	line:259
+_AVERSIVE_ERRNO_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\errno.h	28;"	d	line:28
+_AVERSIVE_ERROR_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\error.h	32;"	d	line:32
+_AVERSIVE_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	37;"	d	line:37
+_AVERSIVE_IRQ_LOCK_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\irq_lock.h	49;"	d	line:49
+_AVERSIVE_LIST_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	251;"	d	line:251
+_AVERSIVE_PARTS_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\parts.h	35;"	d	line:35
+_AVERSIVE_PGMSPACE_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	36;"	d	line:36
+_AVERSIVE_QUEUE_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	38;"	d	line:38
+_AVERSIVE_TIMERS_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\timers.h	41;"	d	line:41
+_AVERSIVE_TYPES_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	23;"	d	line:23
+_AVERSIVE_WAIT_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	38;"	d	line:38
+_BV::(bit_num)(1<<bit_num)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	256;"	d	line:256
+_CONFIGURATION_BITS_CONFIG_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\configuration_bits_config.h	24;"	d	line:24
+_ERROR_CONFIG_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\error_config.h	23;"	d	line:23
+_ERROR_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	23;"	d	line:23
+_INTTYPES_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\inttypes.h	24;"	d	line:24
+_OSCILLATOR_CONFIG_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\oscillator_config.h	25;"	d	line:25
+_OSCILLATOR_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	24;"	d	line:24
+_SPI_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	55;"	d	line:55
+_STDINT_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	24;"	d	line:24
+_U1RXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	133;"	f	line:133	signature:(void)
+_U1TXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	94;"	f	line:94	signature:(void)
+_U2RXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	142;"	f	line:142	signature:(void)
+_U2TXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	102;"	f	line:102	signature:(void)
+_U3RXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	150;"	f	line:150	signature:(void)
+_U3TXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	110;"	f	line:110	signature:(void)
+_U4RXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	158;"	f	line:158	signature:(void)
+_U4TXInterrupt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	118;"	f	line:118	signature:(void)
+_UART_CONFIG_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\uart_config.h	37;"	d	line:37
+_UART_DEFS_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	36;"	d	line:36
+_UART_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	57;"	d	line:57
+_UART_PRIVATE_H_	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	35;"	d	line:35
+_UART_V1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	55;"	d	line:55
+_UART_V2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_defs.h	51;"	d	line:51
+__AVR_LIBC_VERSION__::0UL	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	59;"	d	line:59
+__cirbuf_add_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c	31;"	f	line:31	file:	signature:(struct cirbuf * cbuf, char c)
+__cirbuf_add_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c	32;"	f	line:32	file:	signature:(struct cirbuf * cbuf, char c)
+__cirbuf_del_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c	30;"	f	line:30	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_del_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c	31;"	f	line:31	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_shift_left	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	28;"	f	line:28	file:	signature:(struct cirbuf * cbuf)
+__cirbuf_shift_right	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	45;"	f	line:45	file:	signature:(struct cirbuf * cbuf)
+__offsetof::(type,field)((size_t)(&(type*)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\queue.h	41;"	d	line:41
+_ss_pin	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	43;"	s	line:43	file:
+ap	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	45;"	l	line:45
+baudrate	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	75;"	m	line:75	struct:uart_config
+beg_indice	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	275;"	m	line:275	struct:list_hdr
+bitnum	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	45;"	m	line:45	struct:_ss_pin	file:
+buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	71;"	m	line:71	struct:regs	file:
+cbi::(sfr,bit)(sfr&=~_BV(bit))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	306;"	d	line:306
+cirbuf_add_buf_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_head.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, const char * c, cirbuf_uint n)
+cirbuf_add_buf_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_tail.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, const char * c, cirbuf_uint n)
+cirbuf_add_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c	52;"	f	line:52	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_head_safe	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_head.c	42;"	f	line:42	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c	53;"	f	line:53	signature:(struct cirbuf * cbuf, char c)
+cirbuf_add_tail_safe	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_tail.c	43;"	f	line:43	signature:(struct cirbuf * cbuf, char c)
+cirbuf_align_left	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	62;"	f	line:62	signature:(struct cirbuf * cbuf)
+cirbuf_align_right	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	77;"	f	line:77	signature:(struct cirbuf * cbuf)
+cirbuf_del_buf_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, cirbuf_uint size)
+cirbuf_del_buf_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_buf_tail.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, cirbuf_uint size)
+cirbuf_del_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c	50;"	f	line:50	signature:(struct cirbuf * cbuf)
+cirbuf_del_head_safe	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_head.c	40;"	f	line:40	signature:(struct cirbuf * cbuf)
+cirbuf_del_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c	51;"	f	line:51	signature:(struct cirbuf * cbuf)
+cirbuf_del_tail_safe	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_del_tail.c	41;"	f	line:41	signature:(struct cirbuf * cbuf)
+cirbuf_get_buf_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf, char * c, cirbuf_uint size)
+cirbuf_get_buf_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_tail.c	31;"	f	line:31	signature:(struct cirbuf * cbuf, char * c, cirbuf_uint size)
+cirbuf_get_head	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_head.c	30;"	f	line:30	signature:(struct cirbuf * cbuf)
+cirbuf_get_tail	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_tail.c	30;"	f	line:30	signature:(struct cirbuf * cbuf)
+cirbuf_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf.c	29;"	f	line:29	signature:(struct cirbuf * cbuf, char * buf, cirbuf_uint start, cirbuf_uint maxlen)
+cli::__asm____volatile__("CLI	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	228;"	d	line:228
+cli::do{SRbits.IPL=7;}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	254;"	d	line:254
+cli::do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	247;"	d	line:247
+con1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	69;"	m	line:69	struct:regs	file:
+con2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	70;"	m	line:70	struct:regs	file:
+cur_size	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	274;"	m	line:274	struct:list_hdr
+data_rx	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	61;"	l	line:61
+data_tx	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	61;"	l	line:61
+debug	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	56;"	m	line:56	struct:error_fct
+e	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_head.c	33;"	l	line:33
+e	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_add_buf_tail.c	33;"	l	line:33
+e	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	56;"	l	line:56
+elt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	285;"	m	line:285	struct:generic_list
+elt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	174;"	l	line:174
+elt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	194;"	l	line:194
+elt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	223;"	l	line:223
+elt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	237;"	l	line:237
+elt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv.c	41;"	l	line:41
+elt	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c	41;"	l	line:41
+emerg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	52;"	m	line:52	struct:error_fct
+enabled	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	68;"	m	line:68	struct:uart_config
+err_num	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	43;"	m	line:43	struct:error
+error	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	42;"	s	line:42
+error	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	53;"	m	line:53	struct:error_fct
+error_fct	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	51;"	s	line:51
+error_generate	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	54;"	f	line:54	signature:(uint8_t num, uint8_t severity, PGM_P t, PGM_P f, uint16_t l)
+error_generate	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	62;"	p	line:62	signature:(uint8_t num, uint8_t severity, PGM_P t, PGM_P f, uint16_t l)
+error_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	45;"	f	line:45	signature:(void)
+error_register_debug	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	113;"	f	line:113	signature:(void (*f)(struct error *, ...))
+error_register_debug	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	77;"	p	line:77	signature:(void (*f)(struct error *, ...))
+error_register_emerg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	77;"	f	line:77	signature:(void (*f)(struct error *, ...))
+error_register_emerg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	65;"	p	line:65	signature:(void (*f)(struct error *, ...))
+error_register_error	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	86;"	f	line:86	signature:(void (*f)(struct error *, ...))
+error_register_error	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	68;"	p	line:68	signature:(void (*f)(struct error *, ...))
+error_register_notice	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	104;"	f	line:104	signature:(void (*f)(struct error *, ...))
+error_register_notice	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	74;"	p	line:74	signature:(void (*f)(struct error *, ...))
+error_register_warning	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	95;"	f	line:95	signature:(void (*f)(struct error *, ...))
+error_register_warning	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	71;"	p	line:71	signature:(void (*f)(struct error *, ...))
+event	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	125;"	t	line:125
+event_9bits	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	126;"	t	line:126
+extr16_08_0::(i)({structextract16__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	213;"	d	line:213
+extr16_08_1::(i)({structextract16__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	214;"	d	line:214
+extr32_08_0::(i)({structextract32__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	188;"	d	line:188
+extr32_08_1::(i)({structextract32__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	189;"	d	line:189
+extr32_08_2::(i)({structextract32__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	190;"	d	line:190
+extr32_08_3::(i)({structextract32__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	191;"	d	line:191
+extr32_16_0::(i)({structextract32__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	193;"	d	line:193
+extr32_16_1::(i)({structextract32__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	194;"	d	line:194
+extr32_16_mid::(i)({structextract32__x;__x.u.	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	195;"	d	line:195
+extract16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	198;"	s	line:198
+extract32	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	149;"	s	line:149
+false::FALSE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	279;"	d	line:279
+file	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	46;"	m	line:46	struct:error
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c	42;"	l	line:42
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_send_nowait.c	43;"	l	line:43
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	129;"	l	line:129
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	106;"	l	line:106
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	115;"	l	line:115
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	47;"	l	line:47
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	79;"	l	line:79
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	88;"	l	line:88
+flags	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	97;"	l	line:97
+g_error_fct	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.c	42;"	v	line:42
+g_rx0_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	41;"	v	line:41
+g_rx1_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	45;"	v	line:45
+g_rx2_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	49;"	v	line:49
+g_rx3_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	53;"	v	line:53
+g_rx_fifo	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	42;"	v	line:42
+g_slave_selected	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	59;"	v	line:59	file:
+g_spi_max_slaves	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	60;"	v	line:60	file:
+g_spi_mode	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	58;"	v	line:58	file:
+g_ss_lines	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	50;"	v	line:50	file:
+g_ss_lines	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	52;"	v	line:52	file:
+g_ss_lines	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	54;"	v	line:54	file:
+g_ss_number	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	57;"	v	line:57	file:
+g_tx0_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	40;"	v	line:40
+g_tx1_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	44;"	v	line:44
+g_tx2_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	48;"	v	line:48
+g_tx3_buf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	52;"	v	line:52
+g_tx_fifo	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	41;"	v	line:41
+generic_list	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	283;"	s	line:283
+hdr	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	284;"	m	line:284	struct:generic_list
+i	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	30;"	l	line:30
+i	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	47;"	l	line:47
+i	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	310;"	l	line:310
+i	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_dev_io.c	39;"	l	line:39
+int16_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	29;"	t	line:29
+int32_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	31;"	t	line:31
+int64_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	33;"	t	line:33
+int8_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	27;"	t	line:27
+intr_enabled	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	69;"	m	line:69	struct:uart_config
+line	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	47;"	m	line:47	struct:error
+list_hdr	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	272;"	s	line:272
+main	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	59;"	f	line:59	signature:(void)
+memcmp_P::memcmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	49;"	d	line:49
+memcmp_P::memcmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	85;"	d	line:85
+memcpy_P::memcpy	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	50;"	d	line:50
+mylog	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	43;"	f	line:43	signature:(struct error * e, ...)
+n	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_head.c	32;"	l	line:32
+n	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_get_buf_tail.c	33;"	l	line:33
+nbits	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	74;"	m	line:74	struct:uart_config
+nop::__asm____volatile__("NOP	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	222;"	d	line:222
+nop::do{__asm__volatile("nop");}whi	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	252;"	d	line:252
+nop::do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	245;"	d	line:245
+nothing::__asm____volatile__("	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	225;"	d	line:225
+nothing::do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	246;"	d	line:246
+nothing::do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	253;"	d	line:253
+notice	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	55;"	m	line:55	struct:error_fct
+num	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	310;"	l	line:310
+oscillator_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.c	28;"	f	line:28	signature:(void)
+oscillator_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\hardware\dspic\oscillator\oscillator.h	71;"	p	line:71	signature:(void)
+parity	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	72;"	m	line:72	struct:uart_config
+pgm_read_byte::(x)(*(x))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	65;"	d	line:65
+pgm_read_word::(x)(*(x))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	64;"	d	line:64
+port	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	44;"	m	line:44	struct:_ss_pin	file:
+printf_P::printf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	48;"	d	line:48
+printf_P::printf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	84;"	d	line:84
+prog_char	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	102;"	t	line:102
+prog_char	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	68;"	t	line:68
+prog_int16_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	106;"	t	line:106
+prog_int16_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	72;"	t	line:72
+prog_int32_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	108;"	t	line:108
+prog_int32_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	74;"	t	line:74
+prog_int64_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	110;"	t	line:110
+prog_int64_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	76;"	t	line:76
+prog_int8_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	104;"	t	line:104
+prog_int8_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	70;"	t	line:70
+prog_uchar	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	103;"	t	line:103
+prog_uchar	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	69;"	t	line:69
+prog_uint16_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	107;"	t	line:107
+prog_uint16_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	73;"	t	line:73
+prog_uint32_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	109;"	t	line:109
+prog_uint32_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	75;"	t	line:75
+prog_uint8_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	105;"	t	line:105
+prog_uint8_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	71;"	t	line:71
+prog_void	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	101;"	t	line:101
+prog_void	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	67;"	t	line:67
+read_cursor	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	276;"	m	line:276	struct:list_hdr
+regs	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	67;"	s	line:67	file:
+regs	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	46;"	s	line:46
+reserved	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	71;"	m	line:71	struct:uart_config
+reset::	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	240;"	d	line:240
+ret	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	123;"	l	line:123
+rx_event	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	45;"	v	line:45
+s08	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	52;"	t	line:52
+s16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	53;"	t	line:53
+s32	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	54;"	t	line:54
+s64	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	55;"	t	line:55
+sbi::(sfr,bit)(sfr|=_BV(bit))	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	309;"	d	line:309
+sei::__asm____volatile__("SEI	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	231;"	d	line:231
+sei::do{SRbits.IPL=0;}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	255;"	d	line:255
+sei::do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	248;"	d	line:248
+severity	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	44;"	m	line:44	struct:error
+size	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\list.h	273;"	m	line:273	struct:list_hdr
+spi_clk_rate1_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	98;"	t	line:98
+spi_clk_rate2_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	109;"	t	line:109
+spi_display_ss_lines	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	308;"	f	line:308	signature:(void)
+spi_display_ss_lines	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	179;"	p	line:179	signature:(void)
+spi_format_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	86;"	t	line:86
+spi_get_mode	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	161;"	f	line:161	signature:(uint8_t num)
+spi_get_mode	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	127;"	p	line:127	signature:(uint8_t spi_num)
+spi_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	110;"	f	line:110	signature:(uint8_t num, spi_mode_t mode, spi_format_t format, spi_clk_rate1_t clk_rate1, spi_clk_rate2_t clk_rate2)
+spi_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	120;"	p	line:120	signature:(uint8_t num, spi_mode_t mode, spi_format_t format, spi_clk_rate1_t clk_rate1, spi_clk_rate2_t clk_rate2)
+spi_mode_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	64;"	t	line:64
+spi_receive_data	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	217;"	f	line:217	signature:(uint8_t num)
+spi_receive_data	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	155;"	p	line:155	signature:(uint8_t num)
+spi_reg_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	65;"	t	line:65	file:
+spi_register_ss_line	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	227;"	f	line:227	signature:(uint8_t num, volatile uint16_t *port, uint8_t bitnum)
+spi_register_ss_line	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	135;"	p	line:135	signature:(uint8_t num, volatile uint16_t *port, uint8_t bitnum)
+spi_regs	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	74;"	v	line:74
+spi_send_and_receive_data	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	179;"	f	line:179	signature:(uint8_t num, uint16_t data)
+spi_send_and_receive_data	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	143;"	p	line:143	signature:(uint8_t num, uint16_t data)
+spi_send_data	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	209;"	f	line:209	signature:(uint8_t num, uint16_t data)
+spi_send_data	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	150;"	p	line:150	signature:(uint8_t num, uint16_t data)
+spi_slave	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\test\main.c	61;"	l	line:61
+spi_slave_deselect	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	288;"	f	line:288	signature:(uint8_t num, uint8_t slave)
+spi_slave_deselect	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	174;"	p	line:174	signature:(uint8_t num, uint8_t slave)
+spi_slave_select	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	262;"	f	line:262	signature:(uint8_t num, uint8_t slave)
+spi_slave_select	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.h	169;"	p	line:169	signature:(uint8_t num, uint8_t slave)
+ss_pin_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	46;"	t	line:46	file:
+stat	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\spi\spi.c	68;"	m	line:68	struct:regs	file:
+static_conf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	128;"	l	line:128
+stop_bits	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	73;"	m	line:73	struct:uart_config
+strcat_P::strcat	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	51;"	d	line:51
+strcat_P::strcat	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	86;"	d	line:86
+strcmp_P::strcmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	52;"	d	line:52
+strcmp_P::strcmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	87;"	d	line:87
+strlen_P::strlen	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	55;"	d	line:55
+strlen_P::strlen	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	89;"	d	line:89
+strncmp_P::strncmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	53;"	d	line:53
+strncmp_P::strncmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	88;"	d	line:88
+strncpy_P::strncpy	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	54;"	d	line:54
+text	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	45;"	m	line:45	struct:error
+tmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	31;"	l	line:31
+tmp	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\base\cirbuf\cirbuf_align.c	48;"	l	line:48
+true::TRUE	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	281;"	d	line:281
+tx_event	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	46;"	v	line:46
+u	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	185;"	m	line:185	struct:extract32
+u	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	210;"	m	line:210	struct:extract16
+u08	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	48;"	t	line:48
+u16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	172;"	m	line:172	union:extract32::<anonymous>
+u16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	209;"	m	line:209	union:extract16::<anonymous>
+u16	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	49;"	t	line:49
+u16_0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	166;"	m	line:166	struct:extract32::<anonymous>::<anonymous>
+u16_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	167;"	m	line:167	struct:extract32::<anonymous>::<anonymous>
+u16_b	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	183;"	m	line:183	union:extract32::<anonymous>
+u16_mid	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	176;"	m	line:176	struct:extract32::<anonymous>::<anonymous>
+u32	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	184;"	m	line:184	union:extract32::<anonymous>
+u32	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	50;"	t	line:50
+u64	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\types.h	51;"	t	line:51
+u8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	163;"	m	line:163	union:extract32::<anonymous>
+u8	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	208;"	m	line:208	union:extract16::<anonymous>
+u8_0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	153;"	m	line:153	struct:extract32::<anonymous>::<anonymous>
+u8_0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	175;"	m	line:175	struct:extract32::<anonymous>::<anonymous>
+u8_0	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	202;"	m	line:202	struct:extract16::<anonymous>::<anonymous>
+u8_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	154;"	m	line:154	struct:extract32::<anonymous>::<anonymous>
+u8_1	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	203;"	m	line:203	struct:extract16::<anonymous>::<anonymous>
+u8_2	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	155;"	m	line:155	struct:extract32::<anonymous>::<anonymous>
+u8_3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	156;"	m	line:156	struct:extract32::<anonymous>::<anonymous>
+u8_3	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive.h	177;"	m	line:177	struct:extract32::<anonymous>::<anonymous>
+uart_clear_rxif	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	115;"	f	line:115	signature:(num)
+uart_clear_txif	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	104;"	f	line:104	signature:(num)
+uart_config	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	67;"	s	line:67
+uart_config_int	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	56;"	f	line:56	signature:(uint8_t num, uint16_t config)
+uart_get_rxie	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	93;"	f	line:93	signature:(num)
+uart_get_txie	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	82;"	f	line:82	signature:(num)
+uart_get_urxreg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	140;"	f	line:140	signature:(uint8_t num)
+uart_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	253;"	f	line:253	signature:(void)
+uart_init	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	85;"	p	line:85	signature:(void)
+uart_open	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	100;"	f	line:100	signature:(uint8_t num, uint16_t uxmode, uint16_t uxsta, uint16_t uxbrg)
+uart_recv	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	98;"	p	line:98	signature:(uint8_t num)
+uart_recv	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv.c	39;"	f	line:39	signature:(uint8_t num)
+uart_recv_next_char	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	126;"	p	line:126	file:	signature:(uint8_t num)
+uart_recv_next_char	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	218;"	f	line:218	file:	signature:(uint8_t num)
+uart_recv_nowait	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	104;"	p	line:104	signature:(uint8_t num)
+uart_recv_nowait	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_recv_nowait.c	39;"	f	line:39	signature:(uint8_t num)
+uart_reg_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	44;"	t	line:44
+uart_register_rx_event	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	131;"	p	line:131	signature:(uint8_t num, void (*f)(char))
+uart_register_tx_event	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	125;"	p	line:125	signature:(uint8_t num, void (*f)(char))
+uart_regs	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	48;"	v	line:48
+uart_send	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	119;"	p	line:119	signature:(uint8_t num, char c)
+uart_send	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_send.c	38;"	f	line:38	signature:(uint8_t num, char c)
+uart_send_next_char	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.c	169;"	f	line:169	signature:(uint8_t num)
+uart_send_next_char	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	137;"	p	line:137	signature:(uint8_t num)
+uart_send_nowait	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	112;"	p	line:112	signature:(uint8_t num, char c)
+uart_send_nowait	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_send_nowait.c	41;"	f	line:41	signature:(uint8_t num, char c)
+uart_set_rxie	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	71;"	f	line:71	signature:(num, val)
+uart_set_txie	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	60;"	f	line:60	signature:(num, val)
+uart_set_utxreg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	146;"	f	line:146	signature:(uint8_t num, char c)
+uart_setconf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	91;"	p	line:91	signature:(uint8_t num, struct uart_config *u)
+uart_setconf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	138;"	p	line:138	signature:(uint8_t num, struct uart_config *u)
+uart_setconf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	121;"	f	line:121	signature:(uint8_t num, struct uart_config *u)
+ubrg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	51;"	m	line:51	struct:regs
+ubrg_reg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	124;"	l	line:124
+uconfig_int_reg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	125;"	l	line:125
+uint16_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	30;"	t	line:30
+uint32_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	32;"	t	line:32
+uint64_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	34;"	t	line:34
+uint8_t	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\dspic\stdint.h	28;"	t	line:28
+umode	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	47;"	m	line:47	struct:regs
+umode_reg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	126;"	l	line:126
+urxreg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	50;"	m	line:50	struct:regs
+use_double_speed	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart.h	70;"	m	line:70	struct:uart_config
+usta	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	48;"	m	line:48	struct:regs
+usta_reg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_setconf.c	127;"	l	line:127
+utxreg	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_private.h	49;"	m	line:49	struct:regs
+vfprintf_P::vfprintf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	56;"	d	line:56
+vfprintf_P::vfprintf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	90;"	d	line:90
+vsprintf_P::vsprintf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	57;"	d	line:57
+vsprintf_P::vsprintf	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\pgmspace.h	91;"	d	line:91
+wait_3cyc::(n)_delay_loop_1(n)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	60;"	d	line:60
+wait_3cyc::(n)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	44;"	d	line:44
+wait_4cyc::(n)_delay_loop_2(n)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	64;"	d	line:64
+wait_4cyc::(n)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	45;"	d	line:45
+wait_ms	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	70;"	f	line:70	signature:(uint16_t n)
+wait_ms	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	84;"	f	line:84	signature:(uint16_t n)
+wait_ms::(n)do{}while(0)	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\include\aversive\wait.h	46;"	d	line:46
+warning	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\debug\error\error.h	54;"	m	line:54	struct:error_fct
+write	C:\Javier\Dinacell\DRM12\Prg\V1.1\libs\aversive4dspic\modules\comm\dspic\uart\uart_dev_io.c	38;"	f	line:38	signature:(int handle, void *buffer, unsigned int len)
