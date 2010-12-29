@@ -21,22 +21,14 @@
  */
 
 
-#define SPI_HW_NUM	1
-
 /**************************** SPI 1  *********************************/
 
-/*
- *	Configure HERE your SPI module
- */
 
-
-
-/* Number of slave devices in your system
+/* Number of slave devices per SPI channel (up to 3 channels).
  * Each slave have a dedicated SS line that you have to register
  * before using the SPI module
  */
-#define SPI1_MAX_SLAVES	1
-
-
-/* The same for SPI 2, 3, 4,... */
+#define SPI1_MAX_SLAVES	3
+#define SPI2_MAX_SLAVES	0
+#define SPI3_MAX_SLAVES	0
 
