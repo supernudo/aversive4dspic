@@ -58,67 +58,115 @@ extern const struct regs uart_regs[UART_HW_NUM];
 
 /* uart set TX enable/disable interrupt */
 static inline void uart_set_txie(num, val){         
-	switch(num){                   
+	switch(num){     
+#if defined(_U1TXIE)              
    	case 0: _U1TXIE = val; break;
-   	case 1: _U2TXIE = val; break;          
+#endif
+#if defined(_U2TXIE)              
+   	case 1: _U2TXIE = val; break;
+#endif          
+#if defined(_U3TXIE)              
    	case 2: _U3TXIE = val; break;          
-   	case 3: _U4TXIE = val; break;          
-		default: break;
+#endif
+#if defined(_U4TXIE)              
+   	case 3: _U4TXIE = val; break;     
+#endif     
+	default: break;
 	}       
 }
  
 /* uart set RX enable/disable interrupt */ 
 static inline void uart_set_rxie(num, val){
 	switch(num){                   
+#if defined(_U1RXIE)              
    	case 0: _U1RXIE = val; break;
-   	case 1: _U2RXIE = val; break;          
-   	case 2: _U3RXIE = val; break;          
-   	case 3: _U4RXIE = val; break;          
-		default: break;
+#endif
+#if defined(_U2RXIE)              
+   	case 1: _U2RXIE = val; break;
+#endif          
+#if defined(_U3RXIE)              
+   	case 2: _U3RXIE = val; break; 
+#endif         
+#if defined(_U4RXIE)              
+   	case 3: _U4RXIE = val; break;
+#endif          
+	default: break;
 	}               
 }
 
 /* uart get TX enable/disable interrupt */
 static inline uint8_t uart_get_txie(num){         
  	switch(num){                   
+#if defined(_U1TXIE)              
    	case 0: return _U1TXIE; break;
-   	case 1: return _U2TXIE; break;          
-   	case 2: return _U3TXIE; break;          
-   	case 3: return _U4TXIE; break;          
-		default: return 0; break;
+#endif
+#if defined(_U2TXIE)              
+   	case 1: return _U2TXIE; break;    
+#endif      
+#if defined(_U3TXIE)              
+   	case 2: return _U3TXIE; break;   
+#endif       
+#if defined(_U4TXIE)              
+   	case 3: return _U4TXIE; break; 
+#endif         
+	default: return 0; break;
 	}          
 }
 
 /* uart get RX enable/disable interrupt */
 static inline uint8_t uart_get_rxie(num){         
  	switch(num){                   
+#if defined(_U1RXIE)              
    	case 0: return _U1RXIE; break;
-   	case 1: return _U2RXIE; break;          
-   	case 2: return _U3RXIE; break;          
-   	case 3: return _U4RXIE; break;          
-		default: return 0; break;
+#endif
+#if defined(_U2RXIE)              
+   	case 1: return _U2RXIE; break;
+#endif          
+#if defined(_U3RXIE)              
+   	case 2: return _U3RXIE; break;
+#endif          
+#if defined(_U4RXIE)              
+   	case 3: return _U4RXIE; break;
+#endif          
+	default: return 0; break;
 	}         
 }
 
 /* uart clear TX interrupt flag */
 static inline void uart_clear_txif(num){         
 	switch(num){                   
+#if defined(_U1TXIF)              
    	case 0: _U1TXIF = 0; break;
-   	case 1: _U2TXIF = 0; break;          
-   	case 2: _U3TXIF = 0; break;          
-   	case 3: _U4TXIF = 0; break;          
-		default: break;
+#endif
+#if defined(_U2TXIF)              
+   	case 1: _U2TXIF = 0; break;
+#endif          
+#if defined(_U3TXIF)              
+   	case 2: _U3TXIF = 0; break;
+#endif          
+#if defined(_U4TXIF)              
+   	case 3: _U4TXIF = 0; break;
+#endif          
+	default: break;
 	}             
 }
 
 /* uart clear RX interrupt flag */
 static inline void uart_clear_rxif(num){         
 	switch(num){                   
+#if defined(_U1RXIF)              
    	case 0: _U1RXIF = 0; break;
-   	case 1: _U2RXIF = 0; break;          
-   	case 2: _U3RXIF = 0; break;          
-   	case 3: _U4RXIF = 0; break;          
-		default: break;
+#endif
+#if defined(_U2RXIF)              
+   	case 1: _U2RXIF = 0; break;
+#endif          
+#if defined(_U3RXIF)              
+   	case 2: _U3RXIF = 0; break; 
+#endif         
+#if defined(_U4RXIF)              
+   	case 3: _U4RXIF = 0; break;       
+#endif   
+	default: break;
 	}         
 }
 
