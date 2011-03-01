@@ -33,11 +33,46 @@
 #include <string.h>
 
 #include <aversive.h>
-#include <pwm.h>
-#include <pwm12.h>
 #include <pwm_mc.h>
 
+#include <pwm.h>
+#include <pwm12.h>
 
+/* FIXME: headers of pwm.h */
+void CloseMCPWM(void) __attribute__ ((section (".libperi")));
+void ConfigIntMCPWM(unsigned int config) __attribute__ ((section (".libperi")));
+void OpenMCPWM(unsigned int period, unsigned int sptime,unsigned int
+               config1, unsigned int config2, unsigned int config3) __attribute__ ((section (".libperi")));
+void OverrideMCPWM(unsigned int config) __attribute__ ((section (".libperi")));
+void SetDCMCPWM(unsigned int dutycyclereg, unsigned int dutycycle, 
+                char updatedisable) __attribute__ ((section (".libperi")));
+void SetMCPWMDeadTimeGeneration(unsigned int config) __attribute__ ((section (".libperi")));
+void SetMCPWMFaultA(unsigned int config) __attribute__ ((section (".libperi")));
+
+void SetMCPWMDeadTimeAssignment(unsigned int config) __attribute__ ((section (".libperi")));
+void SetMCPWMFaultB(unsigned int config) __attribute__ ((section (".libperi")));
+
+/* FIXME: headers of pwm12.h */
+void CloseMCPWM1(void) __attribute__ ((section (".libperi")));
+void ConfigIntMCPWM1(unsigned int config) __attribute__ ((section (".libperi")));
+void OpenMCPWM1(unsigned int period, unsigned int sptime,unsigned int
+               config1, unsigned int config2, unsigned int config3) __attribute__ ((section (".libperi")));
+void OverrideMCPWM1(unsigned int config) __attribute__ ((section (".libperi")));
+void SetDCMCPWM1(unsigned int dutycyclereg, unsigned int dutycycle, 
+                char updatedisable) __attribute__ ((section (".libperi")));
+void SetMCPWM1DeadTimeGeneration(unsigned int config) __attribute__ ((section (".libperi")));
+void SetMCPWM1FaultA(unsigned int config) __attribute__ ((section (".libperi")));
+void SetMCPWM1DeadTimeAssignment(unsigned int config) __attribute__ ((section (".libperi")));
+void SetMCPWM1FaultB(unsigned int config) __attribute__ ((section (".libperi")));
+void CloseMCPWM2(void) __attribute__ ((section (".libperi")));
+void ConfigIntMCPWM2(unsigned int config) __attribute__ ((section (".libperi")));
+void OpenMCPWM2(unsigned int period, unsigned int sptime,unsigned int
+               config1, unsigned int config2, unsigned int config3) __attribute__ ((section (".libperi")));
+void OverrideMCPWM2(unsigned int config) __attribute__ ((section (".libperi")));
+void SetDCMCPWM2(unsigned int dutycycle, 
+                char updatedisable) __attribute__ ((section (".libperi")));
+void SetMCPWM2DeadTimeGeneration(unsigned int config) __attribute__ ((section (".libperi")));
+void SetMCPWM2FaultA(unsigned int config) __attribute__ ((section (".libperi")));
 //#define DEBUG_PWM_MC 1
 
 int32_t pwm_max[2];
