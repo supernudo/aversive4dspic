@@ -1,5 +1,5 @@
 /*  
- *  Copyright Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Copyright Droids Corporation (2008)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -15,9 +15,17 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id$
- *
+ */
+
+/*
+ * Author : Julien LE GUEN - jlg@jleguen.info
+ */
+
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F.
+ *
  */
 
 
