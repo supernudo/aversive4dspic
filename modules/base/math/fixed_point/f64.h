@@ -59,12 +59,26 @@ typedef struct fixed_64 {
     __f;              \
 })
 
+#ifdef AVR
+
 #define F64_NAN (                      \
 {                                      \
     f64 __f;                           \
     __f.u.s64 = 0xFFFFFFFFFFFFFFFF;    \
     __f;                               \
 })
+
+#else	/* NOT AVR */
+
+#define F64_NAN (                      \
+{                                      \
+    f64 __f;                           \
+    __f.u.s.decimal = 0xFFFFFFFF;      \
+    __f.u.s.integer = 0xFFFFFFFF;      \
+    __f;                               \
+})
+
+#endif /* AVR */
 
 #define F64_IS_GT(x,y) (f64_to_s64(x) >  f64_to_s64(y))
 #define F64_IS_LT(x,y) (f64_to_s64(x) <  f64_to_s64(y))

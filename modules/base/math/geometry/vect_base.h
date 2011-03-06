@@ -1,3 +1,7 @@
+
+#ifndef _VEC_BASE_H_
+#define _VEC_BASE_H_
+
 typedef struct _vect_t {
   int32_t x;
   int32_t y;
@@ -32,3 +36,4 @@ void vect_rot_trigo(vect_t *v);
 void vect_rot_retro(vect_t *v);
 float vect_get_angle(vect_t *v, vect_t *w);
   
+#endif

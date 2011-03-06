@@ -1,3 +1,7 @@
+
+#ifndef _LINES_H_
+#define _LINES_H_
+
 typedef struct _line {
 	double a;
 	double b;
@@ -18,3 +22,5 @@ uint8_t
 intersect_segment(const point_t *s1, const point_t *s2, 
 		  const point_t *t1, const point_t *t2, 
 		  point_t *p);
+
+#endif
