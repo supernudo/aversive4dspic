@@ -35,7 +35,7 @@
 #include <uart_defs.h>
 #include <uart_private.h>
 
-int write(int handle, void *buffer, unsigned int len) {
+int __attribute__((__section__(".libc"))) write(int handle, void *buffer, unsigned int len) {
 	int i;
   	
   	switch (handle)
