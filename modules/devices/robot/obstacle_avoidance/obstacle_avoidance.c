@@ -46,11 +46,11 @@
 
 #define GET_PT(a) (&(a) - &(oa.points[0]))
 
-#ifdef AVR
-static struct obstacle_avoidance oa;
-#else /* DSPIC */
+//#ifdef AVR
+//static struct obstacle_avoidance oa;
+//#else /* DSPIC */
 static struct obstacle_avoidance oa  __attribute__ ((far));
-#endif
+//#endif
 
 static void __oa_start_end_points(int32_t st_x, int32_t st_y,
 				  int32_t en_x, int32_t en_y);
@@ -150,7 +150,10 @@ poly_t *oa_new_poly(uint8_t size)
 void oa_poly_set_point(poly_t *pol, 
 			 int32_t x, int32_t y, uint8_t i)
 {
-	DEBUG(E_OA, "%s() (%ld,%ld)", __FUNCTION__, x, y);
+   /* FIXME: negative values of int32_t on DSPIC */
+	/* DEBUG(E_OA, "%s() (%ld,%ld)", __FUNCTION__, x, y); */
+	DEBUG(E_OA, "%s() (%d,%d)", __FUNCTION__, (int16_t)x, (int16_t)y);
+
 	
 	pol->pts[i].x = x;
 	pol->pts[i].y = y;
