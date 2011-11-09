@@ -316,6 +316,12 @@ oa_process(void)
 	ret = calc_rays(oa.polys, oa.cur_poly_idx, oa.u.rays);
 	DEBUG(E_OA, "nb_rays = %d", ret);
 
+	if(ret > MAX_RAYS) {
+		ERROR(E_OA, "nb_rays exceed the maximun!");
+		return -1;
+	}
+		
+
 	DEBUG(E_OA, "Ray list");
 	for (i=0;i<ret;i+=4) {
 		DEBUG(E_OA, "%d,%d -> %d,%d", oa.u.rays[i], oa.u.rays[i+1], 
