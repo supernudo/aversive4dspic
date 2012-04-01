@@ -47,11 +47,11 @@
  * PWM_MC_MODE_SIGNED            : activate the sign output on another port
  * PWM_MC_MODE_SIGN_INVERTED     : invert sign output
  */
-#define PWM_MC_MODE_NORMAL          	0x00 
-#define PWM_MC_MODE_REVERSE          	0x01 
-#define PWM_MC_MODE_SIGN_INVERTED   	0x02
-#define PWM_MC_MODE_SIGNED          	0x04
-#define PWM_MC_MODE_BIPOLAR				0x08
+#define PWM_MC_MODE_NORMAL          	0x01 
+#define PWM_MC_MODE_REVERSE          	0x02 
+#define PWM_MC_MODE_SIGN_INVERTED   	0x04
+#define PWM_MC_MODE_SIGNED          	0x08
+#define PWM_MC_MODE_BIPOLAR				0x16
 
 /* 
  * PWM pins configuration 

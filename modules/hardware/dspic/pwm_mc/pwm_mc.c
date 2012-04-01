@@ -268,6 +268,10 @@ void pwm_mc_set(void *data, int32_t value)
 {
 	struct pwm_mc *pwm = data;
 
+	/* return if not configured */
+	if(pwm->mode == 0)
+		return;
+
 	MAX(value, pwm_max[pwm->module_num]);
 	
 	if (pwm->mode & PWM_MC_MODE_SIGNED) {
@@ -288,7 +292,7 @@ void pwm_mc_set(void *data, int32_t value)
 		
 		value += pwm_offset[pwm->module_num];
 	}
-	else {
+	else if (pwm->mode & PWM_MC_MODE_NORMAL) {
 		MIN(value, 0);
 		
 		if (pwm->mode & PWM_MC_MODE_REVERSE)

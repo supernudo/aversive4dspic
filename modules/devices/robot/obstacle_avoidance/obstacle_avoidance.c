@@ -46,11 +46,15 @@
 
 #define GET_PT(a) (&(a) - &(oa.points[0]))
 
+#ifndef HOST_VERSION
 //#ifdef AVR
 //static struct obstacle_avoidance oa;
 //#else /* DSPIC */
 static struct obstacle_avoidance oa  __attribute__ ((far));
 //#endif
+#else
+static struct obstacle_avoidance oa;
+#endif
 
 static void __oa_start_end_points(int32_t st_x, int32_t st_y,
 				  int32_t en_x, int32_t en_y);

@@ -114,7 +114,7 @@ void pwm_servo_disable()
 #endif	
 }
 
-void pwm_servo_set(struct pwm_servo *pwm, uint16_t value)
+uint16_t pwm_servo_set(struct pwm_servo *pwm, uint16_t value)
 {
 	/* add th min */
 	value += pwm->th_min;
@@ -133,5 +133,6 @@ void pwm_servo_set(struct pwm_servo *pwm, uint16_t value)
 	else if(pwm->num == 4)
 		OUTPUT_COMPARE_SET(4, value);
 		
+	return (value - pwm->th_min);
 }
 
