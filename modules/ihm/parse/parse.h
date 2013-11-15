@@ -17,7 +17,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: parse.h,v 1.1.2.9 2009/01/03 16:25:13 zer0 Exp $
+ *  Revision : $Id: parse.h,v 1.1.2.9 2009-01-03 16:25:13 zer0 Exp $
  *
  *
  */

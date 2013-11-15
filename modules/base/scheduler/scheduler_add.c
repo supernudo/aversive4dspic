@@ -15,7 +15,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: scheduler_add.c,v 1.1.2.3 2009/03/17 18:50:49 zer0 Exp $
+ *  Revision : $Id: scheduler_add.c,v 1.1.2.3 2009-03-17 18:50:49 zer0 Exp $
  *
  */
 

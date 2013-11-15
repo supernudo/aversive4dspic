@@ -17,7 +17,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: rdline.c,v 1.1.2.9 2009/02/27 21:41:31 zer0 Exp $
+ *  Revision : $Id: rdline.c,v 1.1.2.9 2009-02-27 21:41:31 zer0 Exp $
  *
  *
  */

@@ -15,7 +15,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: blocking_detection_manager.c,v 1.1.2.7 2009/05/18 12:29:10 zer0 Exp $
+ *  Revision : $Id: blocking_detection_manager.c,v 1.1.2.7 2009-05-18 12:29:10 zer0 Exp $
  *
  *  Olivier MATZ <zer0@droids-corp.org>
  */

@@ -15,7 +15,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: trajectory_manager.h,v 1.4.4.10 2009/05/02 10:03:04 zer0 Exp $
+ *  Revision : $Id: trajectory_manager.h,v 1.4.4.10 2009-05-02 10:03:04 zer0 Exp $
  *
  */
 
