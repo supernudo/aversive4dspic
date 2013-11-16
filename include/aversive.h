@@ -39,6 +39,7 @@
 #include <autoconf.h>
 #include <math.h>
 
+#ifndef HOST_VERSION
 #ifdef AVR
 #include <avr/interrupt.h>
 #include <avr/io.h>
@@ -47,6 +48,7 @@
 #ifdef DSPIC
 #include <parts.h>
 #include <oscillator.h>
+#endif
 #endif
 
 #include <aversive/types.h>
@@ -59,9 +61,11 @@
 #define __AVR_LIBC_VERSION__ 0UL 
 #endif
 
+#ifndef HOST_VERSION
 #ifdef AVR
 #if __AVR_LIBC_VERSION__ < 10403UL
 #include <avr/signal.h>
+#endif
 #endif
 #endif
 
@@ -216,6 +220,7 @@ struct extract16 {
 
 
 /* a few asm utilities */
+#ifndef HOST_VERSION
 #ifdef AVR
 #ifndef nop
 #define nop() __asm__ __volatile__ ("NOP\n") /** nop instruction, 1 CPU cycle consumed */
@@ -240,22 +245,27 @@ do {				     \
 } while(0)
 #endif
 #endif /* AVR */
+#endif /* !HOST_VERSION */
+
 
 #ifdef HOST_VERSION
 #define nop() do {} while(0)
 #define nothing() do {} while(0)
 #define cli() do {} while(0)
 #define sei() do {} while(0)
+#define reset() exit(1)
 #endif /* HOST_VERSION */
 
+#ifndef HOST_VERSION
 #ifdef DSPIC
 #define nop() do {__asm__ volatile ("nop");} while(0)
 #define nothing() do {} while(0)
 #define cli() do {SRbits.IPL=7;} while(0)
 #define sei() do {SRbits.IPL=0;} while(0)
 #define _BV(bit_num) (1<<bit_num)
+/* TODO reset() func? */
 #endif /* DSPIC */
-
+#endif /* !HOST_VERSION */
 
 /**
  *   little bit toggeling macro 

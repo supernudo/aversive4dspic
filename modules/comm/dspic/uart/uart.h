@@ -20,8 +20,8 @@
  *
  */
 
-/*  Olivier MATZ, 2004 - 2006
- *  Interface of the uart module
+/* Olivier MATZ, 2004 - 2006
+ * Interface of the uart module
  */
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
@@ -75,6 +75,11 @@ struct uart_config {
       uint32_t baudrate;      /**< speed of uart */
 };
 
+/** The emission fifo of uart */
+extern struct cirbuf g_tx_fifo[UART_HW_NUM];
+
+/** The reception fifo of uart  */
+extern struct cirbuf g_rx_fifo[UART_HW_NUM];
 
 /** 
  * Initialisation function. This function puts the registers of the

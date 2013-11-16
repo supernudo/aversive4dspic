@@ -1,6 +1,5 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
- *  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,18 +19,7 @@
  *
  */
 
-/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
- *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
- *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
- *
- *  VERY EXPERIMENTAL! NOT TESTED!
- */
-
-#ifdef AVR
 #include <avr/io.h>
-#endif
-
 #include <aversive.h>
 #include <diagnostic.h>
 
@@ -51,20 +39,16 @@
   * almost always free. */
 void show_int_loop(void)
 {
-#ifdef AVR
 	sbi(DDR(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT);
-#else
-//	cbi(DDR(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT);		
-#endif
 
 	while(1) {
-		//cbi(LAT(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT); // port to 0
+		cbi(INTERRUPT_SHOW_PORT, INTERRUPT_SHOW_BIT); // port to 0
 		
 		sei();
 		nop(); // ints can only arrive there (on low level of probe pin)
 		cli();
 		
-		//sbi(LAT(INTERRUPT_SHOW_PORT), INTERRUPT_SHOW_BIT); // port to 1
+		sbi(INTERRUPT_SHOW_PORT, INTERRUPT_SHOW_BIT); // port to 1
 		
 		nop(); // is there to equalize the duty cycle
 	}

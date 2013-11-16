@@ -1,6 +1,5 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
- *  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,17 +19,7 @@
  *
  */
 
-/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
- *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
- *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
- *
- *	VERY EXPERIMENTAL! NOT TESTED!
- */
-
-#ifdef AVR
 #include <avr/io.h>
-#endif
 #include <aversive.h>
 
 
@@ -45,19 +34,14 @@
  * left since the reset of the microcontroller. */
 
 // call this function at the beginning of program
-#ifdef AVR
 void fill_mem_with_mark(void) __attribute__ ((naked)) \
 __attribute__ ((section (".init1")));
-#else
-void fill_mem_with_mark(void) __attribute__((section (".user_init")));
-//((user_init));
-#endif
+
 
 /** this functions fills the ram with a predefined pattern after a
  * reset and BEFORE any other operation */
 void fill_mem_with_mark(void)
 {
-#ifdef AVR
 	register int i   asm("r16");
 	register int end asm("r18");
 
@@ -74,39 +58,16 @@ void fill_mem_with_mark(void)
 	// end of RAM
 	asm(  "ldi r18,lo8(__stack)" );
 	asm(  "ldi r19,hi8(__stack)" );
-	
-	
+  
 	// fill ram with the spacified pattern
 	for(; i< end ; i++)
 		* ( (volatile unsigned char* )(i) ) = MARK;
-  
-#else
 
-	register int * i   asm("w4");
-	register int * end asm("w5");
-
-	// where is the beginning of the RAM memory ?
-#ifdef DIAG_FILL_ENTIRE_RAM // fill entire RAM
-	asm("mov #__DATA_BASE,w4");
-#else                       // fill only stack and heap spaces
-	asm("mov #__SP_init,w4");
-#endif
-
-	// end of RAM
-	asm("mov #__DMA_END,w5");
-	
-	// fill ram with the spacified pattern
-	for(; i< end ; i++)
-		*i = MARK;
-
-#endif
-  
 }
 
 
 uint16_t min_stack_space_available(void)
 {
-#ifdef AVR	
 	register int i   asm("r16");
 	register int end asm("r18");
 	uint16_t count , max;
@@ -117,8 +78,8 @@ uint16_t min_stack_space_available(void)
 	// end of RAM
 	asm(  "ldi r18,lo8(__stack)" );
 	asm(  "ldi r19,hi8(__stack)" );
- 
- 	/* the algorithm finds the size of the biggest zone filled
+  
+	/* the algorithm finds the size of the biggest zone filled
 	 * with the mark, which is normally the stack space left */
 	count = 0;
 	max  = 0;
@@ -133,34 +94,6 @@ uint16_t min_stack_space_available(void)
 		else
 			count = 0; // reset counter
 	}
- 
-#else
-	register int * i   asm("w4");
-	register int * end asm("w5");
-	uint16_t count , max;
-
-	// where is the beginning of the stack space ?
-	asm("mov #__SP_init,w4");
-	// end of RAM
-	asm("mov #__DMA_END,w5");
-
-	/* the algorithm finds the size of the biggest zone filled
-	 * with the mark, which is normally the stack space left */
-	count = 0;
-	max  = 0;
-	for(; i<end; i++) {
-		// = mark?
-		if (MARK == *i ){
-			// count
-			count+=2;
-			if (count > max)
-				max = count;
-		}
-		else
-			count = 0; // reset counter
-	}
-
-#endif
 	
 	return max;
 }

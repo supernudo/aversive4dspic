@@ -16,24 +16,21 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: scheduler.c,v 1.9.4.5 2009-01-28 23:26:01 zer0 Exp $
- *
- */
-
-/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
- *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
- *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
+ *  Revision : $Id: scheduler.c,v 1.9.4.6 2009-11-08 17:33:14 zer0 Exp $
  *
  */
 
 #include <string.h>
+#include <stdio.h>
+#include <inttypes.h>
 
-#include <aversive.h>
 #include <aversive/parts.h>
+#include <aversive/pgmspace.h>
+#include <aversive.h>
 
 #include <scheduler.h>
 #include <scheduler_private.h>
+#include <scheduler_stats.h>
 #include <scheduler_config.h>
 
 
@@ -42,6 +39,9 @@
 /** declared in scheduler_host.c in case of host version */
 struct event_t g_tab_event[SCHEDULER_NB_MAX_EVENT];
 
+#ifdef CONFIG_MODULE_SCHEDULER_STATS
+struct scheduler_stats sched_stats;
+#endif
 
 void scheduler_init(void)
 {

@@ -1,6 +1,5 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
- *  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -41,9 +40,11 @@
 
 #ifdef HOST_VERSION
 
-#define wait_3cyc(n) do {} while(0)
-#define wait_4cyc(n) do {} while(0)
-#define wait_ms(n) do {} while(0)
+#include <unistd.h>
+
+#define wait_3cyc(n) do { volatile int a = 0; a++; } while (0)
+#define wait_4cyc(n) do { volatile int a = 0; a++; } while (0)
+#define wait_ms(n) host_wait_ms(n)
 
 #else /* HOST_VERSION */
 

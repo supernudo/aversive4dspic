@@ -15,13 +15,14 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: scheduler_add.c,v 1.1.2.3 2009-03-17 18:50:49 zer0 Exp $
+ *  Revision : $Id: scheduler_add.c,v 1.1.2.4 2009-11-08 17:33:14 zer0 Exp $
  *
  */
 
 #include <aversive.h>
 #include <scheduler_config.h>
 #include <scheduler_private.h>
+#include <scheduler_stats.h>
 
 /** get a free event, mark it as allocated and return its index, or -1
  *  if not found. */
@@ -40,6 +41,7 @@ scheduler_alloc_event(void)
 		}
 		IRQ_UNLOCK(flags);
 	}
+	SCHED_INC_STAT(alloc_fails);
 	return -1;
 }
 
@@ -59,6 +61,8 @@ scheduler_add_event(uint8_t unicity, void (*f)(void *),
 	i = scheduler_alloc_event();
 	if ( i == -1 )
 		return -1;
+
+	SCHED_INC_STAT(add_event);
 
 	if (!unicity)
 		g_tab_event[i].period = period ;

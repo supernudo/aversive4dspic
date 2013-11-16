@@ -1,0 +1,19 @@
+# Aversive configuration
+MCU = atmega128
+OPT = s
+FORMAT = ihex
+FORMAT_EXTENSION = hex
+MATH_LIB = -lm
+PRINTF_LDFLAGS = 
+PTHREAD_CFLAGS = -pthread
+PTHREAD_LDFLAGS = -pthread
+PROGRAMMER = avrdude
+AVRDUDE_PROGRAMMER = stk200
+AVRDUDE_PORT = "/dev/parport0"
+AVRDUDE_BAUDRATE = 19200
+AVRDUDE_FLAGS_SIGNATURE_CHECK = -F
+AVARICE_PROGRAMMER = mkI
+AVARICE_PORT = "/dev/ttyS0"
+AVARICE_DEBUG_PORT = 1234
+MODULES = base/hostsim ihm/parse ihm/rdline ihm/vt100 devices/robot/trajectory_manager devices/robot/blocking_detection_manager devices/robot/obstacle_avoidance devices/robot/position_manager devices/robot/robot_system devices/control_system/filters/pid devices/control_system/filters/quadramp devices/control_system/control_system_manager base/time base/scheduler comm/uart hardware/timer base/cirbuf debug/error base/math/geometry base/math/vect2
+

@@ -353,7 +353,8 @@ uint8_t AX12_read_int(AX12 *s, uint8_t id, AX12_ADDRESS address,
 
 	ret = AX12_recv(s, &rp);
 	if (ret)
-		return ret;	
+		return ret;
+
 	*val = rp.params[0] + ((rp.params[1])<<8);
 	return 0;
 }

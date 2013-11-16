@@ -27,8 +27,9 @@
  */
 
 #include <aversive.h>
+#ifdef CONFIG_MODULE_ROBOT_SYSTEM_USE_F64
 #include <f64.h>
-
+#endif
 #include "angle_distance.h"
 
 #ifndef _ROBOT_SYSTEM_H_
@@ -69,11 +70,19 @@ struct robot_system
 	/* External encoders */
 	int32_t (*left_ext_encoder)(void *);
 	void* left_ext_encoder_param;
+#ifdef CONFIG_MODULE_ROBOT_SYSTEM_USE_F64
 	f64 left_ext_gain;
+#else
+	double left_ext_gain;
+#endif
 	
 	int32_t (*right_ext_encoder)(void *);
 	void* right_ext_encoder_param;
+#ifdef CONFIG_MODULE_ROBOT_SYSTEM_USE_F64
 	f64 right_ext_gain;
+#else
+	double right_ext_gain;
+#endif
 
 	/* PWM */
 	void (*left_pwm)(void *, int32_t);

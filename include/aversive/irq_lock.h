@@ -1,6 +1,5 @@
 /*  
- *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
- *  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
  * 
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -50,10 +49,18 @@
 
 #ifdef HOST_VERSION
 
+#ifdef CONFIG_MODULE_HOSTSIM
+#include <hostsim.h>
+
 /* we must use 'flags' to avoid a warning */
-#define IRQ_UNLOCK(flags) flags=0
-#define IRQ_LOCK(flags) flags=0
-#define GLOBAL_IRQ_ARE_MASKED() (1)
+#define IRQ_UNLOCK(flags) do { flags=0; /* hostsim_lock(); */ } while(0)
+#define IRQ_LOCK(flags) do { flags=0; /* hostsim_unlock(); */ } while(0)
+#define GLOBAL_IRQ_ARE_MASKED() hostsim_islocked()
+#else
+#define IRQ_UNLOCK(flags) do { flags=0; } while(0)
+#define IRQ_LOCK(flags) do { flags=0; } while(0)
+#define GLOBAL_IRQ_ARE_MASKED() (0)
+#endif /* CONFIG_MODULE_HOSTSIM */
 
 #else
 

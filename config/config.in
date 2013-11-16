@@ -1,4 +1,4 @@
-mainmenu_name "Aversive4dsPIC project configuration"
+mainmenu_name "Aversive project configuration"
 
 #############################################################################
 
@@ -161,8 +161,14 @@ dep_bool 'Vect2 lib' CONFIG_MODULE_VECT2 \
 dep_bool 'Geometry lib' CONFIG_MODULE_GEOMETRY \
 	$CONFIG_MATH_LIB
 
+#### Hostsim
+bool 'Hostsim' CONFIG_MODULE_HOSTSIM
+
 #### SCHEDULER
 bool 'Scheduler' CONFIG_MODULE_SCHEDULER
+
+dep_bool '  |-- enable debug statistics' CONFIG_MODULE_SCHEDULER_STATS \
+	$CONFIG_MODULE_SCHEDULER
 
 dep_bool '  |-- Create Default scheduler config' CONFIG_MODULE_SCHEDULER_CREATE_CONFIG \
 	$CONFIG_MODULE_SCHEDULER
@@ -376,7 +382,7 @@ bool 'Menu' CONFIG_MODULE_MENU
 bool 'Vt100' CONFIG_MODULE_VT100
 
 #### rdline
-bool 'Rdline' CONFIG_MODULE_RDLINE \
+dep_bool 'Rdline' CONFIG_MODULE_RDLINE \
 	$CONFIG_MODULE_VT100 \
 	$CONFIG_MODULE_CIRBUF
 
@@ -471,10 +477,12 @@ dep_bool '  |-- Create Default encoders_dspic config' CONFIG_MODULE_DSPIC_ENCODE
 endmenu # (encoders)
 
 mainmenu_option next_comment
-comment 'Robot specific modules'
+comment 'Robot specific modules (fixed point lib may be needed)'
 
 #### ROBOT_SYSTEM
-dep_bool 'Robot System' CONFIG_MODULE_ROBOT_SYSTEM \
+bool 'Robot System' CONFIG_MODULE_ROBOT_SYSTEM
+
+dep_bool 'Use fixed point lib' CONFIG_MODULE_ROBOT_SYSTEM_USE_F64 \
 	$CONFIG_MODULE_FIXED_POINT
 
 dep_bool '  |-- Allow motor and external encoders' CONFIG_MODULE_ROBOT_SYSTEM_MOT_AND_EXT \
@@ -491,8 +499,7 @@ dep_bool '  |-- Compensate centrifugal force' CONFIG_MODULE_COMPENSATE_CENTRIFUG
 dep_bool 'Trajectory manager' CONFIG_MODULE_TRAJECTORY_MANAGER \
 	$CONFIG_MODULE_POSITION_MANAGER \
 	$CONFIG_MODULE_SCHEDULER \
-	$CONFIG_MODULE_VECT2 \
-	$CONFIG_MODULE_FIXED_POINT
+	$CONFIG_MODULE_VECT2
 
 #### BLOCKING DETECTION MANAGER
 bool 'Blocking detection manager' CONFIG_MODULE_BLOCKING_DETECTION_MANAGER

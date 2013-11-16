@@ -44,7 +44,6 @@
 /* you should use uintXX_t instead of uXX which is more standard */
 
 /* explicit types u = unsigned, s = signed  */
-
 typedef uint8_t   u08;
 typedef uint16_t  u16;
 typedef uint32_t  u32;
@@ -53,7 +52,6 @@ typedef int8_t    s08;
 typedef int16_t   s16;
 typedef int32_t   s32;
 typedef int64_t   s64;
-
 
 
 #endif /* _AVERSIVE_TYPES_H_ */

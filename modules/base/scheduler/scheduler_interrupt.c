@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -15,7 +15,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  Revision : $Id: scheduler_interrupt.c,v 1.1.2.8 2009-01-03 16:24:50 zer0 Exp $
+ *  Revision : $Id: scheduler_interrupt.c,v 1.1.2.9 2009-11-08 17:33:14 zer0 Exp $
  *
  */
 
@@ -24,13 +24,14 @@
 #include <aversive.h>
 #include <scheduler_config.h>
 #include <scheduler_private.h>
+#include <scheduler_stats.h>
 
 /** priority of the running event */
 static volatile uint8_t priority_running=0;
 
 /** number of imbricated scheduler interruptions */
 static volatile uint8_t nb_stacking=0;
-	
+
 uint8_t scheduler_disable_save(void)
 {
 	uint8_t ret;
@@ -44,13 +45,13 @@ void scheduler_enable_restore(uint8_t old_prio)
 	priority_running = old_prio;
 }
 
-/** 
+/**
  *  this function is called from a timer interruption. If an event has
  *  to be scheduled, it will execute the fonction (IRQ are allowed
  *  during the execution of the function). This interruption can be
  *  interrupted by itself too, in this case only events with a higher
  *  priority can be scheduled.
- * 
+ *
  *  We assume that this function is called from a SIGNAL(), with
  *  global interrupt flag disabled --> that's why we can use cli() and
  *  sei() instead of IRQ_LOCK(flags).
@@ -64,9 +65,11 @@ scheduler_interrupt(void)
 	struct event_t *e, *next_e, *prev_e=NULL;
 
 	/* maximize the number of imbrications */
-	if (nb_stacking >= SCHEDULER_NB_STACKING_MAX)
+	if (nb_stacking >= SCHEDULER_NB_STACKING_MAX) {
+		SCHED_INC_STAT(max_stacking);
 		return;
-	
+	}
+
 	nb_stacking ++;
 	sei();
 
@@ -79,11 +82,17 @@ scheduler_interrupt(void)
 
 		/* the event is already present in a schedule list,
 		 * only update its current time until it reaches 1 */
-		if (g_tab_event[i].state == SCHEDULER_EVENT_SCHEDULED &&
-		    g_tab_event[i].current_time > 1) {
-			g_tab_event[i].current_time --;
-			sei();
-			continue;
+		if (g_tab_event[i].state == SCHEDULER_EVENT_SCHEDULED) {
+			if (g_tab_event[i].current_time > 1) {
+				g_tab_event[i].current_time --;
+				sei();
+				continue;
+			}
+			else {
+				SCHED_INC_STAT2(task_delayed, i);
+				sei();
+				continue;
+			}
 		}
 
 		/* nothing to do with other unactive events */
@@ -95,17 +104,18 @@ scheduler_interrupt(void)
 		/* decrement current time (we know it is >0 if it is
 		 * in SCHEDULER_EVENT_ACTIVE state */
 		g_tab_event[i].current_time --;
-		
+
 		/* don't need to schedule now */
 		if ( g_tab_event[i].current_time != 0 ) {
 			sei();
 			continue;
 		}
-		
+
 		/* time to schedule, but priority is too low,
 		 * delay it */
 		if (g_tab_event[i].priority <= priority_running) {
 			g_tab_event[i].current_time = 1;
+			SCHED_INC_STAT2(task_delayed, i);
 			sei();
 			continue;
 		}
@@ -115,6 +125,7 @@ scheduler_interrupt(void)
 
 		/* schedule it */
 		g_tab_event[i].state = SCHEDULER_EVENT_SCHEDULED;
+		SCHED_INC_STAT2(task_scheduled, i);
 		sei();
 
 		/* insert it in the list (list is ordered).
@@ -137,7 +148,7 @@ scheduler_interrupt(void)
 		/* harder : find the good place in list */
 		SLIST_FOREACH(e, &event_list, next) {
 			next_e = SLIST_NEXT(e, next);
-			if (next_e == NULL || 
+			if (next_e == NULL ||
 			    g_tab_event[i].priority >= next_e->priority) {
 				SLIST_INSERT_AFTER(e, &g_tab_event[i], next);
 				break;
@@ -175,7 +186,7 @@ scheduler_interrupt(void)
 		if (e->state == SCHEDULER_EVENT_DELETING) {
 			e->state = SCHEDULER_EVENT_FREE;
 		}
-		
+
 		/* end of schedule, mark it as active */
 		if (e->state == SCHEDULER_EVENT_SCHEDULED) {
 			e->state = SCHEDULER_EVENT_ACTIVE;
