@@ -3,3 +3,4 @@ syntax: glob
 *.cof
 *.hex
 *.map
+*.orig
