@@ -61,6 +61,7 @@
 #include <uart_config.h>
 #include <cirbuf.h>
 #include <libpic30.h>
+#include <uart_defs.h>
 
 
 /** this structure stores the configuration of the uart */

@@ -880,7 +880,7 @@ static int8_t calc_clitoid(struct trajectory *traj,
 	double Aa, Aa_rd_s2;
 	line_t line1, line2;
 	line_t line1_int, line2_int;
-	point_t robot, intersect, pt2, center, proj, M;
+	point_t robot, intersect, pt2, center, proj, _M;
 	vect_t v;
 	double xm, ym, L, A;
 
@@ -987,17 +987,17 @@ static int8_t calc_clitoid(struct trajectory *traj,
 
 	/* M is the same point than xm, ym but in absolute coords */
 	if (alpha_rad < 0) {
-		M.x = center.x + cos(a_rad + M_PI/2 + tau) * R_mm;
-		M.y = center.y + sin(a_rad + M_PI/2 + tau) * R_mm;
+		_M.x = center.x + cos(a_rad + M_PI/2 + tau) * R_mm;
+		_M.y = center.y + sin(a_rad + M_PI/2 + tau) * R_mm;
 	}
 	else {
-		M.x = center.x + cos(a_rad - M_PI/2 + tau) * R_mm;
-		M.y = center.y + sin(a_rad - M_PI/2 + tau) * R_mm;
+		_M.x = center.x + cos(a_rad - M_PI/2 + tau) * R_mm;
+		_M.y = center.y + sin(a_rad - M_PI/2 + tau) * R_mm;
 	}
-	DEBUG(E_TRAJECTORY, "absolute M = (%2.2f, %2.2f)", M.x, M.y);
+	DEBUG(E_TRAJECTORY, "absolute M = (%2.2f, %2.2f)", _M.x, _M.y);
 
 	/* project M on line 1 */
-	proj_pt_line(&M, &line1, &proj);
+	proj_pt_line(&_M, &line1, &proj);
 	DEBUG(E_TRAJECTORY, "proj M = (%2.2f, %2.2f)", proj.x, proj.y);
 
 	/* process remaining distance before start turning */

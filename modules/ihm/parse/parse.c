@@ -425,12 +425,12 @@ complete(parse_pgm_ctx_t ctx[], const char *buf, int16_t *state,
 				help_str = (prog_char *) pgm_read_pgmptr(&inst->help_str);
 #if (defined snprintf)
 				if (help_str)
-					snprintf_P(dst, size, PSTR("[%s]: "PGMS_FMT""), tmpbuf, help_str);
+					snprintf_P(dst, size, PSTR("[%s]: "PGMS_FMT), tmpbuf, help_str);
 				else
 					snprintf_P(dst, size, PSTR("[%S]: No help"), tmpbuf);
 #else
 				if (help_str)
-					sprintf(dst, PSTR("[%s]: "PGMS_FMT""), tmpbuf, (char*)help_str); // XXX take care, buffer overruns?
+					sprintf(dst, PSTR("[%s]: %s"), tmpbuf, (char*)help_str); // XXX take care, buffer overruns?
 				else
 					sprintf(dst, PSTR("[%s]: No help"), tmpbuf); // XXX take care, buffer overruns?
 #endif
@@ -468,12 +468,12 @@ complete(parse_pgm_ctx_t ctx[], const char *buf, int16_t *state,
 					help_str = (prog_char *) pgm_read_pgmptr(&inst->help_str);
 #if (defined snprintf)
 					if (help_str)
-						snprintf_P(dst+l, size-l, PSTR("[%s]: "PGMS_FMT""), tmpbuf, help_str);
+						snprintf_P(dst+l, size-l, PSTR("[%s]: "PGMS_FMT), tmpbuf, help_str);
 					else
 						snprintf_P(dst+l, size-l, PSTR("[%s]: No help"), tmpbuf);
 #else
 					if (help_str)
-						sprintf(dst+l, PSTR("[%s]: "PGMS_FMT""), tmpbuf, (char*)help_str); // XXX take care, buffer overruns?
+						sprintf(dst+l, PSTR("[%s]: %s"), tmpbuf, (char*)help_str); // XXX take care, buffer overruns?
 					else
 						sprintf(dst+l, PSTR("[%s]: No help"), tmpbuf); // XXX take care, buffer overruns?
 #endif
