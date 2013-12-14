@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# use: find ./ -name "*.c" -exec ./patch_microb2010 '{}' ';'
+
+file_in=$@
+sed 's/\($Id.*\)\([0-9][0-9][0-9][0-9]\)\(\/\)\([0-9][0-9]\)\(\/\)\([0-9][0-9]\)/\1\2\-\4\-\6/' $file_in > file_temp
+cp -v file_temp $file_in
+rm file_temp
+
+
