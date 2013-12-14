@@ -34,7 +34,7 @@ MODULES_LIST="CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL,/devices/brushless_mot
               CONFIG_MODULE_TIME,base/time
               CONFIG_MODULE_SCHEDULER,base/scheduler
               CONFIG_MODULE_SPI,comm/spi
-				  CONFIG_MODULE_DSPIC_SPI,comm/dspic/spi
+              CONFIG_MODULE_DSPIC_SPI,comm/dspic/spi
               CONFIG_MODULE_CC2420,devices/radio/cc2420
               CONFIG_MODULE_UART,comm/uart
               CONFIG_MODULE_DSPIC_UART,comm/dspic/uart
@@ -45,7 +45,9 @@ MODULES_LIST="CONFIG_MODULE_BRUSHLESS_3PHASE_DIGITAL_HALL,/devices/brushless_mot
               CONFIG_MODULE_PWM_NG,hardware/pwm_ng
               CONFIG_MODULE_DSPIC_OSCILLATOR,hardware/dspic/oscillator
               CONFIG_MODULE_DSPIC_CONFIGURATION_BITS,hardware/dspic/configuration_bits
-              CONFIG_MODULE_DSPIC_PWM,hardware/dspic/pwm
+              CONFIG_MODULE_DSPIC_PWM_MC,hardware/dspic/pwm_mc
+              CONFIG_MODULE_DSPIC_PWM_SERVO,hardware/dspic/pwm_servo
+              CONFIG_MODULE_DSPIC_DAC_MC,hardware/dspic/dac_mc
               CONFIG_MODULE_DSPIC_ENCODERS_DSPIC,devices/encoders/dspic/encoders_dspic
               CONFIG_MODULE_ADC,hardware/adc
               CONFIG_MODULE_AES,crypto/aes

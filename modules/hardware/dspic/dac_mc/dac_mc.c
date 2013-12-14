@@ -29,6 +29,8 @@
  *
  */
 
+#ifndef HOST_VERSION
+
 #include <stdio.h>
 #include <string.h>
 
@@ -223,4 +225,6 @@ void dac_mc_set(void *data, int32_t value)
 		dac2_data_channel[dac->channel] = (uint16_t)value;
 
 }
+
+#endif
 

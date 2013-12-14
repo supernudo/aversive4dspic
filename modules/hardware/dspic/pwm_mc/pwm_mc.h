@@ -33,6 +33,8 @@
 #define _PWM_MC_H_
 
 #include <aversive.h>
+
+#ifndef HOST_VERSION
 #include <parts.h>
 
 #include <pwm12.h>
@@ -113,6 +115,8 @@
 #error "This target don't have MCPWM"
 #endif
 
+#endif
+
 /* PWM motor control struct */
 struct pwm_mc{
 	uint8_t mode:4,
@@ -167,3 +171,4 @@ void pwm_mc_init(struct pwm_mc *pwm, uint16_t f_pwm, uint16_t pwm_pins_config);
 void pwm_mc_set(void *pwm, int32_t value); 
 
 #endif // _PWM_MC_H_
+

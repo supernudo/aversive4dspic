@@ -33,11 +33,14 @@
 #define _DAC_MC_H_
 
 #include <aversive.h>
-#include <parts.h>
 
+#ifndef HOST_VERSION
+#include <parts.h>
 
 #if !(defined _DAC1LIE)
 #error "This target don't have DAC module"
+#endif
+
 #endif
 
 /*
@@ -99,3 +102,4 @@ void dac_mc_channel_init(struct dac_mc *dac,
 void dac_mc_set(void *dac, int32_t value); 
 
 #endif // _DAC_MC_H_
+

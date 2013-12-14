@@ -20,6 +20,8 @@
  *  Javier Baliñas Santos <javier@arc-robots.org>
  */
 
+#ifndef HOST_VERSION
+
 #ifndef _OSCILLATOR_H_
 #define _OSCILLATOR_H_
 
@@ -71,4 +73,5 @@
 void oscillator_init(void);
 
 #endif /* OSCILLATOR_H */
+#endif /* !HOST_VERSION */
 

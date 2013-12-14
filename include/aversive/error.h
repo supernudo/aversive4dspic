@@ -34,11 +34,11 @@
 
 #ifdef CONFIG_MODULE_ERROR
 
-#ifdef DSPIC
-#include <error/error.h>
-#else
+//#ifdef DSPIC
+//#include <error/error.h>
+//#else
 #include <error.h>
-#endif
+//#endif
 
 #else
 

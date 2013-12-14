@@ -33,8 +33,8 @@ struct pwm_servo{
 };
 
 void pwm_servo_init(struct pwm_servo * pwm, uint16_t num, uint16_t th_min, uint16_t th_max);
-void pwm_servo_enable();
-void pwm_servo_disable();
+void pwm_servo_enable(void);
+void pwm_servo_disable(void);
 uint16_t pwm_servo_set(struct pwm_servo *pwm, uint16_t value);
 
 #endif

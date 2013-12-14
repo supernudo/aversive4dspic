@@ -20,6 +20,7 @@
  *  Javier Baliñas Santos <javier@arc-robots.org>
  */
 
+#ifndef HOST_VERSION
 
 #include <stdlib.h>
 
@@ -92,7 +93,7 @@ void pwm_servo_init(struct pwm_servo *pwm, uint16_t num, uint16_t th_min_us, uin
 	
 }
 
-void pwm_servo_enable()
+void pwm_servo_enable(void)
 {
 #if TIMER_SOURCE == 2
 	T2CON |= 0x8000;
@@ -103,7 +104,7 @@ void pwm_servo_enable()
 #endif	
 }
 
-void pwm_servo_disable()
+void pwm_servo_disable(void)
 {
 #if TIMER_SOURCE == 2
 	T2CON &= 0x3FFF;
@@ -135,4 +136,7 @@ uint16_t pwm_servo_set(struct pwm_servo *pwm, uint16_t value)
 		
 	return (value - pwm->th_min);
 }
+
+#endif /* !HOST_VERSION */
+
 

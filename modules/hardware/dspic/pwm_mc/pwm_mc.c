@@ -29,6 +29,8 @@
  *
  */
 
+#ifndef HOST_VERSION
+
 #include <stdio.h>
 #include <string.h>
 
@@ -315,4 +317,6 @@ void pwm_mc_set(void *data, int32_t value)
 #warning "This target don't have MCPWM2"
 #endif
 }
+
+#endif /* !HOST_VERSION */
 

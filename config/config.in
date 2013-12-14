@@ -87,8 +87,6 @@ endmenu
 
 #############################################################################
 
-if [ "$AVR" = "y" ]; then
-
 mainmenu_option next_comment
 comment 'Generation options'
 
@@ -131,9 +129,6 @@ choice 'Default output format' "\
 " ihex
 
 endmenu
-fi # if AVR
-
-
 
 #############################################################################
 
@@ -346,7 +341,7 @@ dep_bool '  |-- Create Default Oscillator config' CONFIG_MODULE_DSPIC_OSCILLATOR
 	$CONFIG_MODULE_DSPIC_OSCILLATOR
 
 #### TIMER
-bool 'Timer (not yet on DSPIC)' CONFIG_MODULE_TIMER
+#bool 'Timer (not yet on DSPIC)' CONFIG_MODULE_TIMER
 
 #dep_bool '  |-- Create Default timer config' CONFIG_MODULE_TIMER_CREATE_CONFIG \
 #	$CONFIG_MODULE_TIMER
@@ -357,11 +352,14 @@ bool 'Timer (not yet on DSPIC)' CONFIG_MODULE_TIMER
 #### PWM_MC
 bool 'PWM_MC' CONFIG_MODULE_DSPIC_PWM_MC 
 
-#### PWM_NG
-#bool 'PWM_ng (not yet on DSPIC)' CONFIG_MODULE_PWM_NG
+#### DAC_MC
+bool 'DAC_MC' CONFIG_MODULE_DSPIC_DAC_MC
+
+#### PWM_SERVO
+bool 'PWM_SERVO' CONFIG_MODULE_DSPIC_PWM_SERVO
 
 #### ADC
-bool 'ADC (not yet on DSPIC)' CONFIG_MODULE_ADC
+#bool 'ADC (not yet on DSPIC)' CONFIG_MODULE_ADC
 
 #dep_bool '  |-- Create Default adc config' CONFIG_MODULE_ADC_CREATE_CONFIG \
 #	$CONFIG_MODULE_ADC

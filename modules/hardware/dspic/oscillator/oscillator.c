@@ -20,6 +20,8 @@
  *  Javier Baliñas Santos <javier@arc-robots.org>
  */
 
+#ifndef HOST_VERSION
+
 #include <oscillator.h>
 
 /**
@@ -49,4 +51,5 @@ void oscillator_init(void){
 	#endif /* defined(__dsPIC33F__) || defined(__PIC24H__) */
 }
 
+#endif
 

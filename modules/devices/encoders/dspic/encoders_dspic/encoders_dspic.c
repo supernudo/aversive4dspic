@@ -28,6 +28,7 @@
  *
  */
 
+#ifndef HOST_VERSION
 
 #include <stdlib.h>
 
@@ -168,4 +169,7 @@ void encoders_dspic_set_value(void * number, int32_t v)
   g_encoders_dspic_values[(int)number] = v;
   IRQ_UNLOCK(flags);
 }
+
+#endif
+
 

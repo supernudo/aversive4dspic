@@ -20,6 +20,8 @@
  *  Javier Baliñas Santos <javier@arc-robots.org>
  */
 
+#ifndef HOST_VERSION
+
 #ifndef _CONFIGURATION_BITS_CONFIG_H_
 #define _CONFIGURATION_BITS_CONFIG_H_
 
@@ -210,4 +212,6 @@ _CONFIG1( JTAGEN_OFF & FWDTEN_OFF )
 #endif
 
 #endif /* CONFIGURATION_BITS_CONFIG_H */
+
+#endif
 
