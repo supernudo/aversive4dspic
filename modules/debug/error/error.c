@@ -31,7 +31,6 @@
 
 #include <aversive.h>
 #include <aversive/error.h>
-#include <aversive/pgmspace.h>
 
 #ifndef HOST_VERSION
 #ifdef AVR

@@ -34,11 +34,11 @@
 
 #ifdef CONFIG_MODULE_ERROR
 
-//#ifdef DSPIC
-//#include <error/error.h>
-//#else
+#ifndef HOST_VERSION
+#include <error/error.h>
+#else
 #include <error.h>
-//#endif
+#endif
 
 #else
 
@@ -52,5 +52,5 @@
 
 #define DEBUG(num, text...)  do {} while(0)
 
-#endif
-#endif
+#endif /* CONFIG_MODULE_ERROR */
+#endif /* _AVERSIVE_ERROR_H_ */
