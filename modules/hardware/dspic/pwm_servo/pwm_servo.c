@@ -46,7 +46,7 @@
 #define OUTPUT_COMPARE_CONFIG(num)						\
 do{																						\
 	OC##num##CON = 0x0000;											\
-	OC##num##CON |= (uint16_t)(TIMER_SOURCE-2);	\
+	OC##num##CON |= (uint16_t)(TIMER_SOURCE-2) << 3;	\
 	OC##num##R 	 = 0x0000;											\
 	OC##num##RS  = (uint16_t)(pwm->th_min+(uint16_t)((pwm->th_max-pwm->th_min)/2)); \
 	OC##num##CON |= 0x0005;											\
