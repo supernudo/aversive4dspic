@@ -30,8 +30,8 @@
 #include <aversive/wait.h>
 #include <uart.h>
 
-//#define DUMMYBOT_BOARD
-#define DRM12_BOARD
+#define DUMMYBOT_BOARD
+//#define DRM12_BOARD
 #define TEST_SW_LOOPBACK
 
 /*

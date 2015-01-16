@@ -20,7 +20,7 @@ struct token_ops token_string_ops = {
 static uint8_t
 get_token_len(const prog_char * s)
 {
-   prog_char c;
+   char c;
 	uint8_t i=0;
 
 	c = pgm_read_byte(s+i);

@@ -54,7 +54,7 @@ struct token_hdr {
 };
 typedef struct token_hdr parse_token_hdr_t;
 
-struct token_hdr_pgm {
+const struct token_hdr_pgm {
 	struct token_ops *ops;
 	uint8_t offset;
 } PROGMEM;
@@ -108,7 +108,7 @@ struct inst {
 };
 typedef struct inst parse_inst_t;
 
-struct inst_pgm {
+const struct inst_pgm {
 	/* f(parsed_struct, data) */
 	void (*f)(void *, void *);
 	void * data;

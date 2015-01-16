@@ -31,30 +31,30 @@
 
 #include <vt100.h>
 
-static const prog_char cmd0[] = vt100_up_arr;
-static const prog_char cmd1[] = vt100_down_arr;
-static const prog_char cmd2[] = vt100_right_arr;
-static const prog_char cmd3[] = vt100_left_arr;
-static const prog_char cmd4[] = "\177"; //backspace
-static const prog_char cmd5[] = "\n"; //ctrl+enter
-static const prog_char cmd6[] = "\001";
-static const prog_char cmd7[] = "\005";
-static const prog_char cmd8[] = "\013";
-static const prog_char cmd9[] = "\031";
-static const prog_char cmd10[] = "\003";
-static const prog_char cmd11[] = "\006";
-static const prog_char cmd12[] = "\002";
-static const prog_char cmd13[] = vt100_suppr;
-static const prog_char cmd14[] = vt100_tab;
-static const prog_char cmd15[] = "\004";
-static const prog_char cmd16[] = "\014";
-static const prog_char cmd17[] = "\r";
-static const prog_char cmd18[] = "\033\177";
-static const prog_char cmd19[] = vt100_word_left;
-static const prog_char cmd20[] = vt100_word_right;
-static const prog_char cmd21[] = "?";
+static prog_char cmd0[] = vt100_up_arr;
+static prog_char cmd1[] = vt100_down_arr;
+static prog_char cmd2[] = vt100_right_arr;
+static prog_char cmd3[] = vt100_left_arr;
+static prog_char cmd4[] = "\177"; //backspace
+static prog_char cmd5[] = "\n"; //ctrl+enter
+static prog_char cmd6[] = "\001";
+static prog_char cmd7[] = "\005";
+static prog_char cmd8[] = "\013";
+static prog_char cmd9[] = "\031";
+static prog_char cmd10[] = "\003";
+static prog_char cmd11[] = "\006";
+static prog_char cmd12[] = "\002";
+static prog_char cmd13[] = vt100_suppr;
+static prog_char cmd14[] = vt100_tab;
+static prog_char cmd15[] = "\004";
+static prog_char cmd16[] = "\014";
+static prog_char cmd17[] = "\r";
+static prog_char cmd18[] = "\033\177";
+static prog_char cmd19[] = vt100_word_left;
+static prog_char cmd20[] = vt100_word_right;
+static prog_char cmd21[] = "?";
 
-const prog_char * vt100_commands[] PROGMEM = {
+prog_char * vt100_commands[] PROGMEM = {
 	cmd0, cmd1, cmd2, cmd3, cmd4, cmd5, cmd6, cmd7,
 	cmd8, cmd9, cmd10, cmd11, cmd12, cmd13, cmd14,
 	cmd15, cmd16, cmd17, cmd18, cmd19, cmd20,
@@ -71,14 +71,14 @@ vt100_init(struct vt100 * vt)
 static int8_t
 match_command(char * buf, uint8_t size)
 {
-	const prog_char * cmd;
+	prog_char * cmd;
 	uint8_t i = 0;
 	
-	for (i=0 ; i<sizeof(vt100_commands)/sizeof(const prog_char *) ; i++) {
+	for (i=0 ; i<sizeof(vt100_commands)/sizeof(prog_char *) ; i++) {
 #ifdef HOST_VERSION
 		cmd = *(vt100_commands + i);
 #else
-		cmd = (const prog_char *) pgm_read_word(vt100_commands + i);
+		cmd = (prog_char *) pgm_read_word(vt100_commands + i);
 #endif
 
 		if (size == strlen_P(cmd) &&
