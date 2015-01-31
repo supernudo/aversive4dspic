@@ -184,7 +184,7 @@ void oa_dump(void)
 		printf_P(PSTR("poly #%d\r\n"), i);
 		for (j=0; j<poly->l; j++) {
 			pt = &poly->pts[j];
-			printf_P(PSTR("  pt #%d (%.2f,%.2f)\r\n"), j, (double)pt->x, (double)pt->y);
+			printf_P(PSTR("  pt #%d (%"PRIi32",%"PRIi32")\r\n"), j, (int32_t)pt->x, (int32_t)pt->y);
 		}
 	}
 }

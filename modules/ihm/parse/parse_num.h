@@ -25,7 +25,7 @@ struct token_num {
 };
 typedef struct token_num parse_token_num_t;
 
-const struct token_num_pgm {
+struct token_num_pgm {
 	struct token_hdr hdr;
 	struct token_num_data num_data;
 } PROGMEM;

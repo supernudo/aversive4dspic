@@ -17,7 +17,7 @@ struct token_string {
 	struct token_string_data string_data;
 };
 typedef struct token_string parse_token_string_t;
-const struct token_string_pgm {
+struct token_string_pgm {
 	struct token_hdr hdr;
 	struct token_string_data string_data;
 } PROGMEM;
