@@ -61,7 +61,8 @@ struct token_hdr_pgm {
 #ifdef AVR
 typedef struct token_hdr_pgm parse_pgm_token_hdr_t;
 #else /* DSPIC */
-typedef const struct token_hdr_pgm parse_pgm_token_hdr_t;
+//typedef const struct token_hdr_pgm parse_pgm_token_hdr_t;
+typedef struct token_hdr_pgm parse_pgm_token_hdr_t;
 #endif
 
 /**
@@ -118,7 +119,8 @@ struct inst_pgm {
 #ifdef AVR
 typedef struct inst_pgm parse_pgm_inst_t;
 #else /* DSPIC */
-typedef const struct inst_pgm parse_pgm_inst_t;
+//typedef const struct inst_pgm parse_pgm_inst_t;
+typedef struct inst_pgm parse_pgm_inst_t;
 #endif
 
 /**
@@ -130,7 +132,8 @@ typedef parse_pgm_inst_t * parse_ctx_t;
 #ifdef AVR
 typedef PROGMEM parse_ctx_t parse_pgm_ctx_t;
 #else /* DSPIC */
-typedef const parse_ctx_t parse_pgm_ctx_t;
+//typedef const parse_ctx_t parse_pgm_ctx_t;
+typedef parse_ctx_t parse_pgm_ctx_t;
 #endif
 
 /**

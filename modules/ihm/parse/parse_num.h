@@ -32,7 +32,8 @@ struct token_num_pgm {
 #ifdef AVR
 typedef struct token_num_pgm parse_pgm_token_num_t;
 #else
-typedef const struct token_num_pgm parse_pgm_token_num_t;
+//typedef const struct token_num_pgm parse_pgm_token_num_t;
+typedef struct token_num_pgm parse_pgm_token_num_t;
 #endif
 
 extern struct token_ops token_num_ops;
