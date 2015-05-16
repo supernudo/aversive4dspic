@@ -610,8 +610,8 @@ static void trajectory_manager_event(void * param)
 	case RUNNING_XY_ANGLE:
 	case RUNNING_XY_F_ANGLE:
 	case RUNNING_XY_B_ANGLE: {
-		struct quadramp_filter *q_a;
-		q_a = traj->csm_angle->consign_filter_params;
+		//struct quadramp_filter *q_a;
+		//q_a = traj->csm_angle->consign_filter_params;
 		/* if d_speed is not 0, we are in start_angle_win */
 		if (get_quadramp_distance_speed(traj)) {
 			if(is_robot_in_xy_window(traj, traj->d_win)) {
