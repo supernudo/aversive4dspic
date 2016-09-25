@@ -1,6 +1,0 @@
-syntax: glob
-*.o
-*.cof
-*.hex
-*.map
-*.orig
