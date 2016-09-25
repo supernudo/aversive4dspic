@@ -32,28 +32,28 @@ config                  -> files related to aversive configuration
   config/fuses_defs     -> fuse names and help
   config/gen_headers    -> dirty scripts for generating some .h
   config/scripts        -> project configuration scripts (imported 
-						   from linux-2.4 kernel)
+                           from linux-2.4 kernel)
 
 include                 -> generic Aversive include files, that are
-						   not related to a module
+			   not related to a module
 
 mk                      -> Aversive Makefiles (project, module, and
-						   templates) 
+			   templates) 
 
 modules                 -> modules directory. A "module" is a small
-						   library that provide a specific
-						   functionnality
+			   library that provide a specific
+			   functionnality
   modules/base          -> common modules, frequently used
   modules/comm          -> communication modules (uart, spi, i2c, ...)
   modules/crypto        -> modules for cryptographic operations
   modules/debug         -> helper modules for debugging
   modules/devices       -> modules related to a device that is not
-						   part of an Atmel AVR (lcd, motors, ...)
+			   part of an Atmel AVR (lcd, motors, ...)
   modules/encoding      -> buffer conversion (base64, hamming)
   modules/hardware      -> generic interfaces module for specific AVR
-						   hardware (timers, ADC, ...)
+			   hardware (timers, ADC, ...)
   modules/ihm           -> Human-machine interface modules (menu, and
-					       probably a future CLI)
+			   probably a future CLI)
 
 projects                -> Project examples (to be enhanced)
   projects/example1
@@ -86,6 +86,7 @@ One of your file must have a main() function.
 In an aversive project, you need an .config file, that describes which options are enabled (like in the linux kernel).
 
 Two files are generated from it: .aversive_conf and autoconf.h:
+
 - .aversive_conf is included in the project Makefile 
 - autoconf.h file is included in base/utils/utils.h
 
