@@ -1,4 +1,4 @@
-# Aversive for dsPIC (aka aversive4dspic)
+# Aversive for dsPIC
 
 ## Introduction
 
@@ -117,7 +117,7 @@ Aversive main authors:
 
 Aversive4dspic authors:
 
-* Javier Baliñas
+* Javier Baliñas Santos
 
 ## Copyright
 
