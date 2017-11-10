@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -28,7 +28,6 @@
  * Each slave have a dedicated SS line that you have to register
  * before using the SPI module
  */
-#define SPI1_MAX_SLAVES	3
+#define SPI1_MAX_SLAVES	4
 #define SPI2_MAX_SLAVES	0
 #define SPI3_MAX_SLAVES	0
-

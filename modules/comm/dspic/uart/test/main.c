@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -19,7 +19,7 @@
  *
  *  Javier Baliñas Santos <javier@arc-robots.org>
  */
- 
+
 #include <stdio.h>
 
 
@@ -30,38 +30,46 @@
 #include <aversive/wait.h>
 #include <uart.h>
 
-#define DUMMYBOT_BOARD
+//#define DUMMYBOT_BOARD
 //#define DRM12_BOARD
-#define TEST_SW_LOOPBACK
+#define DSPIC33E_BOARD
+//#define TEST_SW_LOOPBACK
 
 /*
  * This code sends a counter value to uart.
  */
 int main(void)
-{  
+{
 	unsigned int i;
+
 
 	/* initialize oscillator with the default parameters ( see
 	 * oscillator_config.h ) */
-	oscillator_init();  
+	oscillator_init();
 
    /* remap and io config */
-	#if defined(DUMMYBOT_BOARD)	
+	#if defined(DUMMYBOT_BOARD)
 		_U1RXR = 8;
 	  	_RP7R = 0b00011;
-	  	_TRISB8 = 1; 
+	  	_TRISB8 = 1;
 	  	_TRISB7 = 0;
 	#elif defined(DRM12_BOARD)
 	  	_U1RXR = 12;
 	  	_RP9R = 0b00011;
-	  	_TRISD11 = 1; 
+	  	_TRISD11 = 1;
 	  	_TRISB9 = 0;
-	#endif
+    #elif defined(DSPIC33E_BOARD)
+	  	_U1RXR = 66;
+	  	_RP65R = 0b00001;
+        _TRISD1 = 0;
+	  	_TRISD2 = 1;
+#endif
 
 	/* initialize uart with the default parameters ( see
 	 * uart_config.h ) */
-	uart_init();  
- 
+	uart_init();
+    
+    
 	/* enable interrupts */
 	sei();
 
@@ -80,15 +88,15 @@ int main(void)
 		uart_send(0,uart_recv(0));
    };
 	#endif
-  
+
 	/** ready to do a nice printf on the uart */
 	printf("Uart is cool !!\r\n");
-  
+
 	while (1) {
 		printf(PSTR("This format string takes no RAM "
 			      "space. %i\r\n"), i++);
 		wait_ms(1000);
 	}
-    
+
 	return 0;
 }

@@ -13,7 +13,7 @@
  * Hardware
  */
 #define CONFIG_QUARTZ (8000000)
-#define CONFIG_F_CPU (16000000)
+#define CONFIG_F_CPU (60000000)
 
 /*
  * Base modules

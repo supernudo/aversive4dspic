@@ -1,7 +1,7 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
  *  Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -26,7 +26,7 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F from
  *  uart_defs.h,v 1.2.4.13 2009/06/29 20:28:27 zer0 Exp.
  *
@@ -45,7 +45,7 @@
 #define UxRXREG_VALUE           0x0000
 #define UxBRG_VALUE             0x0000
 
-#if defined(__dsPIC33F__) || defined(__PIC24H__) || defined(__PIC24F__) ||\
+#if defined(__dsPIC33F__) || defined(__PIC24H__) || defined(__PIC24F__) || defined(__dsPIC33E__) ||\
     defined(__dsPIC30F1010__) || defined(__dsPIC30F2020__) || defined(__dsPIC30F2023__) || defined(__dsPIC30F4011__)
 
 #define _UART_V2
@@ -256,4 +256,3 @@
 #endif
 
 #endif //_UART_DEFS_H_
-

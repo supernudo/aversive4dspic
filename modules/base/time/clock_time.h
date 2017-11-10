@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -37,11 +37,11 @@
 #include <aversive.h>
 
 /* a 16 bit variable cannot cover one day */
-typedef int32_t seconds; 
+typedef int32_t seconds;
 typedef int32_t microseconds;
 
 /** the time structure */
-typedef struct 
+typedef struct
 {
   microseconds us;
   seconds s;
@@ -53,6 +53,9 @@ typedef struct
 
 /** init time module : schedule the event with the givent priority */
 void time_init(uint8_t priority);
+
+/*** manual event for time count management */
+void time_increment_event (void);
 
 /**********************************************************/
 
@@ -67,7 +70,7 @@ microseconds time_get_us(void);
 /**********************************************************/
 
 /** get the complete time struct since last init/reset */
-time_h time_get_time(void); 
+time_h time_get_time(void);
 
 /**********************************************************/
 

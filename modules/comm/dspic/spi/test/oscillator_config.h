@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -24,9 +24,15 @@
 #ifndef _OSCILLATOR_CONFIG_H_
 #define _OSCILLATOR_CONFIG_H_
 
-/* ***************************  PIC24F  *****************************/
+
+/* *******************************  PIC24F  ***********************************/
 /* PLL x4 configuration */
-#define PLLX4 1
+//#define PLLX4 1
+
+/* *************************  dsPIC33E & PIC24E  ******************************/
+
+/* Auxxilary frecuency clock (USB) */
+#define FAIN_POSCCLK
+#define FACLK 48000000L
 
 #endif
-

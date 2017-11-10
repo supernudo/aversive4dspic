@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -138,6 +138,24 @@ void time_wait_ms(uint16_t ms)
 {
 	microseconds old = time_get_us2();
 	while (time_get_us2() - old < ms*1000L);
+}
+
+/**********************************************************/
+
+void time_increment_event (void)
+{
+  uint8_t flags;
+  /* XXX we should lock only when writing */
+  IRQ_LOCK(flags); // for reading correct time inside an interrupt
+
+  us2 += ((int)TIME_PRECISION);
+  t.us += ((int)TIME_PRECISION);
+  while (t.us > 1000000) {
+      t.s ++;
+      t.us -= 1000000;
+  }
+
+  IRQ_UNLOCK(flags);
 }
 
 /**********************************************************/

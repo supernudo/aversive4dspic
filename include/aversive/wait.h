@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -21,13 +21,13 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
 
-/** 
- * This file is an interface for wait functions, in order to put the 
+/**
+ * This file is an interface for wait functions, in order to put the
  * microcontroller in a loop state.
  */
 
@@ -54,39 +54,48 @@
 #include <avr/delay.h>
 #else
 #include <util/delay.h>
-#endif 
+#endif
 
-/** wait n "3 cycles time" 
+/** wait n "3 cycles time"
  * n is 8 bits */
 #define wait_3cyc(n) _delay_loop_1(n)
 
-/** wait n "4 cycles time" 
+/** wait n "4 cycles time"
  * n is 16 bits */
 #define wait_4cyc(n) _delay_loop_2(n)
 
-/** wait n milliseconds 
+/** wait n milliseconds
  * n is 16 bits
 
  */
-static inline void wait_ms(uint16_t n) 
+static inline void wait_ms(uint16_t n)
 {
-  while ( n -- ) 
+  while ( n -- )
     wait_4cyc(F_CPU/4000);
-} 
+}
 
 
 #else /* DSPIC */
 
 #include <libpic30.h>
 
-/** wait n milliseconds 
+/** wait n milliseconds
  * n is 16 bits
  */
-static inline void wait_ms(uint16_t n) 
+static inline void wait_ms(uint16_t n)
 {
-  while ( n -- ) 
+  while ( n -- )
     __delay32(F_CPU/1000);
-} 
+}
+
+/** wait n microseconds
+ * n is 16 bits
+ */
+static inline void wait_us(uint16_t n)
+{
+  while ( n -- )
+    __delay32(F_CPU/1000000L);
+}
 
 #endif /* AVR else DSPIC */
 

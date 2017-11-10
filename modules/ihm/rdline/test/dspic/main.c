@@ -1,7 +1,7 @@
-/*  
+/*
  *  Copyright Droids Corporation (2007)
  *  Olivier MATZ <zer0@droids-corp.org>
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -28,9 +28,11 @@
 #include <p30fxxxx.h>
 #elif defined(__dsPIC33F__)
 #include <p33Fxxxx.h>
+#elif defined(__dsPIC33E__)
+#include <p33Exxxx.h>
 #elif defined(__PIC24H__)
 #include <p24Hxxxx.h>
-#endif 
+#endif
 
 #include <stdio.h>
 #include <string.h>
@@ -83,8 +85,8 @@ void sock_printf(const char * fmt, ...)
 	n=vsnprintf(buf, BUFSIZ, fmt, ap);
 #else
 	n=vsprintf(buf, fmt, ap);
-#endif	
-	
+#endif
+
 	if (s>0) write(s, buf, n);
 	va_end(ap);
 }
@@ -94,7 +96,7 @@ void dump_it(struct cirbuf * cbuf)
 	int i;
 	char e;
 
-	sock_printf("sta=%2.2d end=%2.2d len=%2.2d/%2.2d { ", 
+	sock_printf("sta=%2.2d end=%2.2d len=%2.2d/%2.2d { ",
 		 cbuf->start, cbuf->end,
 		 CIRBUF_GET_LEN(cbuf),
 		 CIRBUF_GET_MAXLEN(cbuf));
@@ -149,7 +151,7 @@ rx(char c)
 #endif
 
 
-void display_buffer(const char * buf, uint8_t size) 
+void display_buffer(const char * buf, uint8_t size)
 {
 	printf("**** GOT  (%d) >> %s", size, buf);
 }
@@ -163,9 +165,9 @@ const char * dummy_complete[] = {
 
 #define TEST_COMPLETION 1
 //#define TEST_COMPLETION 2
-//int8_t 
+//int8_t
 //complete_buffer(const char * buf, uint8_t size, char * dstbuf, uint8_t dstsize, int * state)
-int8_t 
+int8_t
 complete_buffer(const char * buf, char * dstbuf, uint8_t dstsize,int16_t * state)
 {
 	sock_printf("complete -> %d\n", *state);
@@ -228,13 +230,13 @@ int main(void)
 #else
 
 	oscillator_init();
-	
+
 	/* remap io config */
    _U1RXR = 8;
    _RP7R = 0b00011;
-   _TRISB8 = 1; 
+   _TRISB8 = 1;
    _TRISB7 = 0;
-	
+
 	uart_init();
 //	fdevopen(uart0_dev_send, uart0_dev_recv);
 
@@ -250,10 +252,10 @@ int main(void)
 	/* common init */
 	rdline_init(&rdl, write_char, display_buffer, complete_buffer);
 #ifdef AVR
-	snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);	
+	snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);
 #else
-	sprintf(prompt, "toto[%d] > ", cpt++);	
-#endif	
+	sprintf(prompt, "toto[%d] > ", cpt++);
+#endif
 	rdline_newline(&rdl, prompt);
 
 
@@ -271,9 +273,9 @@ int main(void)
 			if (ret == 1) {
 				rdline_add_history(&rdl, rdline_get_buffer(&rdl));
 #ifdef AVR
-				snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);	
+				snprintf(prompt, sizeof(prompt), "toto[%d] > ", cpt++);
 #else
-				sprintf(prompt, "toto[%d] > ", cpt++);	
+				sprintf(prompt, "toto[%d] > ", cpt++);
 #endif
 				rdline_newline(&rdl, prompt);
 			}

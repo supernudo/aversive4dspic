@@ -1,7 +1,7 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005),
  *  Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -22,7 +22,7 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
@@ -180,5 +180,3 @@ static inline uint8_t pgm_read_byte(const prog_void *x)
 
 #endif /* HOST_VERSION */
 #endif /* _AVERSIVE_PGMSPACE_H_ */
-
-

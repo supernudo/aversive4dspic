@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -21,26 +21,26 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
 
 /** \file modules/base/utils/irq_lock_macros.h
  *  \brief Interface of the utils module
- *   
- *   here are defined the three macros : 
+ *
+ *   here are defined the three macros :
  *
  *  IRQ_LOCK(flags);              this saves interrupt state
  *  IRQ_UNLOCK(flags);            this restores interrupt state
- *  
- *  code example follows: 
+ *
+ *  code example follows:
  *
  *    uint8_t flags;
  *    IRQ_LOCK(flags);
  *      // code to be protected against interrupts ...
  *    IRQ_UNLOCK(flags); // needs to be associated with an unlock
- *  
+ *
  */
 
 
@@ -82,9 +82,11 @@
 #include <p30fxxxx.h>
 #elif defined(__dsPIC33F__)
 #include <p33Fxxxx.h>
+#elif defined(__dsPIC33E__)
+#include <p33Exxxx.h>
 #elif defined(__PIC24H__)
 #include <p24Hxxxx.h>
-#endif 
+#endif
 
 #define GLOBAL_IRQ_ARE_MASKED() (SRbits.IPL==7)
 

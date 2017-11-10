@@ -1,7 +1,7 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2007),
  *  Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -22,14 +22,14 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
 
 /**
  * here are some cute little macros, and other stuff, microcontroller
- * related ! 
+ * related !
  */
 
 
@@ -57,8 +57,8 @@
 
 
 /* version.h should be included by avr/io.h */
-#ifndef __AVR_LIBC_VERSION__ 
-#define __AVR_LIBC_VERSION__ 0UL 
+#ifndef __AVR_LIBC_VERSION__
+#define __AVR_LIBC_VERSION__ 0UL
 #endif
 
 #ifndef HOST_VERSION
@@ -142,7 +142,7 @@ do {                                     \
 			__val;				\
 		})
 
-/* 
+/*
  * Extract bytes and u16 from larger integer
  */
 
@@ -268,8 +268,8 @@ do {				     \
 #endif /* !HOST_VERSION */
 
 /**
- *   little bit toggeling macro 
- *  
+ *   little bit toggeling macro
+ *
  *  change pin state
  *  usage :
  *  BIT_TOGGLE(PORTB,2) to make the pin 2 of PORTB toggle
@@ -283,12 +283,17 @@ do {				     \
 
 
 /** booleans */
-#define FALSE 0
-#define TRUE 1
-#define False FALSE
-#define false FALSE
-#define True TRUE
-#define true TRUE
+#ifndef false
+#define false 0
+#endif
+#define FALSE false
+#define False false
+
+#ifndef true
+#define true 1
+#endif
+#define TRUE true
+#define True true
 
 
 /** DDR and PINS from port adress */
@@ -321,4 +326,3 @@ do {				     \
 
 
 #endif /* ifndef _AVERSIVE_H_ */
-

@@ -35,7 +35,7 @@
 #include <aversive/wait.h>
 #include <uart.h>
 #include <configuration_bits_config.h>
-#include <time.h>
+#include <clock_time.h>
 
 uint8_t event_id;
 
@@ -74,7 +74,8 @@ void __attribute__((__interrupt__, no_auto_psv)) _T1Interrupt(void)
 #endif
 
 //#define DUMYBOT_BOARD
-#define DRM12_BOARD
+//#define DRM12_BOARD
+#define DSPIC33E_BOARD
 
 int main(void)
 {
@@ -94,6 +95,11 @@ int main(void)
 	   _RP9R = 0b00011;
 	   _TRISD11 = 1; 
 	   _TRISB9 = 0;
+    #elif defined(DSPIC33E_BOARD)
+	  	_U1RXR = 66;
+	  	_RP65R = 0b00001;
+        _TRISD1 = 0;
+	  	_TRISD2 = 1;
 	#endif
 	
 #ifndef HOST_VERSION

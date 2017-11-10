@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation (2008)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -23,7 +23,7 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F.
  *
  */
@@ -54,18 +54,20 @@ typedef struct _ss_pin {
 } ss_pin_t;
 
 /* global vars */
+/* HACK: for FIXME of spi_register_ss_line function:
+	+2 on g_ss_lines declaration, but why?? */
 #if (SPI_HW_NUM == 1)
-static volatile ss_pin_t g_ss_lines[SPI_HW_NUM][SPI1_MAX_SLAVES+1];
+static volatile ss_pin_t g_ss_lines[SPI_HW_NUM][SPI1_MAX_SLAVES+2];
 #elif (SPI_HW_NUM == 2)
-static volatile ss_pin_t g_ss_lines[SPI_HW_NUM][SPI2_MAX_SLAVES+1];
+static volatile ss_pin_t g_ss_lines[SPI_HW_NUM][SPI2_MAX_SLAVES+2];
 #elif (SPI_HW_NUM == 3)
-static volatile ss_pin_t g_ss_lines[SPI_HW_NUM][SPI3_MAX_SLAVES+1];
+static volatile ss_pin_t g_ss_lines[SPI_HW_NUM][SPI3_MAX_SLAVES+2];
 #endif
 
 static volatile uint8_t g_ss_number[SPI_HW_NUM];
 static volatile spi_mode_t g_spi_mode[SPI_HW_NUM];
 static volatile uint8_t g_slave_selected[SPI_HW_NUM];
-static volatile uint8_t g_spi_max_slaves[SPI_HW_NUM] = 
+static volatile uint8_t g_spi_max_slaves[SPI_HW_NUM] =
 {SPI1_MAX_SLAVES, SPI2_MAX_SLAVES, SPI3_MAX_SLAVES};
 
 
@@ -111,7 +113,7 @@ const struct regs spi_regs[SPI_HW_NUM] = {
 /*
  *	Initialize SPI
  */
-void spi_init(uint8_t num, spi_mode_t mode, spi_format_t format, 
+void spi_init(uint8_t num, spi_mode_t mode, spi_format_t format,
 	      spi_clk_rate1_t clk_rate1, spi_clk_rate2_t clk_rate2)
 {
 	/* Check SPI number range */
@@ -122,11 +124,11 @@ void spi_init(uint8_t num, spi_mode_t mode, spi_format_t format,
 
 	NOTICE(E_SPI, "Init SPI%d: mode %d, format %d, clk_rate1 %d, clk_rate2 %d",
 	       num, mode, format, clk_rate1, clk_rate2);
-	
-	/* SPI index of register */  
+
+	/* SPI index of register */
 	num --;
 
-	/* SS pin is not driven by SPI hardware 
+	/* SS pin is not driven by SPI hardware
 	 * This is taken care of by spi_register_ss_line()
 	 * EVEN for the "default" SS line */
 	g_ss_number[num] = 0;
@@ -138,15 +140,15 @@ void spi_init(uint8_t num, spi_mode_t mode, spi_format_t format,
 	*spi_regs[num].con2 = 0;
 
 	/* SPI mode, XXX Master only for now ! */
-	*spi_regs[num].con1 |= _BV(5);	
-	
+	*spi_regs[num].con1 |= _BV(5);
+
 	if(mode == SPI_MODE_MASTER_16BITS){
 		*spi_regs[num].con1 |= _BV(10);
 	}
-	
-	/* SPI format, clock polarity and phase */	
+
+	/* SPI format, clock polarity and phase */
 	*spi_regs[num].con1 |= (uint16_t)format;
-		
+
 	/* Clockrate: primary and secondary presscaler */
 	*spi_regs[num].con1 |= (uint16_t)clk_rate1;
 	*spi_regs[num].con1 |= (uint16_t)(clk_rate2<<2);
@@ -169,8 +171,8 @@ spi_mode_t spi_get_mode(uint8_t num)
 		ERROR(E_SPI, "SPI number is out of range [1:SPI_HW_NUM]");
 		return SPI_MODE_UNINIT;
 	}
-	
-	/* SPI index of register */  
+
+	/* SPI index of register */
 	num --;
 
 	return g_spi_mode[num];
@@ -188,21 +190,20 @@ uint16_t spi_send_and_receive_data(uint8_t num, uint16_t data)
 		return 0;
 	}
 
-	/* SPI index of register */  
+	/* SPI index of register */
 	num --;
 
 	//DEBUG(E_SPI, "Sending 0x%x", data);
 
 	/* Start transmission */
-	if (SPI1CON1bits.MODE16)	
+	if (SPI1CON1bits.MODE16)
 		*spi_regs[num].buf = data;			/* word write */
-	else 
+	else
 		*spi_regs[num].buf = data & 0xff;	/* byte write  */
 
-	/* Wait for transmission complete 
+	/* Wait for transmission complete
 	 * Timings are VERY important, do not bypass this ! */
-	while(!((*spi_regs[num].stat) & (_BV(0))))
-		;
+	while(!((*spi_regs[num].stat) & (_BV(0))));
 
 	/* Return received byte */
 	return *spi_regs[num].buf;
@@ -224,7 +225,7 @@ uint16_t spi_receive_data(uint8_t num)
 	return spi_send_and_receive_data(num, 0x00);
 }
 
-/* 
+/*
  * Register a pin as SS line
  * Returns a unique identifier, or -1 on error
  * There is always the physical SS line registered as 0
@@ -238,8 +239,8 @@ int8_t spi_register_ss_line(uint8_t num, volatile uint16_t *port, uint8_t bitnum
 		ERROR(E_SPI, "SPI number is out of range [1:SPI_HW_NUM]");
 		return -1;
 	}
-	
-	/* SPI index of register */  
+
+	/* SPI index of register */
 	num --;
 
 	/* too much SS lines (try to change SPI_MAX_SLAVES) */
@@ -248,10 +249,11 @@ int8_t spi_register_ss_line(uint8_t num, volatile uint16_t *port, uint8_t bitnum
 		return -1;
 	}
 
+	/* FIXME: when num == SPI_MAX_SLAVES-1 g_ss_number[num] is overwritten by port */
 	g_ss_lines[num][g_ss_number[num]].port = port;
 	g_ss_lines[num][g_ss_number[num]].bitnum = bitnum;
 	*(port-1) &= ~(_BV(bitnum));
-	
+
 	/* Unselected at first */
 	*(port+1) |= _BV(bitnum);
 
@@ -267,10 +269,10 @@ uint8_t spi_slave_select(uint8_t num, uint8_t slave)
 	/* Check SPI number range */
 	if(num <= 0 || num > SPI_HW_NUM){
 		ERROR(E_SPI, "SPI number is out of range [1:SPI_HW_NUM]");
-		return ERANGE;	
+		return ERANGE;
 	}
 
-	/* SPI index of register */  
+	/* SPI index of register */
 	num --;
 
 	/* SS line out of range */
@@ -297,10 +299,10 @@ void spi_slave_deselect(uint8_t num, uint8_t slave)
 	/* Check SPI number range */
 	if(num <= 0 || num > SPI_HW_NUM){
 		ERROR(E_SPI, "SPI number is out of range [1:SPI_HW_NUM]");
-		return;	
+		return;
 	}
 
-	/* SPI index of register */  
+	/* SPI index of register */
 	num --;
 
 	/* SS line out of range */
@@ -308,7 +310,7 @@ void spi_slave_deselect(uint8_t num, uint8_t slave)
 		ERROR(E_SPI, "SPI%d SS line %d is out of range of SPI%d_MAX_SLAVES", num+1, slave, num+1);
 		return;
 	}
-	
+
 	*((g_ss_lines[num][slave].port)+1) |= (_BV(g_ss_lines[num][slave].bitnum));
 	g_slave_selected[num] = FALSE;
 }
@@ -321,7 +323,7 @@ void spi_display_ss_lines(void)
 	uint8_t num,i;
 	for (num = 0; num < SPI_HW_NUM; num++){
 		DEBUG(E_SPI, "=== SPI%d SS lines ===",num+1);
-		
+
 		for (i = 0; i < g_ss_number[num]; i++) {
 			DEBUG(E_SPI, "SS%d: adr 0x%X bitnum %d value 0x%X",
 				   i,

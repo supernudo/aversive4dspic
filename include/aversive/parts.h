@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2009)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -21,7 +21,7 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
@@ -279,6 +279,8 @@
 #include <p30fxxxx.h>
 #elif defined(__dsPIC33F__)
 #include <p33Fxxxx.h>
+#elif defined(__dsPIC33E__)
+#include <p33Exxxx.h>
 #elif defined(__PIC24F__)
 #include <p24Fxxxx.h>
 #else

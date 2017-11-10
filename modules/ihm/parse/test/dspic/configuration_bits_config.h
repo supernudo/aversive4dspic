@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -27,11 +27,13 @@
 #include <p30fxxxx.h>
 #elif defined(__dsPIC33F__)
 #include <p33Fxxxx.h>
+#elif defined(__dsPIC33E__)
+#include <p33Exxxx.h>
 #elif defined(__PIC24H__)
 #include <p24Hxxxx.h>
 #elif defined(__PIC24F__)
 #include <p24Fxxxx.h>
-#endif 
+#endif
 
 #if defined(__dsPIC33F__)
 
@@ -210,4 +212,3 @@ _CONFIG1( JTAGEN_OFF & FWDTEN_OFF )
 #endif
 
 #endif /* CONFIGURATION_BITS_CONFIG_H */
-

@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation (2008)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -23,7 +23,7 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Code ported to families of microcontrollers dsPIC, PIC24H and PIC24F.
  *
  */
@@ -49,7 +49,7 @@
  *	You can configure
  *	 - the FORMAT of the link (sample on rising or falling edge, ...)
  *	 - the RATE of the connection (you set the prescaler dividing the CPU clock)
- *	
+ *
  *	After that you can register your devices using spi_register_ss_line();
  *	This returns you a device identifier you can use with spi_slave_[de]select();
  *
@@ -73,20 +73,20 @@ typedef enum {
 } spi_mode_t;
 
 
-/* SPI transfert format 
+/* SPI transfert format
  * This defines the SCK phase and polarity.
  * For instance in FORMAT_0, data lines are set on the rising edge
  * of SCK, and sampled at middle of data output time. This determines the order
  * in which sampling and setting occurs.
  * For more information on SPI formats, please see your CPU datasheet.
  */
-typedef enum {	
+typedef enum {
 	SPI_FORMAT_0 = 0x00,            	/* Sample at middle,  Setup rising */
 	SPI_FORMAT_1 = _BV(8),          	/* Sample at middle,  Setup falling */
 	SPI_FORMAT_2 = _BV(9),        	/* Sample at end, Setup rising */
 	SPI_FORMAT_3 = _BV(8)|_BV(9), 	/* Sample at end, Setup rising*/
 
-	/* SCK inverted */		
+	/* SCK inverted */
 	SPI_FORMAT_0_SCK_INV = 0x00|_BV(6),  			/* Sample at middle,  Setup rising */
 	SPI_FORMAT_1_SCK_INV = _BV(8)|_BV(6),			/* Sample at middle,  Setup falling */
 	SPI_FORMAT_2_SCK_INV = _BV(9)|_BV(6),			/* Sample at end, Setup rising */
@@ -97,7 +97,8 @@ typedef enum {
 
 /* SPI Clock Rate
  * This code the values for SPI2X (high nibble), SPR1 and SPR0 (low nibble)
- * FSCK = FCY / SPI_CLK_RATE2_xx / SPI_CLK_RATE2_xx 
+ * FSCK = FP / SPI_CLK_RATE2_xx / SPI_CLK_RATE2_xx
+ * FP = FOSC/2
  */
 typedef enum {
 	SPI_CLK_RATE1_1 =		0x03,
@@ -123,10 +124,10 @@ typedef enum {
  * mode is SPI_MODE_MASTER (slave is not implemented)
  * format defines the transfert format (see above)
  * clk_rates defines the frequency of SCK line:
- * 
+ *
  * FSCK = FCY / clk_rate1 /clk_rate2
  */
-void spi_init(uint8_t num, spi_mode_t mode, spi_format_t format, 
+void spi_init(uint8_t num, spi_mode_t mode, spi_format_t format,
 	      spi_clk_rate1_t clk_rate1, spi_clk_rate2_t clk_rate2);
 
 
@@ -136,7 +137,7 @@ void spi_init(uint8_t num, spi_mode_t mode, spi_format_t format,
 spi_mode_t spi_get_mode(uint8_t spi_num);
 
 
-/* 
+/*
  * Register a pin as SS line
  * Returns a unique identifier, or -1 on error
  * There is always the physical SS line registered as 0
@@ -189,4 +190,3 @@ void spi_display_ss_lines(void);
 
 
 #endif /* _SPI_H_ */
-

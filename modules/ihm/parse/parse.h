@@ -1,8 +1,8 @@
-/*  
+/*
  *  Copyright Droids Corporation (2007)
  *  Olivier MATZ <zer0@droids-corp.org>,
  *  Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -24,7 +24,7 @@
 
 /*  Robotics Association of Coslada, Eurobotics Engineering (2010)
  *  Javier Baliñas Santos <javier@arc-robots.org>
- *	
+ *
  *  Compatibility with families of microcontrollers dsPIC and PIC24H of Microchip.
  *
  */
@@ -74,7 +74,7 @@ typedef struct token_hdr_pgm parse_pgm_token_hdr_t;
  * parsed chars on success and a negative value on error.
  *
  * complete_get_nb() returns the number of possible values for this
- * token if completion is possible. If it is NULL or if it returns 0, 
+ * token if completion is possible. If it is NULL or if it returns 0,
  * no completion is possible.
  *
  * complete_get_elt() copy in dstbuf (the size is specified in the
@@ -93,7 +93,7 @@ struct token_ops {
 	int8_t (*complete_get_elt)(parse_pgm_token_hdr_t *, int8_t, char *, uint8_t);
 	/** get help for this token (token, dstbuf, size) */
 	int8_t (*get_help)(parse_pgm_token_hdr_t *, char *, uint8_t);
-};	
+};
 
 /**
  * Store a instruction, which is a pointer to a callback function and
@@ -125,7 +125,7 @@ typedef struct inst_pgm parse_pgm_inst_t;
 
 /**
  * A context is identified by its name, and contains a list of
- * instruction 
+ * instruction
  *
  */
 typedef parse_pgm_inst_t * parse_ctx_t;
@@ -147,20 +147,20 @@ int8_t parse(parse_pgm_ctx_t ctx[], const char * buf);
 
 /**
  * complete() must be called with *state==0.
- * It returns < 0 on error. 
+ * It returns < 0 on error.
  *
  * Else it returns:
  * 2 on completion (one possible choice). In this case, the chars
  *   are appended in dst buffer.
- * 1 if there is several possible choices. In this case, you must 
+ * 1 if there is several possible choices. In this case, you must
  *   call the function again, keeping the value of state intact.
- * 0 when the iteration is finished. The dst is not valid for this 
+ * 0 when the iteration is finished. The dst is not valid for this
  *   last call.
  *
  * The returned dst buf ends with \0.
- * 
+ *
  */
-int8_t complete(parse_pgm_ctx_t ctx[], const char *buf, int16_t *state, 
+int8_t complete(parse_pgm_ctx_t ctx[], const char *buf, int16_t *state,
 		char *dst, uint8_t size);
 
 
@@ -168,4 +168,3 @@ int8_t complete(parse_pgm_ctx_t ctx[], const char *buf, int16_t *state,
 int isendoftoken(char c);
 
 #endif /* _PARSE_H_ */
-

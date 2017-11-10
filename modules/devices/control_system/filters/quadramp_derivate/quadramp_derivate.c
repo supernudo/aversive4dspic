@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Droids Corporation, Microb Technology, Eirbot (2005)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -34,17 +34,18 @@ void quadramp_derivate_init(struct quadramp_derivate_filter * q)
 	q->var_2nd_ord_neg = 1;
 	q->var_1st_ord_pos = 0;
 	q->var_1st_ord_neg = 0;
-	
+
 	q->previous_in_position = 0;
 	q->previous_out_speed = 0;
-  
-	q-> gain_anticipation= 0;
-	q-> goal_window= 0;
-  
-	q-> divisor = 1;
-  
-	q-> pivot = 0;
-  
+
+	q->gain_anticipation= 0;
+	q->goal_window= 0;
+
+	q->divisor = 1;
+
+	q->pivot = 0;
+	q->pivot_fixed = 0;
+
 	IRQ_UNLOCK(flags);
 }
 
@@ -88,26 +89,37 @@ void quadramp_derivate_set_divisor(struct quadramp_derivate_filter * q, uint8_t 
 {
 	uint8_t flags;
 	IRQ_LOCK(flags);
-  
+
 	q->divisor = divisor;
 	q->divisor_counter = 1;
-  
+
+	IRQ_UNLOCK(flags);
+}
+
+void quadramp_derivate_set_pivot(struct quadramp_derivate_filter * q, int32_t pivot)
+{
+	uint8_t flags;
+	IRQ_LOCK(flags);
+
+	q->pivot_fixed = pivot;
+	q->pivot = 0;
+
 	IRQ_UNLOCK(flags);
 }
 
 
 /**
  * Process the ramp
- * 
+ *
  * \param data should be a (struct quadramp_derivate_filter *) pointer
  * \param in is the input of the filter
- * 
+ *
  */
 int32_t quadramp_derivate_do_filter(void * data, int32_t in_position)
 {
 	struct quadramp_derivate_filter * q = data;
 	int32_t position_pivot, speed, var_2nd_ord, acceleration_consign, speed_consign;
-  
+
 	/** sampling divisor
 	    this is a state machine who executes the algorithm only one time out of "divisor" */
 	if( q->divisor != 1) {
@@ -118,80 +130,93 @@ int32_t quadramp_derivate_do_filter(void * data, int32_t in_position)
 			// and return the previous consign
 			return q->previous_out_speed;
 		}
-		
+
 		q->divisor_counter = q->divisor;
 	}
-	
-  
-  
-	/** compensation of the inversion before the input 
+
+
+
+	/** compensation of the inversion before the input
 	    (inversion of the control system where error = consign - feedback)
 	*/
-	in_position = -in_position; 
-  
-  
+	in_position = -in_position;
+
+
 	// calculating the actual speed (derivate)
 	speed = in_position - q->previous_in_position;
-  
-  
-  
+
+
+
 	/** limitation of this speed, due to overflows, and calculations based on theoretical max value
 	    and also the peak created when the position_consign changes */
 	if (speed >=0) {
 		if(q->var_1st_ord_pos)
-			MAX(speed , (q->var_1st_ord_pos * q-> divisor) ); // divisor reequilibrates the value.
+			MAX(speed , (q->var_1st_ord_pos * q->divisor) ); // divisor reequilibrates the value.
 	}
 	else {
 		if(q->var_1st_ord_neg)
-			MIN(speed , (-(q->var_1st_ord_neg* q-> divisor)) ); // divisor reequilibrates the value.
+			MIN(speed , (-(q->var_1st_ord_neg* q->divisor)) ); // divisor reequilibrates the value.
 	}
-	
-  
-  
-  
+
+
+
+
 	/** calculation of the pivot position.
 	    when this position is atteined, it is just the right time to begin to deccelerate.
-	    The length to this position is given by a linear decceleration to 0 : x = speed²/ (2 * acceleration)
-      
+	    The length to this position is given by a linear decceleration to 0 : x = speedï¿½/ (2 * acceleration)
+
 	*/
-  
+
 	// taking the concerned acc. value
 	if (speed >=0) // why not position ?
 		var_2nd_ord = q->var_2nd_ord_pos;
 	else
 		var_2nd_ord = q->var_2nd_ord_neg;
-  
-	// anticipation, proportionnal to speed. Gain_anticipation is a fixed point value, with 8 bits shift
-	position_pivot = (ABS(speed) * q->gain_anticipation) >>8 ;
 
-	// if necessary, compensation of the output units, when using a sampler divisor
-	if(q->divisor != 1) {
-		var_2nd_ord    *= q-> divisor;
-		position_pivot /= q-> divisor;
+	/** if no fixed value o pivot, the pivot is calculated depending on speed */
+	if (!q->pivot_fixed) {
+		// anticipation, proportionnal to speed. Gain_anticipation is a fixed point value, with 8 bits shift
+		position_pivot = (ABS(speed) * q->gain_anticipation) >>8 ;
+
+		// if necessary, compensation of the output units, when using a sampler divisor
+		if(q->divisor != 1) {
+			var_2nd_ord    *= q->divisor;
+			position_pivot /= q->divisor;
+		}
+
+		// pivot calculation itself
+		position_pivot += speed*speed /(2*var_2nd_ord);
 	}
-	
-	// pivot calculation itself
-	position_pivot += speed*speed /(2*var_2nd_ord);
-  
+	/* if fixed pivot value, the pivot is a constant value */
+	else {
+			position_pivot = q->pivot_fixed;
+
+			// if necessary, compensation of the output units, when using a sampler divisor
+			if(q->divisor != 1) {
+				var_2nd_ord    *= q->divisor;
+				position_pivot /= q->divisor;
+			}
+	}
+
 	// taking the right sign
 	if(speed >=0)
 		position_pivot =  - position_pivot;
 
 	// mem only for debug
-	q-> pivot = position_pivot;
+	q->pivot = position_pivot;
 
 	/** this is the heart of the trajectory generation.
-	    Pretty simple but indeed unstable, 
+	    Pretty simple but indeed unstable,
 	    because of this corresponds to an infinite gain, in the following equation :
 	    acceleration_consign = ( position_pivot - in_position ) * gain
-      
+
 	    In fact this unstability is erased by the fact that the acc value is nearly always limited
 	*/
 	if(position_pivot >= in_position)
 		acceleration_consign = q->var_2nd_ord_pos;
 	else
 		acceleration_consign = -q->var_2nd_ord_neg;
-  
+
 
 
 	/** integration and limitation of the acceleration to obtain a speed consign */
@@ -205,16 +230,16 @@ int32_t quadramp_derivate_do_filter(void * data, int32_t in_position)
 		if(q->var_1st_ord_neg)
 			MIN(speed_consign , -q->var_1st_ord_neg);
 	}
-	
-	
+
+
 	/** creation of an end arrival window. This is done to stop the oscillations when the goal is achieved. */
 	if(ABS( in_position ) < q->goal_window)
 		speed_consign=0;
-  
+
 	/** refresh the memories */
 	q->previous_in_position = in_position;
 	q->previous_out_speed = speed_consign;
-  
-  
+
+
 	return speed_consign ;
 }

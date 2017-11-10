@@ -22,7 +22,7 @@
 #ifndef _AVERSIVE_TYPES_H_
 #define _AVERSIVE_TYPES_H_
 
-#include <inttypes.h>
+#include <dspic/inttypes.h>
 
 #define U08_MIN 0x00
 #define U08_MAX 0xFF

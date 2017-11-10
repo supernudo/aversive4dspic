@@ -1,7 +1,10 @@
 # Aversive configuration
 MCU = 
-OPT = 
+OPT = s
+FORMAT = ihex
+FORMAT_EXTENSION = hex
 MATH_LIB = 
+PRINTF_LDFLAGS = 
 AVRDUDE_PROGRAMMER = 
 AVRDUDE_PORT = 
 AVRDUDE_BAUDRATE = 

@@ -1,6 +1,6 @@
-/*  
+/*
  *  Copyright Robotics Association of Coslada, Eurobotics Engineering (2010)
- * 
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2 of the License, or
@@ -17,7 +17,7 @@
  *
  *  Revision : $Id$
  *
- *  Javier Baliñas Santos <javier@arc-robots.org>
+ *  Javier Baliï¿½as Santos <javier@arc-robots.org>
  */
 
 #ifndef HOST_VERSION
@@ -31,9 +31,11 @@
 #include <p30fxxxx.h>
 #elif defined(__dsPIC33F__)
 #include <p33Fxxxx.h>
+#elif defined(__dsPIC33E__)
+#include <p33Exxxx.h>
 #elif defined(__PIC24H__)
 #include <p24Hxxxx.h>
-#endif 
+#endif
 
 #include <pwm_servo.h>
 #include <pwm_servo_config.h>
@@ -50,7 +52,7 @@ do{																						\
 	OC##num##R 	 = 0x0000;											\
 	OC##num##RS  = (uint16_t)(pwm->th_min+(uint16_t)((pwm->th_max-pwm->th_min)/2)); \
 	OC##num##CON |= 0x0005;											\
-}while(0)	
+}while(0)
 
 #define TIMER_CONFIG(num)											\
 do{																						\
@@ -70,9 +72,9 @@ void pwm_servo_init(struct pwm_servo *pwm, uint16_t num, uint16_t th_min_us, uin
 	pwm->th_min = (th_min_us*TIMER_FREQ)/1000000;
 	pwm->th_max = (th_max_us*TIMER_FREQ)/1000000;
 	pwm->range = pwm->th_max-pwm->th_min;
-	
+
 	/* configure output compare */
-	// XXX tested on dspic33fj128mc804 target	
+	// XXX tested on dspic33fj128mc804 target
 	if(num == 1)
 		OUTPUT_COMPARE_CONFIG(1);
 	else if(num == 2)
@@ -90,7 +92,7 @@ void pwm_servo_init(struct pwm_servo *pwm, uint16_t num, uint16_t th_min_us, uin
 #else
 #error "Invalid timer source"
 #endif
-	
+
 }
 
 void pwm_servo_enable(void)
@@ -101,7 +103,7 @@ void pwm_servo_enable(void)
 	T3CON |= 0x8000;
 #else
 #error "Invalid timer source"
-#endif	
+#endif
 }
 
 void pwm_servo_disable(void)
@@ -112,18 +114,18 @@ void pwm_servo_disable(void)
 	T3CON &= 0x3FFF;
 #else
 #error "Invalid timer source"
-#endif	
+#endif
 }
 
 uint16_t pwm_servo_set(struct pwm_servo *pwm, uint16_t value)
 {
 	/* add th min */
 	value += pwm->th_min;
-	
+
 	/* saturate th */
 	if(value > pwm->th_max)
 		value = pwm->th_max;
-	
+
 	/* set value */
 	if(pwm->num == 1)
 		OUTPUT_COMPARE_SET(1, value);
@@ -133,10 +135,8 @@ uint16_t pwm_servo_set(struct pwm_servo *pwm, uint16_t value)
 		OUTPUT_COMPARE_SET(3, value);
 	else if(pwm->num == 4)
 		OUTPUT_COMPARE_SET(4, value);
-		
+
 	return (value - pwm->th_min);
 }
 
 #endif /* !HOST_VERSION */
-
-

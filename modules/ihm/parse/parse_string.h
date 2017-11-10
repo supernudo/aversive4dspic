@@ -9,8 +9,8 @@
 typedef char fixed_string_t[STR_TOKEN_SIZE];
 
 struct token_string_data {
-//	const prog_char * str;
-	prog_char * str;
+	const prog_char * str;
+//	prog_char * str;
 };
 
 struct token_string {
