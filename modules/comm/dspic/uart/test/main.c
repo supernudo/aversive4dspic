@@ -17,11 +17,10 @@
  *
  *  Revision : $Id$
  *
- *  Javier BaliÃ±as Santos <javier@arc-robots.org>
+ *  Javier Baliñas Santos <javier@arc-robots.org>
  */
 
 #include <stdio.h>
-
 
 #include <aversive.h>
 #include <configuration_bits_config.h>
@@ -32,8 +31,9 @@
 
 //#define DUMMYBOT_BOARD
 //#define DRM12_BOARD
-#define DSPIC33E_BOARD
+//#define DSPIC33E_BOARD
 //#define TEST_SW_LOOPBACK
+#define PERENQUEN_BOARD
 
 /*
  * This code sends a counter value to uart.
@@ -63,12 +63,27 @@ int main(void)
 	  	_RP65R = 0b00001;
         _TRISD1 = 0;
 	  	_TRISD2 = 1;
-#endif
+    #elif defined(PERENQUEN_BOARD)
+	  	_U1RXR = 101;
+	  	_RP100R = 0b00001;
+        _TRISF4 = 0;
+	  	_TRISF5 = 1;
+        
+        /* LEDs */
+        _TRISF2 = 0;
+        _TRISF3 = 0;       
+        _TRISF6 = 0;
+        _TRISG3 = 0;
+    
+   
+        
+    #endif
 
 	/* initialize uart with the default parameters ( see
 	 * uart_config.h ) */
 	uart_init();
     
+    //wait_ms(500);
     
 	/* enable interrupts */
 	sei();
@@ -93,8 +108,16 @@ int main(void)
 	printf("Uart is cool !!\r\n");
 
 	while (1) {
+        #ifdef PERENQUEN_BOARD
+        _LATF2 = i & 0x01;
+        _LATF3 = i & 0x01;
+        _LATF6 = i & 0x01;
+        _LATG3 = i & 0x01;
+        #endif
+
 		printf(PSTR("This format string takes no RAM "
 			      "space. %i\r\n"), i++);
+        printf(PSTR("This code is running on a invalid device\r\n"));
 		wait_ms(1000);
 	}
 

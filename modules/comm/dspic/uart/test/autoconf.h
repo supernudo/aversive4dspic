@@ -14,7 +14,7 @@
  */
 #define DSPIC_FAMILY 1
 #undef  PIC24F_FAMILY
-#define CONFIG_QUARTZ (8000000)
+#define CONFIG_QUARTZ (10000000)
 #define CONFIG_F_CPU (60000000)
 
 /*

@@ -19,7 +19,14 @@
  *
  */
 
-/*  Robotics Association of Coslada, Eurobotics Engineering (2010) *  Javier Baliñas Santos <javier@arc-robots.org> *	 *   *  Test on Microchip microcontrollers, coder ported from *  main.c,v 1.1.2.6 2007/11/24 22:57:54 zer0 Exp. * */
+/*  Robotics Association of Coslada, Eurobotics Engineering (2010)
+ *  Javier Baliñas Santos <javier@arc-robots.org>
+ *	
+ *  
+ *  Test on Microchip microcontrollers, coder ported from
+ *  main.c,v 1.1.2.6 2007/11/24 22:57:54 zer0 Exp.
+ *
+ */
 
 
 #include <stdio.h>
@@ -87,7 +94,10 @@ complete_buffer(const char * buf, char * dstbuf, uint8_t dstsize,
 }
 
 
-//#define DUMYBOT_BOARD#define DRM12_BOARD
+//#define DUMYBOT_BOARD
+//#define DRM12_BOARD
+#define PERENQUEN_BOARD
+
 /*** main */
 int main(void) 
 {	
@@ -111,7 +121,44 @@ int main(void)
 	oscillator_init();
 	
 	/* remap io config */
-	#if defined(DUMMYBOT_BOARD)	   _U1RXR = 8;	   _RP7R = 0b00011;	   _TRISB8 = 1; 	   _TRISB7 = 0;	#elif defined(DRM12_BOARD)	   _U1RXR = 12;	   _RP9R = 0b00011;	   _TRISD11 = 1; 	   _TRISB9 = 0;	#endif
+	#if defined(DUMMYBOT_BOARD)
+	   _U1RXR = 8;
+	   _RP7R = 0b00011;
+	   _TRISB8 = 1; 
+	   _TRISB7 = 0;
+	#elif defined(DRM12_BOARD)
+	   _U1RXR = 12;
+	   _RP9R = 0b00011;
+	   _TRISD11 = 1; 
+	   _TRISB9 = 0; 
+    #elif defined(PERENQUEN_BOARD)
+	  	_U1RXR = 101;
+	  	_RP100R = 0b00001;
+        _TRISF4 = 0;
+	  	_TRISF5 = 1;
+        
+        /* LEDs */
+        //_TRISF2 = 0;
+        _TRISF3 = 0;       
+        //_TRISF6 = 0;
+        //_TRISG3 = 0;
+        
+        #define LED1_ON() 		sbi(LATG, 3)
+        #define LED1_OFF() 		cbi(LATG, 3)
+        #define LED1_TOGGLE() LED_TOGGLE(LATG, 3)
+
+        #define LED2_ON() 		sbi(LATF, 6)
+        #define LED2_OFF() 		cbi(LATF, 6)
+        #define LED2_TOGGLE() LED_TOGGLE(LATF, 6)
+
+        #define LED3_ON() 		sbi(LATF, 2)
+        #define LED3_OFF() 		cbi(LATF, 2)
+        #define LED3_TOGGLE() LED_TOGGLE(LATF, 2)
+
+        #define LED4_ON() 		sbi(LATF, 3)
+        #define LED4_OFF() 		cbi(LATF, 3)
+        #define LED4_TOGGLE() LED_TOGGLE(LATF, 3)
+   #endif
 
 	uart_init();
 	sei();
@@ -140,13 +187,13 @@ int main(void)
 #endif
 		
 		ret = rdline_char_in(&rdl, c);
-		if (ret == -2) 
+		/*if (ret == -2) 
 			break;
 
 		if (ret != 2 && ret != 0) {
 			rdline_add_history(&rdl, rdline_get_buffer(&rdl));
 			rdline_newline(&rdl, prompt);
-		}
+		}*/
 	}
 
 #ifdef HOST_VERSION

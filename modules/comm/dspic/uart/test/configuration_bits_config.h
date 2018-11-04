@@ -244,8 +244,12 @@ _FWDT(WDTPOST_PS32768 & WDTPRE_PR128 & PLLKEN_ON & WINDIS_OFF & FWDTEN_OFF)
 **     ALTI2C2_OFF          I2C2 mapped to SDA2/SCL2 pins
 **
 */
+#ifdef ALTI2C2_OFF
 _FPOR(FPWRT_PWR128 & BOREN_OFF & ALTI2C1_OFF & ALTI2C2_OFF)
-
+#else
+_FPOR(FPWRT_PWR128 & BOREN_OFF & ALTI2C1_OFF)
+#endif
+        
 /* Register FICD (0xf8000e)                               */
 /*
 ** Only one invocation of FICD should appear in a project,
@@ -271,7 +275,7 @@ _FPOR(FPWRT_PWR128 & BOREN_OFF & ALTI2C1_OFF & ALTI2C2_OFF)
 **     JTAGEN_ON            JTAG is enabled
 **
 */
-_FICD(ICS_PGD2 & RSTPRI_PF & JTAGEN_OFF)
+_FICD(ICS_PGD1 & RSTPRI_PF & JTAGEN_OFF)
 
 /* Register FAS (0xf80010)                               */
 /*
