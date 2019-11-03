@@ -67,8 +67,7 @@ g_encoders_dspic_values[n-1] += (int32_t)res ; \
 #define READ(n)                                \
 do {                                           \
 val = POS##n##CNTL;                            \
-val <<= 16;                                    \
-val |= POS##n##HLD;                		         \
+val |= ((int32_t)POS##n##HLD << 16);      		         \
                                                \
 res = (val - g_encoders_dspic_previous[n-1]);  \
 g_encoders_dspic_previous[n-1] = val;          \
@@ -119,20 +118,21 @@ void encoders_dspic_init(void)
   POS1HLD = 0;
   POS1CNTL = 0;
 
-	QEI1CONbits.CCM = 0; 	      // Enabled (x4 mode) with position counter reset by match (MAXxCNT)
-
 	QEI1IOCbits.FLTREN = 1; 		// Digital filter outputs enabled on QEAx/QEBx/INDXx pins
 	QEI1IOCbits.QFDIV = 0;  		// 1:1 Clock divide for QEAx/QEBx/INDXx
+
+  QEI1CONbits.CCM = 0; 	      // Enabled (x4 mode) with position counter reset by match (MAXxCNT)
+  QEI1CONbits.QEIEN = 1;      // Enable counter
 #endif
 
 #ifdef ENCODERS_DSPIC2_ENABLED
   POS2HLD = 0;
   POS2CNTL = 0;
-
-	QEI2CONbits.CCM = 0; 	      // Enabled (x4 mode) with position counter reset by match (MAXxCNT)
-
 	QEI2IOCbits.FLTREN = 1; 		// Digital filter outputs enabled on QEAx/QEBx/INDXx pins
 	QEI2IOCbits.QFDIV = 0;  		// 1:1 Clock divide for QEAx/QEBx/INDXx
+
+  QEI2CONbits.CCM = 0; 	      // Enabled (x4 mode) with position counter reset by match (MAXxCNT)
+  QEI2CONbits.QEIEN = 1;      // Enable counter
 #endif
 #endif
   encoders_dspic_manage(NULL);
