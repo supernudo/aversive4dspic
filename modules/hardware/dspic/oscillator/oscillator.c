@@ -34,7 +34,7 @@ void oscillator_init(void)
   /* FOSC clock signal and main PLL */
 	#if defined(__dsPIC33F__) || defined(__dsPIC33E__) || defined(__PIC24H__)
 	// Configure PLL prescaler, PLL postscaler, PLL divisor
-	PLLFBD = M-2;
+	PLLFBD = (int)M-2;
 	CLKDIVbits.PLLPOST = N1-2;
 	CLKDIVbits.PLLPRE = (N2/2)-1;
 

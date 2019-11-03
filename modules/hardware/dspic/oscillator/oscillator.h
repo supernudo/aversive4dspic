@@ -48,7 +48,7 @@
     #define FREF_MAX 8000000L
     #define FREF_MIN 800000L
   #elif defined(__dsPIC33E__)
-    #define FOSC_MAX 120000000L
+    #define FOSC_MAX 140000000L
     #define FREF_MAX 8000000L
     #define FREF_MIN 800000L
   #elif defined(__PIC24H__)
